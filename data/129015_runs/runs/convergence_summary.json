@@ -1,0 +1,23 @@
+{
+  "bootstrap_strategy": "bootstrap computed diagnostically from each solved equilibrium and lagged into the next iteration",
+  "coordinate": "rhop",
+  "current_representation": "target current decomposed on j_parallel footing and replayed as total I*",
+  "final_amplitude_in": 1.0,
+  "final_amplitude_next": null,
+  "final_bootstrap_change_rel": null,
+  "final_converged": false,
+  "final_eqdsk_path": "/global/u1/j/joeschm/projects/cheaseBS_tests/data/129015_runs/runs/iteration_00/artifacts/EQDSK_COCOS_02_POS.OUT",
+  "final_ip_a": 743173.0382,
+  "final_ip_error_a": -10735.263800000073,
+  "final_ip_error_rel": 0.014239482137975015,
+  "final_iteration": 0,
+  "final_q_change_rel": null,
+  "iterations": 1,
+  "pressure_strategy": "p_total = p_thermal(new) + p_fast(original floored)",
+  "q_final_at_report_rhop": 10.133286233104982,
+  "q_report_rel_diff": 0.005213415224769935,
+  "q_report_rhop": 0.985,
+  "q_target_at_report_rhop": 10.08073119561296,
+  "replay_representation": "istar",
+  "target_ip_a": 753908.302
+}
