@@ -1,0 +1,135 @@
+&parallelization
+n_parallel_sims = 12
+n_procs_s =   1
+n_procs_v =   1
+n_procs_w =   1
+n_procs_x =   1
+n_procs_y =   1
+n_procs_z = 1
+n_procs_sim = 1
+/
+
+&box
+n_spec = 3
+nx0 = 7  
+nky0 = 1
+nz0 = 128   
+nv0 = 48   
+nw0 = 16   
+
+kymin = 0.4  !scanlist: 0.1, 0.25, 0.4, 0.6, 0.8, 1.0
+adapt_ly = F
+n0_global = 1 !: 5, 10, 20, 30
+lv = 3.0
+lw = 9.0
+x0 = 0.955   !scanlist:     0.91, 0.925, 0.94, 0.955
+kx_center = 0.0  !: 2*3.14159*rhostar(1)
+/
+
+&in_out
+diagdir = '/pscratch/sd/d/drhatch/test/scanfiles0021' 
+read_checkpoint = .F.
+write_checkpoint = T
+istep_nrg = 50
+istep_field = 500
+istep_mom = 1000
+istep_vsp = 10000
+istep_schpt = 10000
+/
+
+
+&general
+check_qn_gradients = F
+bpar = T
+nonlinear =   F
+comp_type = 'IV'
+perf_vec  =  1 1 1 2 1 2 1 1 1
+!perf_vec  =  1 1 1 1 1 1 1 1 1
+arakawa_zv =   F
+
+timescheme = 'RK4'
+calc_dt = T
+courant    =     1.25
+
+timelim    =      3600
+ntimesteps =     100000
+simtimelim =    60.000    
+underflow_limit =   0.1000E-19
+
+beta       =   -1
+debye2     =   -1
+collision_op = 'landau'
+coll         =   -1
+coll_cons_model  = 'xu_rosenbluth'
+
+init_cond = 'ppj'
+
+hyp_z =   -2.000    
+hyp_v =   0.2000    
+
+/
+
+&geometry
+magn_geometry = 'tracer_efit'
+geomdir = './'
+geomfile = 'g129015_chease.eqdsk'
+shat = -1
+rhostar = -1
+edge_opt = 2.0
+dpdx_pm = -1
+sign_Ip_CW = 1
+sign_Bt_CW = -1
+/
+
+
+&species
+name = 'i'
+mass = 1.000
+charge = 1
+prof_type = -1
+/
+
+&species
+name = 'e'
+mass = 2.724e-4
+charge = -1 
+prof_type = -1
+/
+
+&species
+name = 'z'
+mass = 6
+charge = 6
+prof_type = -1
+/
+
+
+
+&units
+Bref =   -1
+Tref =   -1
+nref =   -1
+Lref =   -1
+mref =   2.0000000000000000E+00
+/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&scan
+scan_dims = 6 4
+par_in_dir = '/pscratch/sd/d/drhatch/test/scanfiles0021/in_par'
+/

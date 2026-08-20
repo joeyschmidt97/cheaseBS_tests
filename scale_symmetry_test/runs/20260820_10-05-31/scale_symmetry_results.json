@@ -1,0 +1,301 @@
+{
+ "dirpath": "/global/homes/j/joeschm/data/ST_research/NSTXU_discharges/132543",
+ "scales": [
+  0.7,
+  0.85,
+  1.0,
+  1.15,
+  1.3
+ ],
+ "variables": [
+  "ne",
+  "Te"
+ ],
+ "nominal_fit": {
+  "ne": {
+   "y_sep": 2.772843442401824e+19,
+   "a_y0": 1.8349280897041842e+19,
+   "delta_ped": 0.10249524235608307,
+   "psi_mid": 0.9475452441499382,
+   "a_y1": 4.443141128417707e+19,
+   "psi_ped": 0.9799999999999999,
+   "alpha_1": 1.3656400270638664,
+   "alpha_2": 3.313407164100671
+  },
+  "Te": {
+   "y_sep": 47.94812476590256,
+   "a_y0": 146.976405246499,
+   "delta_ped": 0.13597201122209468,
+   "psi_mid": 0.9036161289270717,
+   "a_y1": 649.6094273694432,
+   "psi_ped": 0.8000000000000002,
+   "alpha_1": 3.168606814278071,
+   "alpha_2": 2.6895810175197887
+  }
+ },
+ "nominal_ped_top": {
+  "ne": 5.3350305055974605e+19,
+  "Te": 163.54157333254648
+ },
+ "cheasebs_overrides": {
+  "max_iter": 25,
+  "tol_bs": 0.0001,
+  "tol_q": 0.0001,
+  "tol_ip_rel": 0.02,
+  "bootstrap_mix": 0.1,
+  "istar_mix": 0.05,
+  "plot_errors": true
+ },
+ "rows": [
+  {
+   "var": "ne",
+   "scale": 0.7,
+   "tag": "ne_0.700",
+   "ped_top": {
+    "ne": 4.564752763285516e+19,
+    "Te": 163.54157333254648,
+    "ni": 3.0573513007395434e+19,
+    "nz": 2.5123357709099546e+18
+   },
+   "ped_top_ratio": 0.8556188682513105,
+   "savedir": "/global/u1/j/joeschm/projects/cheaseBS_tests/scale_symmetry_test/runs/20260820_10-05-31/ne_0.700",
+   "accepted": true,
+   "ip_error_rel": 0.016223567647284755,
+   "q_errors_rel": {
+    "0.736": 0.006426811849551199,
+    "0.825": 0.005145711909719056
+   },
+   "iterations": 2,
+   "converged": true,
+   "bootstrap_change_rel": 8.046229732521232e-05,
+   "q_change_rel": 7.153313257839628e-05,
+   "final_ip_a": 931697.068,
+   "target_ip_a": 947061.789
+  },
+  {
+   "var": "ne",
+   "scale": 0.85,
+   "tag": "ne_0.850",
+   "ped_top": {
+    "ne": 4.948329428016873e+19,
+    "Te": 163.54157333254648,
+    "ni": 3.3142608587515458e+19,
+    "nz": 2.7234476154422113e+18
+   },
+   "ped_top_ratio": 0.9275166136023281,
+   "savedir": "/global/u1/j/joeschm/projects/cheaseBS_tests/scale_symmetry_test/runs/20260820_10-05-31/ne_0.850",
+   "accepted": true,
+   "ip_error_rel": 0.0162233779025373,
+   "q_errors_rel": {
+    "0.736": 0.006426584268828531,
+    "0.825": 0.005145481730586982
+   },
+   "iterations": 2,
+   "converged": true,
+   "bootstrap_change_rel": 8.043258971077466e-05,
+   "q_change_rel": 7.14193760860947e-05,
+   "final_ip_a": 931697.2477,
+   "target_ip_a": 947061.789
+  },
+  {
+   "var": "ne",
+   "scale": 1.0,
+   "tag": "ne_1.000",
+   "ped_top": {
+    "ne": 5.331906092748229e+19,
+    "Te": 163.54157333254648,
+    "ni": 3.571170416763548e+19,
+    "nz": 2.934559459974468e+18
+   },
+   "ped_top_ratio": 0.9994143589533455,
+   "savedir": "/global/u1/j/joeschm/projects/cheaseBS_tests/scale_symmetry_test/runs/20260820_10-05-31/ne_1.000",
+   "accepted": true,
+   "ip_error_rel": 0.016223177493226885,
+   "q_errors_rel": {
+    "0.736": 0.0064263440353295636,
+    "0.825": 0.005145239114710556
+   },
+   "iterations": 2,
+   "converged": true,
+   "bootstrap_change_rel": 8.039531845525267e-05,
+   "q_change_rel": 7.13005482780966e-05,
+   "final_ip_a": 931697.4375,
+   "target_ip_a": 947061.789
+  },
+  {
+   "var": "ne",
+   "scale": 1.15,
+   "tag": "ne_1.150",
+   "ped_top": {
+    "ne": 5.715482757479585e+19,
+    "Te": 163.54157333254648,
+    "ni": 3.82807997477555e+19,
+    "nz": 3.145671304506726e+18
+   },
+   "ped_top_ratio": 1.071312104304363,
+   "savedir": "/global/u1/j/joeschm/projects/cheaseBS_tests/scale_symmetry_test/runs/20260820_10-05-31/ne_1.150",
+   "accepted": true,
+   "ip_error_rel": 0.01387863458611143,
+   "q_errors_rel": {
+    "0.736": 0.00041254581559993053,
+    "0.825": 0.0007156788585229533
+   },
+   "iterations": 2,
+   "converged": true,
+   "bootstrap_change_rel": 2.9592823538103855e-05,
+   "q_change_rel": 3.345205205892601e-05,
+   "final_ip_a": 933917.8645,
+   "target_ip_a": 947061.789
+  },
+  {
+   "var": "ne",
+   "scale": 1.3,
+   "tag": "ne_1.300",
+   "ped_top": {
+    "ne": 6.099059422210943e+19,
+    "Te": 163.54157333254648,
+    "ni": 4.084989532787554e+19,
+    "nz": 3.3567831490389827e+18
+   },
+   "ped_top_ratio": 1.1432098496553809,
+   "savedir": "/global/u1/j/joeschm/projects/cheaseBS_tests/scale_symmetry_test/runs/20260820_10-05-31/ne_1.300",
+   "accepted": true,
+   "ip_error_rel": 0.00454993839900341,
+   "q_errors_rel": {
+    "0.736": 0.00980035297662642,
+    "0.825": 0.008466637881099982
+   },
+   "iterations": 16,
+   "converged": true,
+   "bootstrap_change_rel": 1.8743011248557407e-05,
+   "q_change_rel": 9.935834691903464e-05,
+   "final_ip_a": 942752.7162,
+   "target_ip_a": 947061.789
+  },
+  {
+   "var": "Te",
+   "scale": 0.7,
+   "tag": "Te_0.700",
+   "ped_top": {
+    "ne": 5.3350305055974605e+19,
+    "Te": 129.4937318829534,
+    "ni": 3.5732630662856593e+19,
+    "nz": 2.936279065519668e+18
+   },
+   "ped_top_ratio": 0.7918092583079167,
+   "savedir": "/global/u1/j/joeschm/projects/cheaseBS_tests/scale_symmetry_test/runs/20260820_10-05-31/Te_0.700",
+   "accepted": true,
+   "ip_error_rel": 0.016224108900248363,
+   "q_errors_rel": {
+    "0.736": 0.006427212335012115,
+    "0.825": 0.005146108603056227
+   },
+   "iterations": 2,
+   "converged": true,
+   "bootstrap_change_rel": 8.216960236286584e-05,
+   "q_change_rel": 7.198000244164755e-05,
+   "final_ip_a": 931696.5554,
+   "target_ip_a": 947061.789
+  },
+  {
+   "var": "Te",
+   "scale": 0.85,
+   "tag": "Te_0.850",
+   "ped_top": {
+    "ne": 5.3350305055974605e+19,
+    "Te": 146.96779055089286,
+    "ni": 3.5732630662856593e+19,
+    "nz": 2.936279065519668e+18
+   },
+   "ped_top_ratio": 0.8986570665554722,
+   "savedir": "/global/u1/j/joeschm/projects/cheaseBS_tests/scale_symmetry_test/runs/20260820_10-05-31/Te_0.850",
+   "accepted": true,
+   "ip_error_rel": 0.016223662150094433,
+   "q_errors_rel": {
+    "0.736": 0.006426824802392685,
+    "0.825": 0.005145664549629047
+   },
+   "iterations": 2,
+   "converged": true,
+   "bootstrap_change_rel": 8.13762074432254e-05,
+   "q_change_rel": 7.166732700865863e-05,
+   "final_ip_a": 931696.9785,
+   "target_ip_a": 947061.789
+  },
+  {
+   "var": "Te",
+   "scale": 1.0,
+   "tag": "Te_1.000",
+   "ped_top": {
+    "ne": 5.3350305055974605e+19,
+    "Te": 164.44184921883232,
+    "ni": 3.5732630662856593e+19,
+    "nz": 2.936279065519668e+18
+   },
+   "ped_top_ratio": 1.0055048748030277,
+   "savedir": "/global/u1/j/joeschm/projects/cheaseBS_tests/scale_symmetry_test/runs/20260820_10-05-31/Te_1.000",
+   "accepted": true,
+   "ip_error_rel": 0.016179857510859774,
+   "q_errors_rel": {
+    "0.736": 0.006002893796182973,
+    "0.825": 0.005134000665205546
+   },
+   "iterations": 2,
+   "converged": true,
+   "bootstrap_change_rel": 7.391093687780955e-05,
+   "q_change_rel": 6.691432911562973e-05,
+   "final_ip_a": 931738.4642,
+   "target_ip_a": 947061.789
+  },
+  {
+   "var": "Te",
+   "scale": 1.15,
+   "tag": "Te_1.150",
+   "ped_top": {
+    "ne": 5.3350305055974605e+19,
+    "Te": 181.91590788677178,
+    "ni": 3.5732630662856593e+19,
+    "nz": 2.936279065519668e+18
+   },
+   "ped_top_ratio": 1.1123526830505832,
+   "savedir": "/global/u1/j/joeschm/projects/cheaseBS_tests/scale_symmetry_test/runs/20260820_10-05-31/Te_1.150",
+   "accepted": true,
+   "ip_error_rel": 0.015211401270039036,
+   "q_errors_rel": {
+    "0.736": 0.00016650993768597036,
+    "0.825": 0.0020866447422835336
+   },
+   "iterations": 5,
+   "converged": true,
+   "bootstrap_change_rel": 7.836004108800503e-05,
+   "q_change_rel": 9.46067827589026e-05,
+   "final_ip_a": 932655.6521,
+   "target_ip_a": 947061.789
+  },
+  {
+   "var": "Te",
+   "scale": 1.3,
+   "tag": "Te_1.300",
+   "ped_top": {
+    "ne": 5.3350305055974605e+19,
+    "Te": 199.3899665547113,
+    "ni": 3.5732630662856593e+19,
+    "nz": 2.936279065519668e+18
+   },
+   "ped_top_ratio": 1.219200491298139,
+   "savedir": "/global/u1/j/joeschm/projects/cheaseBS_tests/scale_symmetry_test/runs/20260820_10-05-31/Te_1.300",
+   "accepted": true,
+   "ip_error_rel": 0.012348656165664353,
+   "q_errors_rel": {
+    "0.736": 0.006734620365619891,
+    "0.825": 0.0036340455202632472
+   },
+   "iterations": 2,
+   "converged": true,
+   "bootstrap_change_rel": 2.842036697938687e-05,
+   "q_change_rel": 9.772479020695175e-05,
+   "final_ip_a": 935366.8486,
+   "target_ip_a": 947061.789
+  }
+ ]
+}
