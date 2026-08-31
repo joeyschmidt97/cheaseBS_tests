@@ -170,6 +170,35 @@ def build_rows(files, T):
         add(row(col.replace("_rel", ""), "convergence", "<= tol", 0.0, final,
                 final, tol, verdict, note=note))
 
+    # How many more iterations this setting needs. Choosing a mixing factor is a
+    # rate question, not a pass/fail one: 0.02 and 0.035 both converge, and the
+    # only thing that separates them is how many 56-second iterations they cost.
+    # A log-linear fit to the tail of the Ip residual answers it from a short
+    # probe run, so a mixing sweep does not have to be run to convergence.
+    v = _finite(log.get("ip_error_rel", np.asarray([])))
+    if v.size >= 6:
+        tail = v[-min(15, v.size):]
+        x = np.arange(tail.size, dtype=float)
+        pos = tail > 0
+        proj, rate = None, np.nan
+        if pos.sum() >= 4:
+            rate = float(np.polyfit(x[pos], np.log(tail[pos]), 1)[0])
+        tol = T["ip_rel"]
+        if np.isfinite(rate) and rate < -1e-6 and tail[-1] > tol:
+            proj = int(np.ceil(np.log(tol / tail[-1]) / rate))
+        elif tail[-1] <= tol:
+            proj = 0
+        add(row("iters_to_tol_projected", "convergence", "report only",
+                "tol %.3g" % tol, proj if proj is not None else "not falling",
+                None, None, PASS, fmt="{}",
+                note=("log-linear fit to the last %d Ip residuals: decay %.4f "
+                      "per iteration, final %.4g. %s" %
+                      (tail.size, rate, tail[-1],
+                       "already inside tolerance" if proj == 0 else
+                       "~%d more iterations at this mixing" % proj if proj else
+                       "residual is flat or growing -- this mixing does not get "
+                       "there at any iteration count"))))
+
     # The workflow's own verdict, kept separate from the residual rows: the
     # acceptance policy deliberately does not gate on it.
     conv = summ.get("final_converged")

@@ -114,6 +114,7 @@ things.
 | Row | Reference | Criterion |
 |---|---|---|
 | `p_th_at_radius` | `REF_profiles` (or baseline `p_th_pa`) | `p_th` ratio **at the campaign's GENE analysis radius** (else rho_tor 0.9, override with `--radius`). Must move by > 0.1% and in the scan's direction. **The ingestion test with teeth.** The whole-profile median and the peak deviation are reported in the note as context only: a pedestal-height scale moves a narrow band, so the median understates it and can invert -- 132543 Te at scale 0.70 gives median 1.013 while rho_tor 0.9 gives 0.927, and scoring the median wrongly failed eight correctly-scaled Te points on the 2026-08-28 campaign |
+| `p_th_sign_consistency` | `REF_profiles` | fraction of the radius where `p_th` moved **against** the requested scale: <= 5% PASS, <= 20% FLAG. Catches a scan axis that is not the perturbation its name implies -- 132588 `ne_ped_scale 0.70` lowers the pedestal 21% and raises the core 5%, so 48% of the radius opposes, the volume integral rises, and `beta_t` / `W_stored` fail direction while cheaseBS behaves correctly. Cause is the profile transform, not the solver |
 | `p_axis_ingestion` | `p_fast(reference) + p_th(active)` | axis pressure of the reconstruction within 5% of that sum (FLAG to 15%). Direct check that CHEASE solved with the profiles you think it did |
 | `p_axis_response` | source p(0) | moved, in the scan's direction |
 | `beta_t` | source | `2 mu0 <p>_V / B0^2`, volume-averaged over the real flux-surface volumes; moved in the scan's direction |

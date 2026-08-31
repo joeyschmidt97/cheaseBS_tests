@@ -287,6 +287,36 @@ def build_rows(files, tol=None):
         add(row("p_th_at_radius", "response", "changes", None, None,
                 verdict=SKIP, note="reference or active profiles unavailable"))
 
+    # Is the perturbation actually one-signed? A scan axis named "scale the
+    # pedestal density by 0.70" is assumed everywhere downstream to lower the
+    # pressure. On 132588 it does not: measured 2026-08-31, ne_ped_scale 0.70
+    # lowers p_th by 21% at rho_tor 0.8-0.9 and RAISES it 5% at rho_tor 0.5,
+    # because the Stefanikova full-profile refit renormalises the core when the
+    # pedestal step shrinks. Mid-radius carries most of the volume, so the
+    # volume integral moves the wrong way and beta and W rise on a down-scan --
+    # with the solver behaving correctly the whole time. Scoring one radius
+    # cannot see this; the sign across the whole profile can.
+    if stats is not None and scan_active and scale not in (None, 1.0)             and rho_ref is not None and rho_act is not None:
+        m = (rho_ref <= 0.995) & np.isfinite(pth_ref) & (np.abs(pth_ref) > 0)
+        o = np.argsort(rho_act)
+        ratio = np.interp(rho_ref[m], rho_act[o], pth_act[o]) / pth_ref[m]
+        want_up = scale > 1.0
+        opposed = ((ratio > 1.0 + T["dead"]) != want_up) &                   (np.abs(ratio - 1.0) > T["dead"])
+        frac = float(np.mean(opposed))
+        band = ""
+        if opposed.any():
+            r = rho_ref[m][opposed]
+            band = " opposed over rho_tor %.2f-%.2f" % (r.min(), r.max())
+        add(row("p_th_sign_consistency", "response", "one-signed", 0.0, frac,
+                frac, 0.05,
+                PASS if frac <= 0.05 else FLAG if frac <= 0.20 else FAIL,
+                note=("fraction of the radius where p_th moved AGAINST the "
+                      "requested scale%s. A scan axis that lowers the pedestal "
+                      "while raising the core is not the perturbation its name "
+                      "implies: the volume integral, and so beta and W, can move "
+                      "the opposite way with the solver behaving correctly. "
+                      "Cause is the profile transform, not cheaseBS." % band)))
+
     # The direct pfile-ingestion test: p_total = p_th(active) + p_fast(reference).
     if files.get("baseline_csv") and rho_act is not None:
         col = read_csv_columns(files["baseline_csv"])
