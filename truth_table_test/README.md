@@ -36,7 +36,8 @@ point to a line and keeps the cross-case blocks -- the full tables run to pages
 at sixteen points.
 
 Options: `--source-eqdsk` when the source copy is missing from the run dir,
-`--tol-ip-rel` and `--dead` to override the two tolerances worth overriding,
+`--radius` to set the rho_tor at which `p_th` is scored, `--tol-ip-rel` and
+`--dead` to override the two tolerances worth overriding,
 `--quiet-notes` for the table without explanations, `--out` for the JSON.
 
 Exit status is 0 when nothing FAILed, 1 otherwise, so a wrapper can tell "ran"
@@ -112,7 +113,7 @@ things.
 
 | Row | Reference | Criterion |
 |---|---|---|
-| `p_th_profile_scale` | `REF_profiles` (or baseline `p_th_pa`) | median `p_th` ratio over rho_tor <= 0.995. Must move by > 0.1% and in the scan's direction. **The ingestion test with teeth** |
+| `p_th_at_radius` | `REF_profiles` (or baseline `p_th_pa`) | `p_th` ratio **at the campaign's GENE analysis radius** (else rho_tor 0.9, override with `--radius`). Must move by > 0.1% and in the scan's direction. **The ingestion test with teeth.** The whole-profile median and the peak deviation are reported in the note as context only: a pedestal-height scale moves a narrow band, so the median understates it and can invert -- 132543 Te at scale 0.70 gives median 1.013 while rho_tor 0.9 gives 0.927, and scoring the median wrongly failed eight correctly-scaled Te points on the 2026-08-28 campaign |
 | `p_axis_ingestion` | `p_fast(reference) + p_th(active)` | axis pressure of the reconstruction within 5% of that sum (FLAG to 15%). Direct check that CHEASE solved with the profiles you think it did |
 | `p_axis_response` | source p(0) | moved, in the scan's direction |
 | `beta_t` | source | `2 mu0 <p>_V / B0^2`, volume-averaged over the real flux-surface volumes; moved in the scan's direction |
@@ -150,7 +151,7 @@ configured tolerances rather than this checker's guesses. Produced for every
 |---|---|
 | `Bt target identical` | the imposed field is the same number in every case |
 | `Ip target identical` | so is the target current; a target that moves between cases invalidates the comparison however well each point scores alone |
-| `<axis>/<quantity>` | low scale below high scale in `p_th`, axis pressure, `beta_t`, `W_stored`, bootstrap. A single point can look plausible while the pair is ordered backwards |
+| `<axis>/<quantity>` | low scale below high scale in `p_th_at_radius`, axis pressure, `beta_t`, `W_stored`, bootstrap. A single point can look plausible while the pair is ordered backwards |
 
 ## Reading a result
 

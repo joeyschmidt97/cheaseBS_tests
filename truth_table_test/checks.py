@@ -67,19 +67,48 @@ def _pth_reference(files):
     return None, None, None
 
 
-def _ratio_stats(rho_a, a, rho_b, b, rho_max=0.995):
-    """Median and rho=0.9 value of a/b on the reference grid.
+def ratio_stats(rho_a, a, rho_b, b, radii=None, rho_max=0.995):
+    """Where and by how much a/b changed, on the reference grid.
 
-    Median rather than mean: the ratio at the very edge is a division of two
-    small numbers and would otherwise set the headline number.
+    A pedestal-height scale changes a narrow radial band, so a whole-profile
+    median understates it and can even invert: measured on the 2026-08-28
+    campaign, 132543 Te at scale 0.70 gives a median ratio of 1.013 while the
+    ratio at rho_tor 0.9 is 0.927 -- the median is dominated by the core, which
+    moves slightly the other way when the Stefanikova fit renormalises. Scoring
+    the median therefore failed eight Te points that had scaled correctly.
+
+    So the scored number is the ratio at the radius the scan is *about*: the
+    GENE analysis radius when the campaign recorded one, else rho_tor 0.9. The
+    median and the peak deviation come back alongside it as context, not as the
+    verdict.
+
+    Returns {at_radius, radius, median, peak, peak_rho}.
     """
+    out = dict(at_radius=np.nan, radius=np.nan, median=np.nan,
+               peak=np.nan, peak_rho=np.nan)
     m = (rho_b <= rho_max) & np.isfinite(b) & (np.abs(b) > 0)
     if m.sum() < 5:
-        return np.nan, np.nan
+        return out
     o = np.argsort(rho_a)
-    a_i = np.interp(rho_b[m], rho_a[o], a[o])
-    ratio = a_i / b[m]
-    return float(np.nanmedian(ratio)), float(np.interp(0.9, rho_b[m], ratio))
+    rho = rho_b[m]
+    ratio = np.interp(rho, rho_a[o], a[o]) / b[m]
+    ok = np.isfinite(ratio)
+    if ok.sum() < 5:
+        return out
+    rho, ratio = rho[ok], ratio[ok]
+
+    # The scoring radius: the outermost analysis radius inside the fitted range,
+    # since that is the one nearest the pedestal the scan moved.
+    cand = [float(r) for r in (radii or []) if np.isfinite(float(r))]
+    cand = [r for r in cand if rho.min() <= r <= rho.max()]
+    radius = max(cand) if cand else float(min(0.9, rho.max()))
+
+    i = int(np.nanargmax(np.abs(ratio - 1.0)))
+    out.update(at_radius=float(np.interp(radius, rho, ratio)),
+               radius=radius,
+               median=float(np.nanmedian(ratio)),
+               peak=float(ratio[i]), peak_rho=float(rho[i]))
+    return out
 
 
 def build_rows(files, tol=None):
@@ -226,28 +255,36 @@ def build_rows(files, tol=None):
 
     rho_ref, pth_ref, ref_label = _pth_reference(files)
     rho_act, pth_act, used_act = thermal_pressure(files["profiles_after"])
+    radii = files["case"].get("radii")
 
+    stats = None
     scan_active = True
-    med = np.nan
     if rho_ref is not None and rho_act is not None:
-        med, _ = _ratio_stats(rho_act, pth_act, rho_ref, pth_ref)
-        scan_active = bool(np.isfinite(med) and abs(med - 1.0) > T["dead"])
+        stats = ratio_stats(rho_act, pth_act, rho_ref, pth_ref, radii=radii)
+        # Gate the rest of the response block on the scored radius, not the
+        # median: a real pedestal scan can leave the median at 1.0.
+        scan_active = bool(np.isfinite(stats["at_radius"])
+                           and abs(stats["at_radius"] - 1.0) > T["dead"])
     elif scale in (None, 1.0):
         # No measurable profile change and no scan direction: treat the run as
         # an identity replay and report the responses instead of scoring them.
         scan_active = False
 
-    if rho_ref is not None and rho_act is not None:
-        med, at09 = _ratio_stats(rho_act, pth_act, rho_ref, pth_ref)
-        v, why = _direction(med - 1.0, scale, T["dead"],
+    if stats is not None and np.isfinite(stats["at_radius"]):
+        v, why = _direction(stats["at_radius"] - 1.0, scale, T["dead"],
                             gated=not (scale in (None, 1.0) and not scan_active))
-        add(row("p_th_profile_scale", "response", "changes", 1.0, med, med - 1.0,
-                None, v,
-                note=("median p_th ratio over rho_tor<=0.995; at 0.9: %.3f. "
-                      "reference = %s; active species %s. %s"
-                      % (at09, ref_label, "".join(used_act), why)).strip()))
+        add(row("p_th_at_radius", "response", "changes", 1.0,
+                stats["at_radius"], stats["at_radius"] - 1.0, None, v,
+                note=("p_th ratio at rho_tor %.3f (%s). whole-profile median "
+                      "%.3f, peak %.3f at rho_tor %.3f -- the median understates "
+                      "a pedestal-only scale and can invert, so it is context "
+                      "only. reference = %s; active species %s. %s"
+                      % (stats["radius"],
+                         "campaign analysis radius" if radii else "default 0.9",
+                         stats["median"], stats["peak"], stats["peak_rho"],
+                         ref_label, "".join(used_act), why)).strip()))
     else:
-        add(row("p_th_profile_scale", "response", "changes", None, None,
+        add(row("p_th_at_radius", "response", "changes", None, None,
                 verdict=SKIP, note="reference or active profiles unavailable"))
 
     # The direct pfile-ingestion test: p_total = p_th(active) + p_fast(reference).
@@ -464,7 +501,7 @@ def campaign_rows(cases):
         if len(group) < 2:
             continue
         lo, hi = group[0], group[-1]
-        for name in ("p_th_profile_scale", "p_axis_response", "beta_t",
+        for name in ("p_th_at_radius", "p_axis_response", "beta_t",
                      "W_stored", "bootstrap_response"):
             rlo, rhi = _value(lo["rows"], name), _value(hi["rows"], name)
             if not (rlo and rhi):

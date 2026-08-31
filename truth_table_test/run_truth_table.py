@@ -88,6 +88,10 @@ def _campaign_meta(campaign_dir):
             meta[os.path.abspath(path)] = {"axis": r.get("axis"),
                                            "scale": r.get("scale"),
                                            "error": r.get("error"),
+                                           # the GENE analysis radii this
+                                           # campaign was built around: the
+                                           # radius p_th is scored at
+                                           "radii": rec.get("radii"),
                                            "campaign": campaign_dir}
     return meta
 
@@ -102,7 +106,7 @@ def discover_cases(root):
     if _is_run_point(root):
         m = _campaign_meta(os.path.dirname(root)).get(root, {})
         return [{"path": root, "axis": m.get("axis"), "scale": m.get("scale"),
-                 "campaign": os.path.dirname(root)}]
+                 "radii": m.get("radii"), "campaign": os.path.dirname(root)}]
 
     cases, meta, seen = [], {}, set()
     for dirpath, dirnames, _ in os.walk(root):
@@ -123,13 +127,14 @@ def discover_cases(root):
     for c in cases:
         m = meta.get(c["path"], {})
         c["axis"], c["scale"] = m.get("axis"), m.get("scale")
+        c["radii"] = m.get("radii")
 
     # Points a campaign recorded that are not on this machine. Reported rather
     # than skipped: a scan with a missing edge is not a scan.
     for path, m in sorted(meta.items()):
         if path not in seen and not os.path.isdir(path):
             cases.append({"path": path, "axis": m.get("axis"),
-                          "scale": m.get("scale"),
+                          "scale": m.get("scale"), "radii": m.get("radii"),
                           "campaign": m.get("campaign", root), "missing": True})
     return cases
 
@@ -143,7 +148,7 @@ def _tol_overrides(args):
     return out
 
 
-def score(run_dir, args, axis=None, scale=None):
+def score(run_dir, args, axis=None, scale=None, radii=None):
     """Locate, build and return (files, rows) for one run directory."""
     files = tt.locate(run_dir, source_eqdsk=args.source_eqdsk,
                       iteration=args.iteration)
@@ -151,6 +156,10 @@ def score(run_dir, args, axis=None, scale=None):
         files["case"]["axis"] = axis
     if scale is not None:
         files["case"]["scale"] = scale
+    if radii:
+        files["case"]["radii"] = radii
+    if args.radius is not None:
+        files["case"]["radii"] = [args.radius]
     return files, checks.build_rows(files, tol=_tol_overrides(args))
 
 
@@ -172,6 +181,10 @@ def main(argv=None):
     ap.add_argument("--tol-ip-rel", type=float, default=None,
                     help="override the Ip tolerance (default: the run's own "
                          "tol_ip_rel, else 0.02)")
+    ap.add_argument("--radius", type=float, default=None,
+                    help="rho_tor at which p_th is scored, overriding the "
+                         "campaign's analysis radius (default: the campaign "
+                         "radius, else 0.9)")
     ap.add_argument("--dead", type=float, default=None,
                     help="relative change below which a response counts as "
                          "'never moved' (default 1e-3)")
@@ -220,7 +233,8 @@ def main(argv=None):
                            "rows": [], "missing": True})
             continue
 
-        files, rows = score(path, args, t.get("axis"), t.get("scale"))
+        files, rows = score(path, args, t.get("axis"), t.get("scale"),
+                            t.get("radii"))
         counts = checks.tally(rows)
         bump(counts)
         line = "  ".join("%s %d" % (k, counts.get(k, 0))
