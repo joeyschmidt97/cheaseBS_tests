@@ -92,8 +92,12 @@ def main():
 
     scales = [float(s) for s in args.scales.split(",")]
     variables = [v.strip() for v in args.vars.split(",")]
-    stamp = datetime.now().strftime("%Y%m%d_%H-%M-%S")
-    workdir = os.path.abspath(os.path.join(args.outroot, stamp))
+    # Runs nest under a date directory so an outroot accumulating many
+    # campaigns stays browsable: <outroot>/<YYYYMMDD>/<YYYYMMDD_HH-MM-SS>/
+    now = datetime.now()
+    stamp = now.strftime("%Y%m%d_%H-%M-%S")
+    workdir = os.path.abspath(
+        os.path.join(args.outroot, now.strftime("%Y%m%d"), stamp))
     os.makedirs(workdir, exist_ok=True)
 
     print(f"[test] workdir  {workdir}")
