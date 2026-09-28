@@ -1,0 +1,13 @@
+omega15.gat.com
+/fusion/projects/codes/transp/nelsonand/153764C01_tmp
+local_PID=2048583
+
+tr_send_pppl_r9.pl 153764C01 D3D  
+trapipost.py 153764C01_D3D_tmp.tar.gz
+HTTP 200
+{"status":"submitted","path":"staging/anelson/153764C01_D3D_tmp.tar.gz"}
+{'status': 'submitted', 'path': 'staging/anelson/153764C01_D3D_tmp.tar.gz'}
+
+
+tr_send_pppl_r9.pl: Request file was successfully copied
+153764C01 has been submitted

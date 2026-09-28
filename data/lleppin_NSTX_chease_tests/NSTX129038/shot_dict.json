@@ -1,0 +1,11 @@
+{
+    "shot_id": "NSTX129038",
+    "indir": "/global/homes/l/lleppin/NSTX129038",
+    "efit_name": "g129038.00110",
+    "profile_format": "gene",
+    "profname_e": "REF_profiles_e",
+    "profname_i": "REF_profiles_i",
+    "profname_z": "REF_profiles_z",
+    "Zi": 1,
+    "qz": 6
+}

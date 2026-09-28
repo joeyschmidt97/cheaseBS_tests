@@ -1,0 +1,222 @@
+{
+  "reference_shot": {
+    "shot_id": "NSTX129015",
+    "indir": "/global/homes/l/lleppin/NSTX129015",
+    "efit_name": "g129015.00409",
+    "profile_format": "gene",
+    "profname_e": "REF_profiles_e",
+    "profname_i": "REF_profiles_i",
+    "profname_z": "REF_profiles_z",
+    "Zi": 1,
+    "qz": 6
+  },
+  "modifications": {
+    "1": {
+      "omt": {
+        "alpha": 0.7,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 0.7,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8
+      }
+    },
+    "2": {
+      "omt": {
+        "alpha": 0.7,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 0.8,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8
+      }
+    },
+    "3": {
+      "omt": {
+        "alpha": 0.8,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 0.8,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8
+      }
+    },
+    "4": {
+      "omt": {
+        "alpha": 0.7,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 0.9,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8
+      }
+    },
+    "5": {
+      "omt": {
+        "alpha": 0.8,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 0.9,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8
+      }
+    },
+    "6": {
+      "omt": {
+        "alpha": 0.9,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 0.9,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8
+      }
+    },
+    "7": {
+      "omt": {
+        "alpha": 1.1,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 1.0,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8
+      }
+    },
+    "8": {
+      "omt": {
+        "alpha": 0.8,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 1.0,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8
+      }
+    },
+    "9": {
+      "omt": {
+        "alpha": 0.9,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 1.0,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8
+      }
+    },
+    "10": {
+      "omt": {
+        "alpha": 1.0,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 1.0,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8
+      }
+    },
+    "11": {
+      "omt": {
+        "alpha": 0.8,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 1.1,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8
+      }
+    },
+    "12": {
+      "omt": {
+        "alpha": 0.9,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 1.1,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8
+      }
+    },
+    "13": {
+      "omt": {
+        "alpha": 1.0,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 1.1,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8
+      }
+    },
+    "14": {
+      "omt": {
+        "alpha": 1.1,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 1.1,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.8
+      }
+    }
+  },
+  "chease_config": {
+    "chease_binary": "/global/homes/l/lleppin/chease_perlmutter_build/src-f90/chease_hdf5",
+    "chease_namelist": "/global/homes/l/lleppin/NSTX129015/variations/chease_namelist",
+    "chease_namelist_baseline": "/global/homes/l/lleppin/NSTX129015/variations/chease_namelist_baseline",
+    "coordinate": "rhot",
+    "replay_representation": "jparallel",
+    "max_iter": 20,
+    "tol_ip_rel": 0.001,
+    "tol_bs": 0.001,
+    "tol_q": 0.001,
+    "tol_a": 0.0001,
+    "enforce_qspec": true
+  },
+  "baseline_dir": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX129015/baseline",
+  "variations_dir": "/global/homes/l/lleppin/NSTX129015/variations",
+  "scratch_root": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX129015",
+  "n_workers": 14,
+  "rebuild_baseline": true,
+  "overwrite": true,
+  "make_shot_overview_figures": true,
+  "shot_overview_xmin": 0.8,
+  "shot_overview_mark_pos": [],
+  "make_q_shat_figure": true,
+  "q_shat_rho_min": 0.8,
+  "q_shat_rho_max": 1.0
+}

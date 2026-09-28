@@ -1,0 +1,607 @@
+omega15.gat.com
+/fusion/projects/codes/transp/nelsonand/153764C01_tmp
+local_PID=2047377
+
+atlas.gat.com : transp
+Automated analysis TRANSP from CAKE02
+Created by OMFIT project:
+
+SHOT: 153764C01
+DEVICE: D3D
+TRANSP version: pshare
+MPI processors: 8
+NUBEAM MPI processors: 1
+TORIC MPI processors: 1
+GENRAY MPI processors: 0
+
+/fusion/projects/codes/ntcc/c8/24.3.1/bin/trdat
+
+####################
+# trdat
+####################
+atlas.gat.com : transp
+Automated analysis TRANSP from CAKE02
+Created by OMFIT project:
+
+[!p[?3;4l[4l>    TRDAT 
+  TRANSP Version: 21.X
+  TRANSP DOI: 10.11578/dc.20180627.4
+  Build Date: 2021/--/--
+
+  %trmpi_init.f90: LOG_LEVEL env. var.: 
+  %trmpi_init.f90: logfile_level: warn
+  (mpi_share_env) process myid=           0  cwd: /fusion/projects/codes/transp/nelsonand/153764C01_tmp
+  CTOKNM : Cdir = /fusion/projects/codes/transp/nelsonand/153764C01_tmp/
+ % DIRECTORY IS /fusion/projects/codes/transp/nelsonand/153764C01_tmp/; TOKAMAK ID SET TO ????
+ %COULD NOT INFER TOKAMAK ID FROM CURRENT DEFAULT
+  DIRECTORY:  /fusion/projects/codes/transp/nelsonand/153764C01_tmp/
+ -->LIST OF KNOWN TOKAMAK ID'S:
+ ARC  ARIS ASDX AUGD BPX  CFNS CIT  CMOD D3D  DEMO DIII EAST
+ FIRE FNSF HL1M HL2A HL2M IGTR ISX  ITER JET  JT60 JULI KDMO
+ KSTR LTX  MAST MST  NCSX NHTX NSST NSTX NSTU PBX  PBXM PDX 
+ PLT  TFTR RFXM SSSP TORS TXTR WRK  TCV  GLMT STEP CFET SPRC
+ ST40 ST80 SHPD TCAB PI3  SMRT WEST STAR     
+ %trmpi_openlog: LOGFILE_LEVEL = warn
+
+ %UFINIT -- using root directory for temporary files:
+ /tmp/
+  
+ namelist element value field(s): decimal point(s) inserted:
+   FOCLRA                               FOCLZA                                 
+   PDELTA                                                                      
+     %NLIST: open namelist file153764C01TR.ZDA             
+ %trcom_static_box: loading static data
+  -----------> entering UF0GET.
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.NB2
+ %UF0DRD:  DIMENSIONALITY OF INPUT FILE = 2
+ % NO. OF BEAMS (NB2 DATA) = 14
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.MMX
+ %UF0DRD:  DIMENSIONALITY OF INPUT FILE = 3
+  UF0GET: -> Btor is clockwise from BTOR_CCW scalar in MMX data.
+  UF0GET: -> Itor is counter-clockwise from ITOR_CCW scalar in MMX data.
+  UF0GET: MMX max exponent:            2
+  %UF0GET -- finished.
+  
+  %datchk_mpi: PSERV record file not found: 153764C01_pserv.tmp
+   (continuing without datchk_mpi checks...)
+  %DATCHK: full equilibrium input 
+ DATCHK: CHECKING ARRAY DIMENSIONS, SWITCHES, ETC
+  %DATCHK: NYXINV incremented to be odd:         101         161
+  %DATCHK: no ECH/ECCD, NLECH=F,
+  %DATCHK: no Lower Hybrid, NLLH=F
+  TIDXSW defaulted: value of 0.05 assigned.
+  %DATCKA: ACfile times pre-screen... 
+ %DATCKA -- CHECKING NON-DEFAULT SPECIFICATIONS FOR AC FILE I/O
+  GIVEN IN NAMELIST CHARACTER DATA ARRAYS "SELOUT" AND "SELAVG"
+ %ASCXFIN -- AC FILE OPERATION COMPLETED SUCCESSFULLY.
+  dummy trdatusub vsn trgdat_check called (OK).
+  dummy trdatusub vsn trgdat_psload called (OK).
+  *UTRCHK:  CHECKING TRDAT NAMELIST SPECIFICATIONS.
+  %UTRCHK: full equilibrium input 
+ %UTRCHK- NO GAS PUFF SCE VS T (GAS) DATA, YET NLRCYC = .T
+ %UTRCHK - OK - GAS PUFF SOURCE CONSTANT "GASFLN" USED
+
+ *DDEFIN:  SET UP PHYSICS DATA FOR ANALYSIS:
+  TIME RANGE IS TINIT= 8.0000E-01, FTIME= 5.0200E+00 SECONDS.
+
+ SETSCD - SET SCALAR DATA FOR UPF
+ SETTIM - SET UP TIMING INFORMATION FOR UPF
+
+ *UF1GET:  PROCESSING "CUR":  plasma current amps    -------------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.CUR
+
+ *UF1GET:  PROCESSING "RBZ":  [ext. B field] * R Tesla*cm    -----------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.RBZ
+ %FIXUNS:  CONVERTING UFILE RBZ DATA UNITS, M.T       , TO Tesla*cm  
+          >CONVERSION FACTOR:  * 100.000    
+
+ *UF1GET:  PROCESSING "BDI":  beta diamagnetic      --------------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.BDI
+
+ *UF1GET:  PROCESSING "DFL":  diamagnetic flux Webers    ---------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.DFL
+ %SETDFLT:  "GAS" INPUT DATA FILE NOT SPECIFIED
+ ==>DEFAULT VALUE SUBSTITUTED, GASFLN =  0.0000E+00
+
+ *UF1GET:  PROCESSING "L2B":  li/2 + beta(pol)      --------------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.L2B
+
+ *UF1GET:  PROCESSING "NTX":  Neutron flux n/sec    --------------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.NTX
+
+ *UF1GET:  PROCESSING "PF0":  Psi(axis) Wb/rad    ----------------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.PF0
+ %CHKTIM:  DATA TIME RANGE  1.0000E+00 TO  4.9600E+00 SECONDS
+          DOES NOT COVER THE ENTIRE ANALYSIS TIME RANGE (TINIT,FTIME).
+
+ *UF1GET:  PROCESSING "PLF":  Poloidal flux Wb/rad    ------------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.PLF
+ %CHKTIM:  DATA TIME RANGE  1.0000E+00 TO  4.9600E+00 SECONDS
+          DOES NOT COVER THE ENTIRE ANALYSIS TIME RANGE (TINIT,FTIME).
+
+ *UF1GET:  PROCESSING "RCY":  recycling source #/sec    ----------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.RCY
+
+ *UF1GET:  PROCESSING "TRF":  Toroidal flux Webers    ------------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.TRF
+ %CHKTIM:  DATA TIME RANGE  1.0000E+00 TO  4.9600E+00 SECONDS
+          DOES NOT COVER THE ENTIRE ANALYSIS TIME RANGE (TINIT,FTIME).
+
+ *UF1GET:  PROCESSING "VSF":  surface voltage volts    -----------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.VSF
+
+ *UF3GET:  PROCESSING "MMX":  Equilibrium moments cm    ----------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.MMX
+ %FIXUNS:  CONVERTING UFILE DATA UNITS, M         , TO cm        
+          >CONVERSION FACTOR:  * 100.000    
+ %CHKTIM:  DATA TIME RANGE  1.0000E+00 TO  4.9600E+00 SECONDS
+          DOES NOT COVER THE ENTIRE ANALYSIS TIME RANGE (TINIT,FTIME).
+
+ %Geteq: MMX file does not cover time range of run;
+          equilibrium geometry will be extrapolated
+          flat to fill the time range
+
+  ---> Geteq: #moments NMOM =           16
+ Geteq: Interpolate equilibrium data for UPF
+ SETLIM - SET UP Axisymmetric limiter data for UPF
+
+ *UF1GET:  PROCESSING "LIM":  Axisymmetric Limiter cm    ---------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.LIM
+ %UF1GET:  X axis is not the timebase, processing axis units cm
+ %FIXUNS:  CONVERTING UFILE LIM TIMEBASE UNITS, M         , TO cm        
+          >CONVERSION FACTOR:  * 100.000    
+ %FIXUNS:  CONVERTING UFILE LIM DATA UNITS, M         , TO cm        
+          >CONVERSION FACTOR:  * 100.000    
+
+ *UF2GET:  PROCESSING "BOL":  Power radiated W/cm**3    ----------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.QRA
+ %UF2GET -- INPUT UFILE AXES OUT OF ORDER, WILL SWAP:
+  1ST DIMENSION = "          "; 2ND DIMENSION = "SEC       "
+ %SETDAT2-- X axis is normalized flux, not modified, npts=101
+
+ *UF2GET:  PROCESSING "GRB":  MHD g (R*Bt) profile Tesla*cm    ---------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.GRB
+ %UF2GET -- INPUT UFILE AXES OUT OF ORDER, WILL SWAP:
+  1ST DIMENSION = "          "; 2ND DIMENSION = "Seconds   "
+ %FIXUNS:  CONVERTING UFILE GRB DATA UNITS, TESLA*M   , TO Tesla*cm  
+          >CONVERSION FACTOR:  * 100.000    
+ %CHKTIM:  DATA TIME RANGE  1.0000E+00 TO  4.9600E+00 SECONDS
+          DOES NOT COVER THE ENTIRE ANALYSIS TIME RANGE (TINIT,FTIME).
+ %SETDAT2-- X axis is normalized flux, not modified, npts= 41
+
+ *UF2GET:  PROCESSING "NER":  electron density n/cm**3    --------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.NEL
+ %UF2GET -- INPUT UFILE AXES OUT OF ORDER, WILL SWAP:
+  1ST DIMENSION = "          "; 2ND DIMENSION = "SEC       "
+ %FIXUNS:  CONVERTING UFILE NER DATA UNITS, M**-3     , TO n/cm**3   
+          >CONVERSION FACTOR:  *0.100000E-05
+ %CHKTIM:  DATA TIME RANGE  8.8000E-01 TO  5.1800E+00 SECONDS
+          DOES NOT COVER THE ENTIRE ANALYSIS TIME RANGE (TINIT,FTIME).
+ %SETDAT2-- X axis is normalized flux, not modified, npts=101
+
+ *UF2GET:  PROCESSING "NIM":  impurity density n/cm**3    --------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.NC
+ %UF2GET -- INPUT UFILE AXES OUT OF ORDER, WILL SWAP:
+  1ST DIMENSION = "          "; 2ND DIMENSION = "SEC       "
+ %FIXUNS:  CONVERTING UFILE NIM DATA UNITS, M**-3     , TO n/cm**3   
+          >CONVERSION FACTOR:  *0.100000E-05
+ %CHKTIM:  DATA TIME RANGE  2.0200E+00 TO  3.9600E+00 SECONDS
+          DOES NOT COVER THE ENTIRE ANALYSIS TIME RANGE (TINIT,FTIME).
+ %SETDAT2-- X axis is normalized flux, not modified, npts=101
+
+ *UF2GET:  PROCESSING "OMG":  plasma rotation rad/sec    ---------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.OME
+ %UF2GET -- INPUT UFILE AXES OUT OF ORDER, WILL SWAP:
+  1ST DIMENSION = "          "; 2ND DIMENSION = "SEC       "
+ %CHKTIM:  DATA TIME RANGE  2.0600E+00 TO  3.9000E+00 SECONDS
+          DOES NOT COVER THE ENTIRE ANALYSIS TIME RANGE (TINIT,FTIME).
+ %SETDAT2-- X axis is normalized flux, not modified, npts=101
+
+ *UF2GET:  PROCESSING "PRS":  MHD Pressure profile Pascals    ----------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.PRS
+ %UF2GET -- INPUT UFILE AXES OUT OF ORDER, WILL SWAP:
+  1ST DIMENSION = "          "; 2ND DIMENSION = "Seconds   "
+ %CHKTIM:  DATA TIME RANGE  1.0000E+00 TO  4.9600E+00 SECONDS
+          DOES NOT COVER THE ENTIRE ANALYSIS TIME RANGE (TINIT,FTIME).
+ %SETDAT2-- X axis is normalized flux, not modified, npts= 41
+
+ *UF2GET:  PROCESSING "QPR":  q profile      ---------------------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.QPR
+ %UF2GET -- INPUT UFILE AXES OUT OF ORDER, WILL SWAP:
+  1ST DIMENSION = "          "; 2ND DIMENSION = "Seconds   "
+ %CHKTIM:  DATA TIME RANGE  1.0000E+00 TO  4.9600E+00 SECONDS
+          DOES NOT COVER THE ENTIRE ANALYSIS TIME RANGE (TINIT,FTIME).
+ %SETDAT2-- X axis is normalized flux, not modified, npts= 41
+
+ *UF2GET:  PROCESSING "TER":  electron temperature eV    ---------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.TEL
+ %UF2GET -- INPUT UFILE AXES OUT OF ORDER, WILL SWAP:
+  1ST DIMENSION = "          "; 2ND DIMENSION = "SEC       "
+ %FIXUNS:  CONVERTING UFILE TER DATA UNITS, KEV       , TO eV        
+          >CONVERSION FACTOR:  * 1000.00    
+ %CHKTIM:  DATA TIME RANGE  8.8000E-01 TO  5.1800E+00 SECONDS
+          DOES NOT COVER THE ENTIRE ANALYSIS TIME RANGE (TINIT,FTIME).
+ %SETDAT2-- X axis is normalized flux, not modified, npts=101
+
+ *UF2GET:  PROCESSING "TI2":  ion temperature eV    --------------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.TIO
+ %UF2GET -- INPUT UFILE AXES OUT OF ORDER, WILL SWAP:
+  1ST DIMENSION = "          "; 2ND DIMENSION = "SEC       "
+ %FIXUNS:  CONVERTING UFILE TI2 DATA UNITS, KEV       , TO eV        
+          >CONVERSION FACTOR:  * 1000.00    
+ %CHKTIM:  DATA TIME RANGE  2.0600E+00 TO  4.0000E+00 SECONDS
+          DOES NOT COVER THE ENTIRE ANALYSIS TIME RANGE (TINIT,FTIME).
+ %SETDAT2-- X axis is normalized flux, not modified, npts=101
+
+ *UF2GET:  PROCESSING "ZF2":  Zeff profile      ------------------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.ZFC
+ %UF2GET -- INPUT UFILE AXES OUT OF ORDER, WILL SWAP:
+  1ST DIMENSION = "          "; 2ND DIMENSION = "SEC       "
+ %CHKTIM:  DATA TIME RANGE  2.0200E+00 TO  3.9600E+00 SECONDS
+          DOES NOT COVER THE ENTIRE ANALYSIS TIME RANGE (TINIT,FTIME).
+ %SETDAT2-- X axis is normalized flux, not modified, npts=101
+
+ *DDEFIN: Set Plasma Heating parameters :-    ==========================
+  
+  -> entering setnbi (neutral beam powers, voltages, etc.)
+ SETNBI - SET UP NEUTRAL BEAM DATA FOR UPF
+
+ *UF2GET:  PROCESSING "NB2":  beam heating data      -------------------
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.NB2
+ %SETNBI- BEAM FULL ENERGY FRACTIONS SET BY NBI FILE **
+ %SETNBI- BEAM HALF ENERGY FRACTIONS SET BY NBI FILE **
+  %setnbi: NBI on/off times taken from data.
+ %NB_ONOFF: NBI on/off times (s):   1.2000E+00  5.2001E+00
+  Zeff vs. (x,t) only:
+    Zeff vs. (x,t) input data provided.
+ %SETDFLT:  "DTG" INPUT DATA FILE NOT SPECIFIED
+ ==>DEFAULT VALUE SUBSTITUTED, DTMAXG =  1.0000E-02
+  %setmisc -- time dependent geometry timestep enabled (ZOOM is off).
+ %SETDFLT:  "DTS" INPUT DATA FILE NOT SPECIFIED
+ ==>DEFAULT VALUE SUBSTITUTED, DT_SOURCES =  1.0000E-03
+  %setmisc -- time dependent source timestep enabled (ZOOM is off).
+ %SETDFLT:  "DTX" INPUT DATA FILE NOT SPECIFIED
+ ==>DEFAULT VALUE SUBSTITUTED, DT_OUTPUT =  1.0000E-02
+  %setmisc -- time dependent output timestep enabled (ZOOM is off).
+  --------------------------------------------------
+  %trdat_bdy_check -- checking plasma boundary data
+  
+  trdat_bdy_check: OK
+  ...min(r_curvature/(Rmax-Rmin)) is:    8.2052731047736388E-002
+  ...at time t=   2.7399999999999851       seconds.
+  
+
+ ------------> thermal ion ptcl balance summary:
+
+  Hydrogen  (absent)                                         
+  Deuterium NDEFINE=0 NMODEL=4 RC=NLRCYC GF=NLRCYC           
+  Tritium   (absent)                                         
+  Helium-3  (absent)                                         
+  Helium-4  (absent)                                         
+  Lithium-6 (absent)                                         
+
+ Recycling fractions RFRAC are specified.
+
+ ------------------------------------
+  Fast ion summary:
+  
+  Beam species: D
+  Fusion product species: (None)
+  Minority RF species: (None)
+ ------------------------------------
+
+ *TRDAT (vsn: June 1995) TOP NODE.  TOKAMAK:  D3D 
+ *OPTIONS:
+  1 -- PLOT TIMESERIES SHOT DATA F(T)
+  2 -- PLOT PROFILE SHOT DATA F(X,T)
+  3 -- PLOT PROFILE SHOT DATA F(X,Y,T) e.g. PSI(t,R,Z)
+  B -- PLOT/DISPLAY BEAM DATA
+  C -- PLOT/DISPLAY TF RIPPLE DATA
+  E -- PLOT/DISPLAY ECRH DATA
+  F -- PLOT/DISPLAY Free Boundary DATA
+  I -- PLOT/DISPLAY ICRF DATA
+  L -- PLOT/DISPLAY Lower Hybrid DATA
+  K -- Recompute and plot boundary curvature ratio (bdy_check).
+  M -- PLOT MOMENTS BDY EVOLUTION or FULL EQUILIBRIUM IF AVAIL.
+  N -- (RUNS WITH FREE BDY, MODE 2) PLOT MAGNETICS DATA
+  O -- PLOT PLASMA BDY WITH LIMITERS & WALLS
+  P -- PLOT MIDPLANE BDY INTERCEPTS (MAJOR RADII) vs. TIME
+  S -- DISPLAY SCALAR DATA
+  T -- TEST MAPPING OF PROFILE DATA
+  V -- View information on Sawteeth and Pellets
+  X -- Plot Psi(R,Z) data (if available)
+  W -- WRITE UNIFIED PHYSICS FILE (xxxxPH.DAT)
+  Q -- QUIT -- EXIT PROGRAM
+[7m TRDAT TOP NODE >> ENTER OPTION CODE:
+[0mQ
+####################
+# tr_start
+####################
+atlas.gat.com : transp
+Automated analysis TRANSP from CAKE02
+Created by OMFIT project:
+
+[!p[?3;4l[4l>NB
+tr_start: you are asking for NB MPI 
+          Enter number of proccesses [2, 4, 8, 16, 32, ..., 88]: 8
+TORIC
+PTR
+NGEN
+NCQL
+tr_start.pl ATLAS.GAT.COM transp 153764C01    -nbi_np 8      
+Y
+ *tokyy_id: enter tokamak id:
+tok_valid:  unrecognized tokamak id:  Y
+...valid list is:  ARC ARIS ASDX AUGD BPX CFNS CIT CMOD D3D DEMO DIII EAST FIRE FNSF HL1M HL2A HL2M IGTR ISX ITER JET JT60 JULI KDMO KSTR LTX MAST MST NCSX NHTX NSST NSTX NSTU PBX PBXM PDX PLT TFTR RFXM SSSP TORS TXTR WRK TCV GLMT STEP CFET SPRC ST40 ST80 SHPD TCAB PI3 SMRT WEST STAR
+ *tokyy_id: enter tokamak id:
+D3D
+ %get_tokyr: subroutine d3dyr.for: tokamak D3D shot 153764 => shot year: 2013
+D3D
+ *tokYY_id: verify run tok.yy = D3D.13 (Y/N):
+Please answer Y (yes) or N (no).
+ *tokYY_id: verify run tok.yy = D3D.13 (Y/N):
+Y
+%tr_start: tok.yy = D3D.13
+tree = TRANSP
+mds_get_inf s ATLAS.GAT.COM t TRANSP r 153764C01 n 1537640301 q
+Y
+EDITOR is defined as cat
+Automated analysis TRANSP from CAKE02
+Created by OMFIT project:
+
+ *tr_start: verify your email address = aon2113@columbia.edu (Y/N):
+
+%tr_start: run trdat.pl D3D
+TOK=D3D
+Input:  /fusion/projects/codes/transp/nelsonand/153764C01_tmp/
+CUR : OMF153764.CUR
+BDI : OMF153764.BDI
+DFL : OMF153764.DFL
+RBZ : OMF153764.RBZ
+L2B : OMF153764.L2B
+VSF : OMF153764.VSF
+PLF : OMF153764.PLF
+TRF : OMF153764.TRF
+PF0 : OMF153764.PF0
+PRS : OMF153764.PRS
+GRB : OMF153764.GRB
+QPR : OMF153764.QPR
+Y
+MMX : OMF153764.MMX
+LIM : OMF153764.LIM
+NER : OMF153764.NEL
+TER : OMF153764.TEL
+TI2 : OMF153764.TIO
+OMG : OMF153764.OME
+NIM : OMF153764.NC
+ZF2 : OMF153764.ZFC
+BOL : OMF153764.QRA
+NTX : OMF153764.NTX
+RCY : OMF153764.RCY
+NB2 : OMF153764.NB2
+%trdat.pl: 153764C01TRDAT.TMP has been written.
+
+%tr_start: ck_tmplate returns status 0; 0 or 2 (OK)
+
+%tr_start: run mds_start
+/fusion/projects/codes/ntcc/c8/24.3.1/bin/mds_start E D3D R 153764C01 Y 13 N 1537640301 S ATLAS.GAT.COM T TRANSP Q X 
+
+ ************************************************************************
+ Program: mds_start
+ Version: v0.3.2
+ Revision: 953b182
+ Date: 08/09/2024
+ ************************************************************************
+ mds_conopn: option =           5  1537640301  TRANSP                  
+  ...connecting to server:  ATLAS.GAT.COM
+ ...tcl("SET TREE TRANSP                  ")
+ ...tcl("CREATE PULSE 1537640301")
+ ...tcl("EDIT TRANSP/SHOT=1537640301")
+ create pulse: did source_shot
+ ?create_pulse: put SHOT_IDATE - stat:     265388426 :
+ %TREE-E-INVDTPUSG, Attempt to store datatype which conflicts with the designated usage of this node
+ ?create_pulse: put RUNID - stat:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ call D3D
+ D3D.13
+  Call add_inf(153764C01)
+ try  153764C01CC.TMP                                             
+ nelsonand   
+ check for 153764C01ex.for                                             
+ check for 153764C01ex.f90                                             
+ open 153764C01TR.DAT                                                                                                                                                                                                                                 
+  add_file:         1538  lines -         120
+ ?add_file --  missing $TRDATA 
+  EXTCUR ='CUR'
+  EXTBDI ='BDI'
+  EXTDFL ='DFL'
+  EXTRBZ ='RBZ'
+  EXTL2B ='L2B'
+  EXTVSF ='VSF'
+  EXTPLF ='PLF'
+  EXTTRF ='TRF'
+  EXTPF0 ='PF0'
+  EXTPRS ='PRS'
+  EXTGRB ='GRB'
+  EXTQPR ='QPR'
+  EXTMMX ='MMX'
+  EXTLIM ='LIM'
+  EXTNER ='NER'
+  EXTTER ='TER'
+  EXTTI2 ='TI2'
+  EXTOMG ='OMG'
+  EXTNIM ='NIM'
+  EXTZF2 ='ZF2'
+  EXTBOL ='BOL'
+  EXTNTX ='NTX'
+  EXTRCY ='RCY'
+  EXTNB2 ='NB2'
+  Call add_ufnodes(153764C01)
+ read_trtmp: toff: 153764C01TRDAT.TMP                                                                                                         0.00000000    
+  TrLbl: plasma current      
+  TrLbl: beta diamagnetic    
+  TrLbl: diamagnetic flux    
+  TrLbl: [ext. B field] * R  
+  TrLbl: li/2 + beta(pol)    
+  TrLbl: surface voltage     
+  TrLbl: Poloidal flux       
+  TrLbl: Toroidal flux       
+  TrLbl: Psi(axis)           
+  TrLbl: MHD Pressure profile
+  TrLbl: MHD g (R*Bt) profile
+  TrLbl: q profile           
+  TrLbl: Equilibrium moments 
+  TrLbl: Axisymmetric Limiter
+  TrLbl: electron density    
+  TrLbl: electron temperature
+  TrLbl: ion temperature     
+  TrLbl: plasma rotation     
+  TrLbl: impurity density    
+  TrLbl: Zeff profile        
+  TrLbl: Power radiated      
+  TrLbl: Neutron flux        
+  TrLbl: recycling source    
+  TrLbl: beam heating data   
+ add_ufnodes:           24  files
+          24  files
+
+ %UFINIT -- using root directory for temporary files:
+ /tmp/
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.CUR
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.BDI
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.DFL
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.RBZ
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.L2B
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.VSF
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.PLF
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.TRF
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.PF0
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.PRS
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.GRB
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.QPR
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.MMX
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.LIM
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.NEL
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.TEL
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.TIO
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.OME
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.NC
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.ZFC
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.QRA
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.NTX
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.RCY
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ NAMED FILE:
+ /fusion/projects/codes/transp/nelsonand/153764C01_tmp/OMF153764.NB2
+ T_OFFSET                                                                                   put status:     265388144 :
+ %TREE-W-NNF, Node Not Found
+ ...tcl("WRITE")
+ ...tcl("CLOSE")
+%tr_start: pulse = 1537640301 
+
+ *tr_start: Do you want MDSplus Output? Y/N
+nbi_pserve = "1"
+ngenray_pserve = "0"
+ncql3d_pserve = ""
+Y
+ntoric_pserve = "0"
+nptr_pserve = "0"
+
+ *tr_start: Do you want to send Ufiles as tar file? Y/N
+tr_start.pl -I-  running datprep
+Y
+ datprep -I-   created 153764C01_D3D_tmp.tar

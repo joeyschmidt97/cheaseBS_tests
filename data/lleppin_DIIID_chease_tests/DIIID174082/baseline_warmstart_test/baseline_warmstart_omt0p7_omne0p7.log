@@ -1,0 +1,11 @@
+Starting iterative CHEASE workflow (coordinate=rhot, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/l/lleppin/chease_debug_nan_trace/baseline_warmstart_test/omt0p7_omne0p7
+Baseline directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Run targets: Ip=991046.912 A (source 991046.912 A), Bt=1.994957 T (source 1.994957 T)
+Using existing baseline decomposition: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Seeding iteration_00 from baseline NOUT: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline/chease_stage2_artifacts/NOUT
+Starting iterative replay with target Ip=991046.912 A and initial amplitude=1.000000
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 00 complete: Ip=1039556.072 A, rel_error=4.895e-02, bs_change=n/a, q_change=n/a, next_amplitude=1.000e+00, converged=no
+Iteration 01: running CHEASE (amplitude=1.000000, qspec=on)
+CHEASE did not produce ogyropsi.dat in /pscratch/sd/l/lleppin/chease_debug_nan_trace/baseline_warmstart_test/omt0p7_omne0p7/iteration_01/chease_closure_svi44asg/stage

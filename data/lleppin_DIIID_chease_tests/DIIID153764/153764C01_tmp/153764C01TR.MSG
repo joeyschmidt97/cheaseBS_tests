@@ -1,0 +1,2 @@
+ %mcinit:  created:  153764C01TR.MSG             
+ MCINIT: RANDOM NUMBER GEN INITIALIZED -          1024357185           1024357185

@@ -1,0 +1,141 @@
+ <*=*><*=*>  REMARKS FILE "162940C01T" CREATED 23Jun2026                                  
+ D=23Jun2026 BY NELSONAND                     RUN 162940C01                               
+  TRANSP Version: 25.1.0                                                                  
+  TRANSP DOI: 10.11578/dc.20180627.4                                                      
+  Build Date: 2026/05/27                                                                  
+  >>> EXPERT MODULE = 162940C01ex.for                                                     
+      MPI run: TRANSP MPI components:                                                     
+         NUBEAM: yes                                                                      
+         CEFLUX: no                                                                       
+         TORIC5: no                                                                       
+         PT_SOLVER: no                                                                    
+         EPDIFF: no                                                                       
+         GENRAY: no                                                                       
+ Automated analysis TRANSP from CAKE02                                                    
+ Created by OMFIT project:                                                                
+                                                                                          
+                                                                                          
+ <*=*><*=*><*=*><*=*><*=*><*=*><*=*><*=*><*=*><*=*><*=*><*=*>                             
+ D=23Jun2026 BY TRANSP SYSTEM:  PLABEL=>TRFIL RUN 162940C01
+      SHOT NO.:        162940                                                              
+      START TIME:   8.000E-01       STOP TIME:    5.020E+00                                
+ >>>>Code COMMONs BUILD date:  Fri May  3 15:19:16 EDT 2019                                
+ >>>>Code Source:              TRANSP(pshare)                                              
+  *** UP-DOWN ASYMMETRIC GEOMETRY ***                                                      
+  ... EQUILIBRIUM CODE:  input data                                                        
+  NLBCCW=T: B_phi counter-clockwise viewed from above                                      
+  NLJCCW=T: J_phi counter-clockwise viewed from above                                      
+ MAGNETICS CALCULATION:                                                                    
+ Resistivity model: all FALSE =>TRANSP standard NC:                                        
+      SPITZER:     <FALSE>          NCLASS:      <FALSE>                                   
+      TSC:         <FALSE>          SAUTER:      <TRUE>                                    
+ Bootstrap current model:                                                                  
+      NLBOOT       <TRUE>                                                                  
+   ...SAUTER Bootstrap current model.                                                      
+ General controls:                                                                         
+      MAGDIF:      <FALSE>                                                                 
+      Bp/Bt => q:  <FALSE>          Ufile Q:     <TRUE>                                    
+      MHD code q:  <FALSE>          EQ code dif: <FALSE>                                   
+ ... PLASMA GASSES INCLUDE DEUTERIUM:                                                      
+ D+ PTCL CONFINEMENT DERIVED FROM INPUT DATA                                               
+  D+ DENSITY EVOLUTION MODEL:  SUBTRACTION                                                 
+ NEUTRAL PENETRATION/SOURCE MODEL:  FRANTIC                                                
+      N0 EXTERNAL:  5.000E+12                                                              
+ COLD GAS PUFF TEMPERATURES (EV):                                                          
+      T0(D gas):    3.000E+00                                                              
+ RECYCLING GAS TEMPERATURES (EV):                                                          
+ ...set to TIEDGE value:                                                                   
+      TIEDGE:       1.000E+01                                                              
+      REFLECTIONS: <FALSE>          S0recombine: <TRUE>                                    
+
+ ------------> thermal ion ptcl balance summary:
+
+  Hydrogen  (absent)                                         
+  Deuterium NDEFINE=0 NMODEL=4 RC=NLRCYC GF=NLRCYC           
+  Tritium   (absent)                                         
+  Helium-3  (absent)                                         
+  Helium-4  (absent)                                         
+  Lithium-6 (absent)                                         
+
+ Recycling fractions RFRAC are specified.
+
+ <*=*><*=*>                                                                                
+ * PLABEL=>TRFILS  AUTOMATIC REMARKS -- PAGE 2 --                                          
+ PLASMA HEATING:       OHMIC:      <TRUE>                                                  
+      BEAM*:       <TRUE>                ICRF:   <FALSE>                                   
+      LWR.HYBRID:  <FALSE>                                                                 
+ *BEAM MONTE CARLO ORBITS IN NONCIRCULAR MOMENTS GEOMETRY                                  
+ ION CONDUCTION MODEL:                                                                     
+      CHANG-HINTON                                                                         
+  ION CONDUCTIVITY MULTIPLIER *PROFILE* FORMED                                             
+  TO MATCH INPUT ION TEMPERATURE *PROFILE* DATA                                            
+ ION CONVECTION MODEL:  QLOSSI=                                                            
+      div(nkTv)i *  1.500E+00                                                              
+ ELECTRON CONVECTION MODEL:  QLOSSE=                                                       
+      div(nkTv)e *  1.500E+00                                                              
+ P_conv suppressed when GLF23 or MMM95 in use                                              
+ <*=*><*=*>                                                                                
+ * PLABEL=>TRFILS  AUTOMATIC REMARKS -- PAGE 3 --                                          
+ PLASMA COMPOSITION (ZEFF):                                                                
+      =Z(MAGDIF)?  <FALSE>          =MEASURED?   <FALSE>                                   
+      Z-EXPONENT:   0.000E+00                                                              
+       GAS NO.1 Z=  1.000E+00                 A=  2.000E+00                                
+      IMPURITY Z=   6.000E+00                 A=  1.200E+01                                
+      BEAM     Z=   1.000E+00                 A=  2.000E+00                                
+ <*=*><*=*>                                                                                
+ PHYSICS DATA-BASE (CF TRDAT):                                                             
+   *MDSplus server:  ATLAS.GAT.COM                                                         
+   ...MDSplus tree:  TRANSP                                                                
+   ...MDSplus shot:  1629400301                                                            
+   input data path:  .INPUTS:                                                              
+ < --- IMPURITIES --- >                                                                    
+   Single Tokamakium Impurity                                                              
+      Z =           6.000E+00                                                              
+      A =           1.200E+01                                                              
+      Impurity data read from NIM file                                                     
+   -----                                                                                   
+ ** TIME SERIES DATA**                                                                     
+ BDI:  .INPUTS:BDI - beta diamagnetic                                                      
+ CUR:  .INPUTS:CUR - plasma current                                                        
+ DFL:  .INPUTS:DFL - diamagnetic flux                                                      
+ L2B:  .INPUTS:L2B - li/2 + beta(pol)                                                      
+ NTX:  .INPUTS:NTX - Neutron flux                                                          
+ PF0:  .INPUTS:PF0 - Psi(axis)                                                             
+ PLF:  .INPUTS:PLF - Poloidal flux                                                         
+ RBZ:  .INPUTS:RBZ - [ext. B field] * R                                                    
+ RCY:  .INPUTS:RCY - recycling source                                                      
+ TRF:  .INPUTS:TRF - Toroidal flux                                                         
+ VSF:  .INPUTS:VSF - surface voltage                                                       
+ <*=*><*=*>                                                                                
+ PHYSICS DATA-BASE (CF TRDAT):                                                             
+ ** 2D PROFILE DATA**                                                                      
+ BOL:  .INPUTS:BOL - Power radiated                                                        
+ BOL:  .INPUTS:BOL - Power radiated                                                        
+ GRB:  .INPUTS:GRB - MHD g (R*Bt) profile                                                  
+       ... PREMAPPED DATA; NX=  50                                                         
+ LIM:  .INPUTS:LIM - Axisymmetric Limiter                                                  
+ MMX:  .INPUTS:MMX - Equilibrium moments                                                   
+ NB2:  .INPUTS:NB2 - beam heating data                                                     
+ NER:  .INPUTS:NER - electron density                                                      
+ NER:  .INPUTS:NER - electron density                                                      
+ NIM:  .INPUTS:NIM - impurity density                                                      
+ NIM:  .INPUTS:NIM - impurity density                                                      
+ OMG:  .INPUTS:OMG - plasma rotation                                                       
+ OMG:  .INPUTS:OMG - plasma rotation                                                       
+ PRS:  .INPUTS:PRS - MHD Pressure profile                                                  
+       ... PREMAPPED DATA; NX=  50                                                         
+ QPR:  .INPUTS:QPR - q profile                                                             
+       ... PREMAPPED DATA; NX=  50                                                         
+ TER:  .INPUTS:TER - electron temperature                                                  
+ TER:  .INPUTS:TER - electron temperature                                                  
+ TI2:  .INPUTS:TI2 - ion temperature                                                       
+ TI2:  .INPUTS:TI2 - ion temperature                                                       
+ ZF2:  .INPUTS:ZF2 - Zeff profile                                                          
+ ZF2:  .INPUTS:ZF2 - Zeff profile                                                          
+ <*=*><*=*>                                                                                
+ PHYSICS DATA-BASE (CF TRDAT):                                                             
+ ** 3D PROFILE DATA**                                                                      
+                                                                                           
+ NUMBER OF TIME PTS IN UNIFIED PHYSICS DATA FILE:                                          
+      F(X,T) DATA:        423       F(T) DATA:          423                                
+ <*=*><*=*><*=*><*=*><*=*><*=*><*=*><*=*><*=*><*=*><*=*><*=*>

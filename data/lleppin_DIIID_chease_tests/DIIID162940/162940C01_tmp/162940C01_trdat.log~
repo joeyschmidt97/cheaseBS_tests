@@ -1,0 +1,8 @@
+18Jun2026 16:13:46.06 -openLog: PID=2440462 info_level=1
+18Jun2026 16:13:46.06 !c_setloglevel: info_level set to: 1
+18Jun2026 16:13:46.06 \Enter\ trmpi_requestor
+18Jun2026 16:13:46.06   !trmpi_requestor: service  = RUNID
+18Jun2026 16:13:46.06   !trmpi_requestor: argument = 162940C01
+18Jun2026 16:13:46.06 /Exit / trmpi_requestor
+18Jun2026 16:13:46.06 \Enter\ trdata
+18Jun2026 16:13:46.11 /Exit / trdata

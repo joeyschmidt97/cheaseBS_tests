@@ -1,0 +1,217 @@
+{
+  "reference_shot": {
+    "shot_id": "DIIID162940",
+    "indir": "/global/u2/l/lleppin/DIIID162940",
+    "efit_name": "g162940.02944_670",
+    "profile_format": "gene",
+    "profname_e": "profiles_e",
+    "profname_i": "profiles_i",
+    "profname_z": "profiles_z",
+    "pfile_name": "p162940.02944_670",
+    "Zi": 1,
+    "qz": 6
+  },
+  "modifications": {
+    "1": {
+      "omt": {
+        "alpha": 0.7,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 0.7,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3
+      }
+    },
+    "2": {
+      "omt": {
+        "alpha": 0.7,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 0.8,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3
+      }
+    },
+    "3": {
+      "omt": {
+        "alpha": 0.8,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 0.8,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3
+      }
+    },
+    "4": {
+      "omt": {
+        "alpha": 0.7,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 0.9,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3
+      }
+    },
+    "5": {
+      "omt": {
+        "alpha": 0.8,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 0.9,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3
+      }
+    },
+    "6": {
+      "omt": {
+        "alpha": 0.9,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 0.9,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3
+      }
+    },
+    "7": {
+      "omt": {
+        "alpha": 1.1,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 1.0,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3
+      }
+    },
+    "8": {
+      "omt": {
+        "alpha": 0.8,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 1.0,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3
+      }
+    },
+    "9": {
+      "omt": {
+        "alpha": 0.9,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 1.0,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3
+      }
+    },
+    "10": {
+      "omt": {
+        "alpha": 1.0,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 1.0,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3
+      }
+    },
+    "11": {
+      "omt": {
+        "alpha": 0.8,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 1.1,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3
+      }
+    },
+    "12": {
+      "omt": {
+        "alpha": 0.9,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 1.1,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3
+      }
+    },
+    "13": {
+      "omt": {
+        "alpha": 1.0,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 1.1,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3
+      }
+    },
+    "14": {
+      "omt": {
+        "alpha": 1.1,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 1.1,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3
+      }
+    }
+  },
+  "chease_config": {
+    "chease_binary": "/global/homes/l/lleppin/chease_perlmutter_build/src-f90/chease_hdf5",
+    "chease_namelist": "/global/homes/l/lleppin/DIIID162940/chease_rhotTopPed0p3_ncscal4/chease_namelist",
+    "coordinate": "rhot",
+    "replay_representation": "jparallel",
+    "max_iter": 20,
+    "tol_ip_rel": 0.001,
+    "tol_bs": 0.001,
+    "tol_q": 0.001,
+    "tol_a": 0.0001,
+    "enforce_qspec": true,
+    "ncscal": 4
+  },
+  "baseline_dir": "/pscratch/sd/l/lleppin/cheaseBS_runs/DIIID162940/baseline",
+  "variations_dir": "/global/homes/l/lleppin/DIIID162940/chease_rhotTopPed0p3_ncscal4",
+  "scratch_root": "/pscratch/sd/l/lleppin/cheaseBS_runs/DIIID162940_chease_rhotTopPed0p3_ncscal4",
+  "n_workers": 14,
+  "rebuild_baseline": false,
+  "overwrite": true
+}

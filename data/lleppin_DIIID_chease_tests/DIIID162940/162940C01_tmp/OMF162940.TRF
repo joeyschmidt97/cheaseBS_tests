@@ -1,0 +1,46 @@
+ 162940D3D  1 0 6              ;-SHOT #- F(X) DATA WRITEUF OMFIT
+ 2015                          ;-SHOT DATE-  UFILES ASCII FILE SYSTEM
+   9                           ;-NUMBER OF ASSOCIATED SCALAR QUANTITIES-
+ -1.0000E+35                   ;-SCALAR, LABEL FOLLOWS:
+ TMIN:     Tmin      seconds   
+  1.0000E+35                   ;-SCALAR, LABEL FOLLOWS:
+ TMAX:     Tmax      seconds   
+  0.0000E+00                   ;-SCALAR, LABEL FOLLOWS:
+ TSMOOTH:  delta(t)  seconds   
+  1.0000E+00                   ;-SCALAR, LABEL FOLLOWS:
+ FBDY:     init.bdy            
+  8.0000E-02                   ;-SCALAR, LABEL FOLLOWS:
+ CRAT:     min.curv            
+  2.5000E-01                   ;-SCALAR, LABEL FOLLOWS:
+ GS_ERRMAX:allow.err.          
+  1.0000E+00                   ;-SCALAR, LABEL FOLLOWS:
+ JAC_VARMX:allow.var.          
+  1.0000E+00                   ;-SCALAR, LABEL FOLLOWS:
+ BTOR_CCW: Dir. of B           
+  1.0000E+00                   ;-SCALAR, LABEL FOLLOWS:
+ ITOR_CCW: Dir. of I           
+ Time                Seconds   ;-INDEPENDENT VARIABLE LABEL: X0-
+ EFIT psi(toroidal)  Webers    ;-DEPENDENT VARIABLE LABEL-
+ 0                             ;-PROC CODE- 0:RAW 1:AVG 2:SM 3:AVG+SM
+         41                    ;-# OF X0 PTS-
+  1.00000e+00  1.10000e+00  1.20000e+00  1.30000e+00  1.40000e+00  1.50000e+00
+  1.60000e+00  1.70000e+00  1.80000e+00  1.90000e+00  2.00000e+00  2.10000e+00
+  2.20000e+00  2.30000e+00  2.40000e+00  2.50000e+00  2.60000e+00  2.70000e+00
+  2.80000e+00  2.90000e+00  3.00000e+00  3.10000e+00  3.20000e+00  3.30000e+00
+  3.40000e+00  3.50000e+00  3.60000e+00  3.70000e+00  3.80000e+00  3.90000e+00
+  4.00000e+00  4.10000e+00  4.20000e+00  4.30000e+00  4.40000e+00  4.50000e+00
+  4.60000e+00  4.70000e+00  4.80000e+00  4.90000e+00  5.00000e+00
+  3.80447e+00  3.80447e+00  3.80447e+00  3.80447e+00  3.81951e+00  3.80758e+00
+  3.79075e+00  3.76800e+00  3.78000e+00  3.77790e+00  3.77388e+00  3.74265e+00
+  3.74761e+00  3.74540e+00  3.74599e+00  3.79560e+00  3.76750e+00  3.77874e+00
+  3.76313e+00  3.78871e+00  3.77657e+00  3.77950e+00  3.77948e+00  3.79058e+00
+  3.79805e+00  3.77098e+00  3.78176e+00  3.76318e+00  3.69983e+00  3.74633e+00
+  3.75590e+00  3.74134e+00  3.76220e+00  3.75733e+00  3.77401e+00  3.74823e+00
+  3.74315e+00  3.77082e+00  3.76628e+00  3.76998e+00  3.80257e+00
+ ;----END-OF-DATA-----------------COMMENTS:-----------;
+ Ufile written by SCRUNCH2, details follow:
+ date: Tue Jun 23 10:09:02 2026
+ username: nelsonand
+ hostname: omega15.gat.com
+ data_source:  EFIT_GFILE_INDEX
+ index_filename:  EFIT_INDEX:scrunch2.index

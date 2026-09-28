@@ -1,0 +1,60 @@
+{
+  "reference_shot": {
+    "shot_id": "DIIID174082",
+    "indir": "/global/u2/l/lleppin/DIIID174082",
+    "profile_format": "gene",
+    "efit_name": "g174082.3000",
+    "profname_e": "profiles_e",
+    "profname_i": "profiles_i",
+    "profname_z": "profiles_z",
+    "pfile_name": "p174082.3000",
+    "Zi": 1,
+    "qz": 6
+  },
+  "modifications": {
+    "1": {
+      "omt": {
+        "alpha": 0.7,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 0.7,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3
+      }
+    },
+    "10": {
+      "omt": {
+        "alpha": 1.0,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3,
+        "tz_eq_ti": true
+      },
+      "omne": {
+        "alpha": 1.0,
+        "rhotMidPed": 1.0,
+        "rhotTopPed": 0.3
+      }
+    }
+  },
+  "chease_config": {
+    "chease_binary": "/global/homes/l/lleppin/chease_perlmutter_build/src-f90/chease_hdf5",
+    "chease_namelist": "/global/homes/l/lleppin/DIIID174082/ncscal_default_check/chease_namelist",
+    "coordinate": "rhot",
+    "replay_representation": "jparallel",
+    "max_iter": 20,
+    "tol_ip_rel": 0.001,
+    "tol_bs": 0.001,
+    "tol_q": 0.001,
+    "tol_a": 0.0001,
+    "enforce_qspec": true
+  },
+  "baseline_dir": "/pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline",
+  "variations_dir": "/global/homes/l/lleppin/DIIID174082/ncscal_default_check",
+  "scratch_root": "/pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082_ncscal_default_check",
+  "n_workers": 2,
+  "rebuild_baseline": false,
+  "overwrite": true
+}

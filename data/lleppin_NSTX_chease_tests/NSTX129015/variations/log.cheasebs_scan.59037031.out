@@ -1,0 +1,352 @@
+Ensuring baseline is ready at /pscratch/sd/l/lleppin/cheaseBS_runs/NSTX129015/baseline (rebuild=True)
+Rebuilding baseline decomposition from reference profiles
+Preparing baseline inputs from g129015.00409
+Baseline radial mapping complete
+Baseline Step 1 complete: thermal/fast pressure split and Zeff
+Baseline Step 2 complete: bootstrap/driven current decomposition
+Baseline outputs written
+Baseline rebuild complete: /pscratch/sd/l/lleppin/cheaseBS_runs/NSTX129015/baseline
+Baseline ready.
+baseline diagnostics: saved /global/homes/l/lleppin/NSTX129015/variations/baseline/metadata.json
+baseline diagnostics: saved /global/homes/l/lleppin/NSTX129015/variations/baseline/baseline_overview.png
+Dispatching 14 case(s) across 14 worker(s)
+Test of quasineutrality (should be <<1):0.0
+Test of quasineutrality (should be <<1):0.0
+Test of quasineutrality (should be <<1):0.0
+Test of quasineutrality (should be <<1):0.0
+Test of quasineutrality (should be <<1):0.0
+Test of quasineutrality (should be <<1):0.0
+Test of quasineutrality (should be <<1):0.0
+Test of quasineutrality (should be <<1):0.0
+Test of quasineutrality (should be <<1):0.0
+Test of quasineutrality (should be <<1):0.0
+Test of quasineutrality (should be <<1):0.0
+Test of quasineutrality (should be <<1):0.0
+Test of quasineutrality (should be <<1):0.0
+Test of quasineutrality (should be <<1):0.0
+case omt0p7_omne0p7: failed
+Traceback (most recent call last):
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/scripts/run_scan.py", line 194, in run_case
+    solve_result = ev.solve_equilibrium(
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/src/equilibrium_variation.py", line 222, in solve_equilibrium
+    return ces.solve(
+           ^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/cheaseBS/equilibrium_solve.py", line 136, in solve
+    json.dump(merged, f)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PosixPath is not JSON serializable
+
+case omt1p0_omne1p0: failed
+Traceback (most recent call last):
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/scripts/run_scan.py", line 194, in run_case
+    solve_result = ev.solve_equilibrium(
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/src/equilibrium_variation.py", line 222, in solve_equilibrium
+    return ces.solve(
+           ^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/cheaseBS/equilibrium_solve.py", line 136, in solve
+    json.dump(merged, f)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PosixPath is not JSON serializable
+
+case omt0p8_omne0p9: failed
+Traceback (most recent call last):
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/scripts/run_scan.py", line 194, in run_case
+    solve_result = ev.solve_equilibrium(
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/src/equilibrium_variation.py", line 222, in solve_equilibrium
+    return ces.solve(
+           ^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/cheaseBS/equilibrium_solve.py", line 136, in solve
+    json.dump(merged, f)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PosixPath is not JSON serializable
+
+case omt0p7_omne0p8: failed
+Traceback (most recent call last):
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/scripts/run_scan.py", line 194, in run_case
+    solve_result = ev.solve_equilibrium(
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/src/equilibrium_variation.py", line 222, in solve_equilibrium
+    return ces.solve(
+           ^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/cheaseBS/equilibrium_solve.py", line 136, in solve
+    json.dump(merged, f)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PosixPath is not JSON serializable
+
+case omt0p8_omne0p8: failed
+Traceback (most recent call last):
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/scripts/run_scan.py", line 194, in run_case
+    solve_result = ev.solve_equilibrium(
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/src/equilibrium_variation.py", line 222, in solve_equilibrium
+    return ces.solve(
+           ^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/cheaseBS/equilibrium_solve.py", line 136, in solve
+    json.dump(merged, f)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PosixPath is not JSON serializable
+
+case omt1p1_omne1p0: failed
+Traceback (most recent call last):
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/scripts/run_scan.py", line 194, in run_case
+    solve_result = ev.solve_equilibrium(
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/src/equilibrium_variation.py", line 222, in solve_equilibrium
+    return ces.solve(
+           ^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/cheaseBS/equilibrium_solve.py", line 136, in solve
+    json.dump(merged, f)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PosixPath is not JSON serializable
+
+case omt0p9_omne1p1: failed
+Traceback (most recent call last):
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/scripts/run_scan.py", line 194, in run_case
+    solve_result = ev.solve_equilibrium(
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/src/equilibrium_variation.py", line 222, in solve_equilibrium
+    return ces.solve(
+           ^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/cheaseBS/equilibrium_solve.py", line 136, in solve
+    json.dump(merged, f)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PosixPath is not JSON serializable
+
+case omt1p1_omne1p1: failed
+Traceback (most recent call last):
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/scripts/run_scan.py", line 194, in run_case
+    solve_result = ev.solve_equilibrium(
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/src/equilibrium_variation.py", line 222, in solve_equilibrium
+    return ces.solve(
+           ^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/cheaseBS/equilibrium_solve.py", line 136, in solve
+    json.dump(merged, f)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PosixPath is not JSON serializable
+
+case omt1p0_omne1p1: failed
+Traceback (most recent call last):
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/scripts/run_scan.py", line 194, in run_case
+    solve_result = ev.solve_equilibrium(
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/src/equilibrium_variation.py", line 222, in solve_equilibrium
+    return ces.solve(
+           ^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/cheaseBS/equilibrium_solve.py", line 136, in solve
+    json.dump(merged, f)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PosixPath is not JSON serializable
+
+case omt0p8_omne1p0: failed
+Traceback (most recent call last):
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/scripts/run_scan.py", line 194, in run_case
+    solve_result = ev.solve_equilibrium(
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/src/equilibrium_variation.py", line 222, in solve_equilibrium
+    return ces.solve(
+           ^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/cheaseBS/equilibrium_solve.py", line 136, in solve
+    json.dump(merged, f)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PosixPath is not JSON serializable
+
+case omt0p9_omne0p9: failed
+Traceback (most recent call last):
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/scripts/run_scan.py", line 194, in run_case
+    solve_result = ev.solve_equilibrium(
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/src/equilibrium_variation.py", line 222, in solve_equilibrium
+    return ces.solve(
+           ^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/cheaseBS/equilibrium_solve.py", line 136, in solve
+    json.dump(merged, f)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PosixPath is not JSON serializable
+
+case omt0p7_omne0p9: failed
+Traceback (most recent call last):
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/scripts/run_scan.py", line 194, in run_case
+    solve_result = ev.solve_equilibrium(
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/src/equilibrium_variation.py", line 222, in solve_equilibrium
+    return ces.solve(
+           ^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/cheaseBS/equilibrium_solve.py", line 136, in solve
+    json.dump(merged, f)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PosixPath is not JSON serializable
+
+case omt0p8_omne1p1: failed
+Traceback (most recent call last):
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/scripts/run_scan.py", line 194, in run_case
+    solve_result = ev.solve_equilibrium(
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/src/equilibrium_variation.py", line 222, in solve_equilibrium
+    return ces.solve(
+           ^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/cheaseBS/equilibrium_solve.py", line 136, in solve
+    json.dump(merged, f)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PosixPath is not JSON serializable
+
+case omt0p9_omne1p0: failed
+Traceback (most recent call last):
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/scripts/run_scan.py", line 194, in run_case
+    solve_result = ev.solve_equilibrium(
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/profile_tools/src/equilibrium_variation.py", line 222, in solve_equilibrium
+    return ces.solve(
+           ^^^^^^^^^^
+  File "/global/homes/l/lleppin/TPED/projects/cheaseBS/equilibrium_solve.py", line 136, in solve
+    json.dump(merged, f)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/global/cfs/cdirs/m2116/lleppin/.conda/envs/lleppinenv/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PosixPath is not JSON serializable
+
+Finished: 14 case(s), 14 failed.
+Generating shot_overview figures...
+Generating q_shat figure...
+q_shat: no case has solved output, skipping

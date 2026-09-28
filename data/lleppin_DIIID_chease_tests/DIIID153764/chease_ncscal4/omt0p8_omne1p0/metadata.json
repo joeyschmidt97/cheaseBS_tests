@@ -1,0 +1,94 @@
+{
+  "case_name": "omt0p8_omne1p0",
+  "created": "2026-09-24T12:40:39.763866-07:00",
+  "final_eqdsk_path": "/global/homes/l/lleppin/DIIID153764/chease_ncscal4/omt0p8_omne1p0/omt0p8_omne1p0.eqdsk",
+  "reference_shot": {
+    "shot_id": "DIIID153764",
+    "indir": "/global/u2/l/lleppin/DIIID153764",
+    "efit_name": "g153764.01359",
+    "profname_e": "profiles_e",
+    "profname_i": "profiles_i",
+    "profname_z": "profiles_z",
+    "Zi": 1,
+    "qz": 6
+  },
+  "modification": {
+    "omt": {
+      "alpha": 0.8,
+      "rhotMidPed": 1.0,
+      "rhotTopPed": 0.8,
+      "tz_eq_ti": true
+    },
+    "omne": {
+      "alpha": 1.0,
+      "rhotMidPed": 1.0,
+      "rhotTopPed": 0.8
+    }
+  },
+  "chease_config": {
+    "chease_binary": "/global/homes/l/lleppin/chease/src-f90/chease",
+    "chease_namelist": "/global/homes/l/lleppin/DIIID153764/chease_ncscal4/chease_namelist",
+    "coordinate": "rhot",
+    "replay_representation": "jparallel",
+    "max_iter": 12,
+    "tol_ip_rel": 0.001,
+    "tol_bs": 0.001,
+    "tol_q": 0.001,
+    "tol_a": 0.0001,
+    "enforce_qspec": true,
+    "ncscal": 4,
+    "eqdsk": "/global/u2/l/lleppin/DIIID153764/g153764.01359",
+    "reference_electron_profile": "/global/u2/l/lleppin/DIIID153764/profiles_e",
+    "reference_deuterium_profile": "/global/u2/l/lleppin/DIIID153764/profiles_i",
+    "reference_carbon_profile": "/global/u2/l/lleppin/DIIID153764/profiles_z"
+  },
+  "modified_profiles": {
+    "electron": "/global/homes/l/lleppin/DIIID153764/chease_ncscal4/omt0p8_omne1p0/profiles_e_omt0p8_omne1p0",
+    "deuterium": "/global/homes/l/lleppin/DIIID153764/chease_ncscal4/omt0p8_omne1p0/profiles_i_omt0p8_omne1p0",
+    "carbon": "/global/homes/l/lleppin/DIIID153764/chease_ncscal4/omt0p8_omne1p0/profiles_z_omt0p8_omne1p0",
+    "iterdb": "/global/homes/l/lleppin/DIIID153764/chease_ncscal4/omt0p8_omne1p0/DIIID153764_omt0p8_omne1p0.iterdb"
+  },
+  "solve_result": {
+    "eqdsk_path": "/pscratch/sd/l/lleppin/cheaseBS_runs/DIIID153764_chease_ncscal4/omt0p8_omne1p0/iteration_10/artifacts/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT",
+    "output_dir": "/pscratch/sd/l/lleppin/cheaseBS_runs/DIIID153764_chease_ncscal4/omt0p8_omne1p0",
+    "converged": true,
+    "final_ip_a": 1567817.963,
+    "summary": {
+      "bootstrap_strategy": "bootstrap computed diagnostically from each solved equilibrium and lagged into the next iteration",
+      "coordinate": "rhot",
+      "current_representation": "CHEASE j_parallel = <j.B>/B0 [A/m^2]",
+      "final_amplitude_in": 1.029740284424113,
+      "final_amplitude_next": 1.029740284424113,
+      "final_bootstrap_change_rel": 0.0007158428945195933,
+      "final_converged": true,
+      "final_eqdsk_path": "/pscratch/sd/l/lleppin/cheaseBS_runs/DIIID153764_chease_ncscal4/omt0p8_omne1p0/iteration_10/artifacts/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT",
+      "final_ip_a": 1567817.963,
+      "final_ip_error_a": -637.716999999946,
+      "final_ip_error_rel": 0.0004065891106339364,
+      "final_iteration": 10,
+      "final_q_change_rel": 0.0005987076251201986,
+      "iterations": 11,
+      "pressure_strategy": "p_total = p_thermal(new) + p_fast(original floored)",
+      "q_final_at_report_rhop": 3.2794099462054267,
+      "q_report_rel_diff": -0.008929084071388926,
+      "q_report_rhop": 0.985,
+      "q_target_at_report_rhop": 3.3089558915495907,
+      "replay_representation": "jparallel",
+      "source_bt_t": -1.8966166,
+      "source_ip_a": 1568455.68,
+      "target_bt_t": -1.8966166,
+      "target_ip_a": 1568455.68
+    }
+  },
+  "git": {
+    "TPED": {
+      "commit": "027dfe33c2595f0b59076f1849a64b11d92215f9",
+      "dirty": true
+    }
+  },
+  "environment": {
+    "user": "lleppin",
+    "hostname": "nid005184",
+    "python_version": "3.11.10"
+  }
+}

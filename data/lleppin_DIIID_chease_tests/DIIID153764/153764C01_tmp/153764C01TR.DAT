@@ -1,0 +1,1543 @@
+ &HEADER
+! -------------------------------------------------
+! TRANSP namelist template file created by OMFIT
+! TRANSP online help as hierarchy starting
+! with NAMELIST Then going down
+! CATEGORY
+! - Sub1
+!  - Sub2
+!   - ...
+!    o [Description] / [Units] / [Defaults] / [See also] / [Warnings]
+!variable=value
+!
+!
+!***********************************************************************
+! So begins the TRANSP namelist.
+! This is read by both TRANSP and TRDAT
+!***********************************************************************
+!
+ &END
+ &MPI
+ kmdsplus=1
+ mds_shot=1537640301
+ mds_server='ATLAS.GAT.COM'
+ mds_tree='TRANSP'
+ mds_path='.INPUTS'
+!
+! MPI TRANSP
+! - Selecting MPI components
+!  o NUBEAM Should set NBI_PSERVE=1 for NPTCLS>5000 and load balance with
+!    NPTCLS=4000*number of NUBEAM CPUs
+!    Also Set NDEP0=5000 for MPI NUBEAM
+ NBI_PSERVE = 1
+!
+!  o MPI TORIC for ECH
+ NTORIC_PSERVE = 0
+!
+!  o MPI PTRANSP.  Used when lpredictive_mode=3 and TGLF transport model.
+ NPTR_PSERVE = 0
+!
+!  o MPI GENRAY. Setting this to 1 is no longer supported, as of 2018
+ NGENRAY_PSERVE = 0
+!
+ &END
+ &SOURCE_PLAYBACK
+!
+! SOURCE PLAYBACK OPTIONS
+!
+ &END
+ &RESTART
+!
+! RESTART RECORDS
+!  o MRSTRT is frequency of writing restart records for each
+!    (+) ouptut timestep (SEDIT/STEDIT)
+!    (-) number of wall clock CPU minutes.
+ MRSTRT = -30
+!
+ &END
+ &ELVIS
+!
+! ELVIS OUTPUT
+!
+ &END
+ &ACFILE
+!
+! ACFILE OUTPUT
+!
+ &END
+ &SHOT_NUMBER
+!
+! SHOT NUMBER
+ NSHOT = 153764
+!
+ &END
+ &UFILE
+!
+! UFILE characteristics
+! - UFILE names are set in TRDAT but the characteristics are
+!   set here in TRANSP namelist.
+! - Range specification for profile UFILE data (equilibrium, fluid variables)
+!  o NRI??? sets x-axis
+!  o NSY??? sets symmetrization
+!  o XRC??? sets range of extension valid data exists
+!
+ NRIGRB = -5
+ NSYGRB = 0
+ NRIQPR = -5
+ NSYQPR = 0
+ NRIPRS = -5
+ NSYPRS = 0
+ NRINER = -5
+ NSYNER = 0
+ NRITER = -5
+ NSYTER = 0
+ NRITI2 = -5
+ NSYTI2 = 0
+ NRIOMG = -5
+ NSYOMG = 0
+ NRINIM = -5
+ NSYNIM = 0
+ NRIZF2 = -5
+ NSYZF2 = 0
+ NRIBOL = -5
+ NSYBOL = 0
+ &END
+ &MHD_GEOMETRY
+!
+! MHD_Geometry
+! LEVGEO is the switch for the type of equilibrium representation
+! o levgeo=8 says entire equilibrium is from scrunch2 and associated
+!   UFILES must be specified.
+ LEVGEO = 8
+!
+! - Beta Adjustment
+!   In TRANSP beta is normally from kinetic profiles, but can be used
+!   from input equilibrium history data li/2+betap or diamagnetic beta.
+!  o Adjust XABFAC as a function of time to be consistent with li/2+beta?
+ NLALAM = .false.
+!
+!  o Adjust anomalous beta multipliter XABFAC to make beta to for MHD
+!    consistent with diamagnetic beta data?
+ NLABDA = .false.
+!
+ &END
+ &BOUNDARY
+!
+! PLASMA_BOUNDARY
+! - For LEVGEO=8 (default) the boundary is specified from
+!   UFILEs.
+!
+ &END
+ &NCLASS
+!
+! NCLASS neoclassical
+! - Namelist_Control_Summary
+!  o Default is to use NCMODEL=2
+!  o Use NCLASS bootstrap current smoothed for r/a<xl1ncjbs
+!    Handled in MAGNETICS namelist
+!NLBOOTW = .False.
+!
+!  o Modify NCLASS resistivity for r/a< this value (for NLETAW)
+ XL1NCJBS = 0.1
+!
+!  o Use NCLASS resistivity
+!    Handled in MAGNETICS namelist
+!NLETAW = .False.
+!
+!  o Modify NCLASS resistivity for r/a< this value (for NLETAW)
+ XL1NCETA = 0.1
+!
+!  o Use NCLASS to analyze rotation data and compute radial
+!    electric potential profile.
+ NLVWNC = .false.
+!
+!  o Use orbit squeezing in NCLASS
+ NLSQUEEZ = .false.
+!
+!  o Use Average Ti for all species in nclass (T), or use
+!    Tx and Tmj individually.
+ NLTINC = .true.
+!
+!  o NCMULTI could be used to select options for multi species.
+!
+!  o Apply smoothing for NCLASS input profiles
+ NLNCSMOO = .false.
+!
+!  o Smoothing convolution time for densities
+ TAUSMNNC = 0.05
+!
+!  o Smoothing convolution time for temperatures
+ TAUSMTNC = 0.05
+!
+!  o Radial smoothing half-width for densities
+ XSMN_NC = 0.1
+!
+!  o Radial smoothing half-width for temperatures
+ XSMT_NC = 0.1
+!
+!  o Use NLSAW_NC=T for sawtoothing NCLASS
+!  o Use XSMNB_NC for NUBEAM NCLASS sawtooting.
+!
+ &END
+ &MAGNETICS
+!
+! MAGNETICS
+! - Shared_Controls
+!  - Resistivity
+!   o Use Spitzer resistivity?  Should be FALSE for most modern
+!     TRANSP runs.
+ NLSPIZ = .false.
+!
+!   o Use NCLASS resistivity
+ NLETAW = .false.
+!
+!   o Use Sauter for resistivity
+ NLRES_SAU = .true.
+!
+!  - Bootstrap current
+!   o Use bootstrap current in poloidal field equation
+ NLBOOT = .true.
+!
+!   o Use NCLASS bootstrap current smoothed for r/a<xl1ncjbs
+ NLBOOTW = .false.
+!
+!   o Use Sauter for bootstrap current
+ NLBOOT_SAU = .true.
+!
+!   o Use NEO for bootstrap current
+ NLBOOTNEO = .false.
+!
+! - NLMDIF: Magnetic (poloidal) field diffusion equation
+!  o Evolve poloidal field diffusion?  If false then most following
+!    switches are not used.
+ NLMDIF = .false.
+!
+!  o Match experimental plasma current?
+ NLPCUR = .true.
+!
+!  o Iterate Zeff to match surface voltage?
+ NLVSUR = .false.
+!
+! - NLQDATA
+!  o Use input q-profile from QPR UFILE?
+!    Note this can cause modification to edge
+!    q to match total plasma current.
+ NLQDATA = .true.
+!
+! - Poh_options
+!  o Circumvent negative ohmic heating powers
+ NMODPOH = 2
+!
+!  o For ohmic power the equation POH=eta*J^2 (ignore non-ohmic J)
+!    For resistivity the plasma Zeff/CZEFFM is used
+!    Default(CMG): 1.0 same as TRANSP def.
+!    See also: Plasma_comp_Zeff, Resistivity_Zeff
+ CZEFFM = 1.0
+!
+! - EFIELD for toroidal electric field profile initialization
+!  o For current diffusion need to initialize E so use q
+ NEFLD = 7
+!
+!  o Use 2D magnetics alpha vs. time?
+!    This is not a documented switch, but I think it belongs here
+!    as a paramaterization of the voltage profile.
+ NLALP = .false.
+!
+!  o Minimum voltage allowed anywhere to initialize the voltage profile
+ VLPMIN = 0.1
+!
+!  o VLPMML used for setting VLPMML*(surface voltate) as minimum
+!    allowed voltage
+! Unused variable
+! VLPMML = 0.05
+!
+! - UFILE Data
+!  o Use input inductance/2+beta poloidal data?
+ NLI2PB = .true.
+!
+!  o Use input diamagnetic beta toroidal data?
+!    cannot use both nlbdia=T and nlbpda=T
+ NLBDIA = .true.
+!
+!  o Use input diamagnetic beta poloidal data?
+ NLBPDA = .false.
+!
+!  o Use input diamagnetic flux data
+ NLDFLX = .true.
+!
+!  o Use input diamagnetic energy data?
+ NLEDIA = .false.
+!
+!  o Use (1/2) pol. field energy density + plasma energy?
+!    N.B. This is not on the TRANSP Help website.
+ NLEH2P = .false.
+!
+!  o Use input li-energy vs. time CF NLALP
+ NLELI = .false.
+!
+!  o Input 2D magnetics RT parameter vs. time?
+ NLRTP = .false.
+!
+! - Field Orientation Controls
+!   N.B. These can have unexpected effects on NCLASS rotation data!  Be sure to check sign of D+ Vpol
+!  o Is plasma current CCW from above?
+! purposly removed from template to make sure that these settings are set by `historyufiles` before anything else
+! NLJCCW = .True.
+!
+!  o Is toroidal field CCW from above?
+! purposly removed from template to make sure that these settings are set by `historyufiles` before anything else
+! NLBCCW = .False.
+!
+ NLJCCW = .true.
+ NLBCCW = .false.
+ &END
+ &ELECTRON_DENSITY
+!
+! ELECTRON DENSITY
+! o Minimum electron density
+ FNEMIN = 1500000000000.0
+!
+! - Boundary Condition
+!  o Set the boundary condition for electron density using MODNEDG with optoins
+!    2 - Use EDGENE namelist variable
+!    3 - Use edge electron density data
+!    5 - Use PEDESTAL model
+ MODNEDG = 3
+!
+!  o Define the edge electron density.  Only used if MODNEDG = 2.  TRANSP default 1e12 cm**-3.
+ EDGENE = 1000000000000.0
+!
+ &END
+ &MINORITY_ION_DENSITY
+!
+! MINORITY ION DENSITY
+! o Miminum allowed density defualts to 1e9
+!
+ &END
+ &ELECTRON_TEMPERATURE
+!
+! ELECTRON TEMPERATURE
+! o Minimum allowed temperature defaults to 10 eV
+!
+ &END
+ &ION_TEMPERATURE
+!
+! ION TEMPERATURE(&neutrons)
+! - NLTIPRO
+!  o Using NLTIPRO=T says Ti is from input.
+ NLTIPRO = .true.
+!
+! o Use 2D Ti data directly?
+ NLTI2 = .true.
+!
+! o Use input neutron data?
+ NLNTX = .true.
+!
+! Profile mapping/symmetrization control
+!
+! o Specify max radius where to control ions
+ XTILIM = 1.0
+!
+!  o When using actual Ti data this is set to the maximum
+!    valid radius (r/a) of the Ti data
+ TIXLIM = 1.0
+!
+!  o Factor for modifying Ti profile based on Te and Ti/Te
+!    but defaults to 1.0==use Ti data.
+ FIEFAC = 1.0
+!
+! - NLTI2TX
+ NLTI2TX = .false.
+!  o
+! - SLVTX
+!   This is used for temperatures of different ions.
+!   (describe, this is important)
+!  o Here the default is to take input Ti is Ti of primary hydrogenic species (deuterium).
+!    This can cause Tx to become large in low density regions and will certainly make it larger
+!    in low density strongly beam heated plasmas.
+!    This affects the neutron rate, which is tied to Ti of the deuterium.
+ NSLVTXI = 1
+!
+! - (others/unknown)
+! o Ratio of initial ion to electron temperature
+ FTITE = 0.8
+!
+ &END
+ &PLASMA_COMPOSITION
+!
+! PLASMA COMPOSITION
+! - PLASMA
+!  o Atomic weight of jth plasma ion
+ APLASM(1) = 2.0
+!
+!  o Atomic charge of jth plasma ion
+ BACKZ(1) = 1.0
+!
+!  o number of thermal ion spcies
+ NG = 1
+!
+!  o max number of thermal ion species (>1 if plasma is initially
+!    one species but then we introduce others later (NBI,pellet,etc...)
+ NGMAX = 1
+!
+! - IMPURITY
+!  - Single impurity model
+!   o Atomic weight of impurity in in amu (i.e. 12.0 for C+6)
+ AIMP = 12.0
+!
+!   o Charge of impurity ion (i.e. 6.0 for C+6)
+ XZIMP = 6.0
+!
+!   o "Newer" (1994) Impurity stopping is set with this flag.
+ NMSIGX = 2
+!
+!  - Multiple Impurities
+!   - Usage
+!    o Compute interaction of beams with impurities separately?
+ NLMINSV = .true.
+!
+ &END
+ &ZEFF
+!
+! ZEFF
+! - Plasma comp Zeff
+!   Must set either static switch (one true, others false) of the following:
+!     NLZEFM, NLZFIN, NLZFI2, NLZFXI, NLZSIM
+!   or use time-switching that will override the static switches.
+!
+!  o Use MAGDIF resistivity Zeff
+ NLZEFM = .false.
+!
+!  o Read 1d UFILE of Zeff vs. time and radius
+ NLZFIN = .false.
+!
+!  o Read 2d UFILE of Zeff vs. time and radius
+ NLZFI2 = .true.
+!
+!  o Read 2d UFILE of single impurity density vs. time and radius
+ NLZFXI = .false.
+!
+!  o Read 2d UFILE of multiple impurity densities vs. time and radius
+ NLZSIM = .false.
+!
+!  o Specify Zeff to use in absence of data
+ XZEFFI = 2.0
+!
+!   - Time switching
+!    o Zeff profile model NZEFMOD(i) and associated times with DTZEFMOD and TZEFMOD
+!      Currently not set and not used by default.
+!
+! - Resistivity Zeff
+!    o Here we can set options in the situation that NLZEFM is used.
+!
+! - Zeff and predictive runs
+!  o Minimum Zeff
+ XZFMIN = 1.0
+!
+ &END
+ &POWER_RADIATED
+!
+! POWER RADIATED
+! o Use experimental bolomotry when Te profile is input or theory when Te predicted.
+ NPRAD = 1
+!
+ &END
+ &PARTICLE_BALANCE
+!
+! PTCL BALANCE(&neutrals)
+! - General Remarks
+!  o NRCYOPT is recycling option.
+!    NRCYOPT=0 (default) is use taup or recycling source.
+ NRCYOPT = 0
+!
+! - NDEFINE
+!  o use old TRANSP NMODEL to evolve mix of ions.
+ NDEFINE(1) = 0
+!
+! - Initial Conditions
+!  o For ndefine(i)=0
+!    Initial relative concentration of ions for give nmodel
+!    See: nmodel
+ FRAC(1) = 1.0
+!
+! - NMODEL
+!   Only for ndefine(ig)=0
+!  o nmodel=4 is as "mixed model" where the Z-weighted summed
+!    contuinity equation is solved to give Z-weighted summed
+!    flux constraint.  Each ion species evolved independently
+!    with flux=D*grad(n) + V*n.
+!    With 4, D is set by user by ndiffi
+ NMODEL = 4
+!
+!  o For nmodel=4 we have to set ndiffi as the input diffusivity.
+!    where for ndiffi=3 we use "net" electron diffusivity flux/grad(ne)
+!    from previous timestep e- particle balance for the current timestep
+!    for the ions.
+ NDIFFI = 3
+!
+!  o minimum allowed diffusivity
+ DFIMIN = 0.0
+!
+!  o maximum allowed diffusivity
+ DFIMAX = 1000000.0
+!
+!  o Input diffusivity (NDIFFI=1)
+ DIFFUS = 10000.0
+!
+!  o species dependent diffusivity anomaly factor
+ DIFAC(1) = 1.0
+!
+!  o species dependent non-diffusive flow velocity factor
+ VIFAC(1) = 1.0
+!
+!
+! - Gasflow_Source
+!  o For UFILE gas flow is used and NLRCYC=T then gasflow
+!    summed over species is provided and GFRAC is used to spcify
+!    the initial gas flow fractions and TGFRAC, GFRACA are used to
+!    specify times where GFRAC changes and the new gas flow fractions.
+ GFRAC(1) = 1.0
+!
+!
+! - Recycling_Source
+!   Can specify particle confiment time where
+!   outflow=(total # ions in plasma)/taup
+!   or specify with UFILE input and NLRCYC=T
+!  o Specify if tau_p is input. Else ouptut if NLRCYC=T
+ NLTAUP = .false.
+!
+!  o Sepcify recycling option (F=needs taup, T=UFILE)
+ NLRCYC = .true.
+!
+!  - Tau_p
+!   o When NRCYOPT=1 or no other data provided, control particle
+!     confinement time for each species (ig) up to NGMAX
+ TAUPH(1) = 0.03
+!
+!   o Impurity particle confinement time for imposed taup.
+ TAUPO = 0.2
+!
+!   o Recycling controls
+ RFRAC(1) = 1.0
+!
+!  - Constraints
+!   o Minimum allowable taup (for UFILE or soruce data)
+ TAUPMN = 0.03
+!
+! - Sources
+!  o Have TRANSP give this density profile input species
+!    the recycling source rate needed to obtain the same
+!    global taup as the NDEFINE( )=0 ion species
+!    This is used for NDEFINE(i)=2 ions.
+ NLRCYI = .false.
+!
+!  o Give impurities same global taup as thermal ions
+ NLRCYX = .true.
+!
+! - Neutrals
+!  o nsomod is the neutrals model selection
+!    where nsomod=1 is FRANTIC (nzones_frantic=20 radial def.)
+ NSOMOD = 1
+!
+!  o Recycling coefficient.  If R is the recycling source then
+!    then recyb*R are the number of "warm" neutrals and
+!    (1-recyb)*R are the number of "cold" neutrals.  Number conserved.
+ RECYCB = 0.8
+!
+!  o Mode for neutrals.  1 means that if recycling data is provided
+!    then use it.  Otherwise use TIEDGE to set recycling neutral
+!    temperatures e0in(1), e0in(4) etc...
+ MOD0ED = 1
+!
+!  o Use recombination volumme neutral source
+ NLRECO = .true.
+!
+!  o E0IN(js) is the energy of neutral with source number js
+!    where js=sce on TRANSP Help website
+!
+!  o Fraction of escaping neutrals to return as "warm" recycling source
+!    neutrals, with the remainging returned as "cold".
+ FH0ESC = 0.3
+!
+ E0IN(1) = 15.0
+ E0IN(2) = 3.0
+ E0IN(3) = 3.0
+ E0IN(4) = 15.0
+ E0IN(5) = 3.0
+ E0IN(6) = 3.0
+!  o fraction of central ion temperature for edge "warm" recycling source
+!    when using mod0ed=2
+ TI0FRC = 0.033333
+!
+ &END
+ &RADIAL_RESOLUTION
+!
+! Radial resolution
+! When increasing NZONES over 50 you must also increase the number of radial points in SCRUNCH2 equilibrium compression.
+! For example, NZONES=100 with 41 scrunch2 radii will cause a step-wise ohmic current profile.
+! SCRUNCH2 defaults at DIII-D are (201401)
+!  NFOURIER=16 (=max)
+!  NRADIAL=41
+!  NPOLOIDAL=100
+ NZONES = 50
+!
+ &END
+ &ION_POWER_BALANCE
+!
+! ION POWER BALANCE
+! - CONVECTION
+!  o alph0e/i defines electron/ion convection power loss
+!    as Pconve=alph0e *(5/2)*div(n*k*T*<v_radial>)
+!    Default(CMG): alph0i=0.6 giving coeff. as (3/2)
+!    See also: ALPHAI (normally off)
+ ALPH0I = 0.6
+!
+! - Boundary Condition
+!  o Set the boundary condition for ion temperature using MODIEDG with optoins
+!    1 - Same boundary condition as recycling neutrals
+!    2 - Use TIEDGE namelist variable
+!    3 - Use edge electron temperature setting
+!    4 - Use edge ion temperature data
+!    5 - Use PEDESTAL model
+ MODIEDG = 4
+!
+!  o Define the edge ion temperature.  Only used if MODIEDG = 2.  TRANSP default 10 eV
+ TIEDGE = 10.0
+!
+ &END
+ &ELECTRON_POWER_BALANCE
+!
+! ELECTRON POWER BALANCE
+! - CONVECTION
+!  o alph0e defines electron convection power loss
+!    as Pconve=alph0e *(5/2)*div(n*k*T*<v_radial>).
+!    Default(CMG): alph0e=0.6 giving coeff. as (3/2)
+!    See also: ALPHAE (normally off)
+ ALPH0E = 0.6
+!
+! - Boundary Condition
+!  o Set the boundary condition for electron temperature using MODEEDG with optoins
+!    2 - Use TEEDGE namelist variable
+!    3 - Use edge electron temperature setting
+!    4 - Use edge ion temperature data
+!    5 - Use PEDESTAL model
+ MODEEDG = 3
+!
+!  o Define the edge electron temperature.  Only used if MODEEDG = 2.  TRANSP default 10 eV
+ TEEDGE = 10.0
+!
+ &END
+ &ROTATION
+!
+! ROTATION
+! *Sign Convention*.  Rotation is taken w.r.t. plasma current.
+!
+! - Analysis
+!  o Use Rotation Data
+ NLVPHI = .true.
+!
+!  o Specify that velocity VTR data is for diagnostic ions if VTR present
+ NGVTOR = 101
+!
+!  o Specifiy that rotation OMG profile data is for diagnostic ions if OMG present
+ NLOMGVTR = .true.
+!
+! - Boundary Condition
+!  o Set the boundary condition for toroidal rotation using MODOMEDG with optoins
+!    2 - Use OMEDG namelist variable
+!    3 - Use edge toroidal rotation data
+ MODOMEDG = 3
+!
+!  o Define the edge toroidal rotation.  Only used if MODOMEDG = 2.  TRANSP default 0.0 rad/s.
+ OMEDGE = 0.0
+!
+! - Neoclassical Interpretation
+!  o Set NLVWNC=T to input one species rotation and let NCLASS calculate (and use) other species rotation.
+!    See above "NCLASS neoclassical" section.
+! - Electrostatic Field
+!  o User can specify radial electrostatic potential from Er analysis by specifying VPO UFILE and setting NLIVPO=T
+ NLIVPO = .false.
+!
+ &END
+ &PEDESTAL
+!
+! PEDESTAL
+!
+! - Analysis
+!  o Use NTCC model to calculate the L-H power threshold and the pedestal parameters
+!  by default the model is switched off in analysis mode
+ NLHMODE = .false.
+!
+!  o Specify the L-H transition time model: 0 = user defined in namelist, 1 = model based
+ NMODEL_L2H_TRANS = 1
+!
+ &END
+ &PTRANSP
+!
+! PTRANSP
+!  - PTRANSP Solver Selection
+!   o Choose solver (0=interperative=no prediction)
+!     (3=PT-SOLVER)
+ LPREDICTIVE_MODE = 0
+!
+ &END
+ &FAST_ION_SPECIES
+!
+! Fast Ion Species
+!
+ &END
+ &LOWER_HYBRID_LSC
+!
+! LOWER HYBRID (LSC)
+!
+ &END
+ &LOWER_HYBRID_GENRAY
+ &END
+ &HIGH_HARMONIC_HEATING
+!
+! HIGH HARMONIC HEATING
+!
+ &END
+ &ELECTRON_CYCLOTRON_RESONANCE_HEATING
+ &END
+ &NEUTRAL_BEAMS
+! - NEUTRAL BEAMS
+!  - Time dependent inputs
+!   o Option to use time-dependent NUBEAM data via ufile.
+ NLBDAT = .true.
+!
+!   o For driving NUBEAM history from UFILE must specify
+!     the UFILE prefix and extension as PRENB2 = 'OMF', EXTNB2 = 'NB2'
+!
+!  - General Controls
+!   o Enable beam model
+ NLBEAM = .true.
+!
+!   o Specify monte-carlo seed.  False is random.  True requires NSEEDI.
+ NLSEED = .false.
+!
+!   o Number of neutral beams
+ NBEAM = 14
+!
+!   o Beam timestep.  Larger values are faster but with more lag
+!     in prompt effects like jxB and neutron rate.  Must be ~1e-3
+!     for accurate fast-ion population for beams in beta feedback.
+ DTBEAM = 0.001
+!
+!   o Numeric goosing parameter
+!    5 - "good but expeditious job"
+!    10 - compromise (default)
+!    20 - excellent representation of banana transport
+ GOOCON = 10.0
+!
+!   o Time step control (depricated but required parameter)
+ DTN = 0.001
+!
+!   o Time step control for bounce orbits (replaces DTN)
+ DTN_NBI_ACC = 0.001
+!
+!   o Number of Monete-carlo particles
+ NPTCLS = 32000
+!
+!   o Switch to calculate fast-ion distribution function
+ NLFBM = .true.
+!
+!   o Maximum energy to track in slowing down (def. 1.2*max voltage)
+ EBDMAX = 97200.0
+!
+!   o Beam atomic weight (amu) if specifying for all beams
+ ABEAM = 2.0
+!
+!   o Shielding of neutral beam current option
+ NMCURB = 1
+!
+!   o Neutral density for CX losses outside plasma
+!     Setting to 1e11 cm**-3 will result in rapid loss of external ion
+ DN0OUT = 5000000000000.0
+!
+!   o Weighting of particles
+ WGHTA = 20.0
+!
+!   o Radial smoothing half-width (in r/a) of NUBEAM output
+ DXBSMOO = 0.05
+!
+!  - Deposition Atomic Physics
+!   o NBI depostion model
+!     1 - 100% PREACT rates
+!     2 - 100% ADAS rates
+ LEV_NBIDEP = 2
+!
+!   o Excited states
+!     1 - Simple excited states
+!     2 - Boley-Janev-Post excited states model
+!     3 - ADAS 310 bundle-n rates
+ NSIGEXC = 3
+!
+!  - Deposition statistics
+!   o Number of deposition tracks
+ NDEP0 = 5000
+!
+!  - Deuterium beam halo model
+!  - RF Kick Operator
+!  - 2D Geometry
+!    NUBEAM uses a 2D geometry in (rho,theta)
+!   o Number of zones (in 2D)
+!     Note: this relates to NZONES and NZONE_NB in TRANSP Namelist
+ NZONE_FB = 10
+!
+!   o Number of pitch-angle zones (undocumented) (default 50)
+ NZNBMA = 50
+!
+!   o Number of energy-angle zones (undocumented) (default 100)
+ NZNBME = 100
+!
+!  - Beam Parameters
+!   - Fixed Controls (not used, see next topic)
+!   - Variable Controls - Here for DIII-D (30LT, 30RT, 210LT, 210RT)
+!    o Beam species mass (amu)
+!      Covered above with ABEAM for all species, duplicated for completeness.
+ ABEAMA(1) = 2.0
+ ABEAMA(2) = 2.0
+ ABEAMA(3) = 2.0
+ ABEAMA(4) = 2.0
+ ABEAMA(5) = 2.0
+ ABEAMA(6) = 2.0
+ ABEAMA(7) = 2.0
+ ABEAMA(8) = 2.0
+ ABEAMA(9) = 2.0
+ ABEAMA(10) = 2.0
+ ABEAMA(11) = 2.0
+ ABEAMA(12) = 2.0
+ ABEAMA(13) = 2.0
+ ABEAMA(14) = 2.0
+!
+!    o Beam species charge
+ XZBEAMA(1) = 1.0
+ XZBEAMA(2) = 1.0
+ XZBEAMA(3) = 1.0
+ XZBEAMA(4) = 1.0
+ XZBEAMA(5) = 1.0
+ XZBEAMA(6) = 1.0
+ XZBEAMA(7) = 1.0
+ XZBEAMA(8) = 1.0
+ XZBEAMA(9) = 1.0
+ XZBEAMA(10) = 1.0
+ XZBEAMA(11) = 1.0
+ XZBEAMA(12) = 1.0
+ XZBEAMA(13) = 1.0
+ XZBEAMA(14) = 1.0
+!
+!    o Injection energy (eV)
+ EINJA(1) = 81518.265625
+ EINJA(2) = 0.0
+ EINJA(3) = 75103.7421875
+ EINJA(4) = 75103.7421875
+ EINJA(5) = 75103.7421875
+ EINJA(6) = 75103.7421875
+ EINJA(7) = 0.0
+ EINJA(8) = 0.0
+ EINJA(9) = 0.0
+ EINJA(10) = 0.0
+ EINJA(11) = 0.0
+ EINJA(12) = 0.0
+ EINJA(13) = 76017.015625
+ EINJA(14) = 75218.59375
+!
+!    o Injected power (Watts)
+ PINJA(1) = 2253094.25
+ PINJA(2) = 0.0
+ PINJA(3) = 555556.6065916304
+ PINJA(4) = 389855.2915899649
+ PINJA(5) = 357116.55505886197
+ PINJA(6) = 376250.5660391884
+ PINJA(7) = 0.0
+ PINJA(8) = 0.0
+ PINJA(9) = 0.0
+ PINJA(10) = 0.0
+ PINJA(11) = 0.0
+ PINJA(12) = 0.0
+ PINJA(13) = 1919858.875
+ PINJA(14) = 1751467.5
+!
+!    o Time beam turns on (Seconds)
+ TBONA(1) = 0.0
+ TBONA(2) = 0.0
+ TBONA(3) = 0.0
+ TBONA(4) = 0.0
+ TBONA(5) = 0.0
+ TBONA(6) = 0.0
+ TBONA(7) = 0.0
+ TBONA(8) = 0.0
+ TBONA(9) = 0.0
+ TBONA(10) = 0.0
+ TBONA(11) = 0.0
+ TBONA(12) = 0.0
+ TBONA(13) = 0.0
+ TBONA(14) = 0.0
+!
+!    o Time beam turns off (Seconds)
+ TBOFFA(1) = 10.0
+ TBOFFA(2) = 10.0
+ TBOFFA(3) = 10.0
+ TBOFFA(4) = 10.0
+ TBOFFA(5) = 10.0
+ TBOFFA(6) = 10.0
+ TBOFFA(7) = 10.0
+ TBOFFA(8) = 10.0
+ TBOFFA(9) = 10.0
+ TBOFFA(10) = 10.0
+ TBOFFA(11) = 10.0
+ TBOFFA(12) = 10.0
+ TBOFFA(13) = 10.0
+ TBOFFA(14) = 10.0
+!
+!    o ?? Depricated parameter
+ PDELTA(1) = 0
+ PDELTA(2) = 0
+ PDELTA(3) = 0
+ PDELTA(4) = 0
+!
+!    o Beam Tangency Radius (cm)
+ RTCENA(1) = 114.6
+ RTCENA(2) = 76.2
+ RTCENA(3) = 117.91440645132724
+ RTCENA(4) = 117.91398440840034
+ RTCENA(5) = 117.91398440832565
+ RTCENA(6) = 117.91440644885226
+ RTCENA(7) = 72.59191146005085
+ RTCENA(8) = 72.591527236178
+ RTCENA(9) = 72.59152723577438
+ RTCENA(10) = 72.59191145731032
+ RTCENA(11) = 76.2
+ RTCENA(12) = 114.6
+ RTCENA(13) = 114.6
+ RTCENA(14) = 76.2
+!
+!    o Species mix full fraction (current or #/s particle fractions)
+!
+!    o Species mix half fraction (current or #/s particle fractions)
+!
+!    o Distance from ion source to beam tangency radius (cm)
+ XLBTNA(1) = 802.8
+ XLBTNA(2) = 817.3
+ XLBTNA(3) = 846.1103357962917
+ XLBTNA(4) = 846.0612644067395
+ XLBTNA(5) = 846.0613612757493
+ XLBTNA(6) = 846.1100697203773
+ XLBTNA(7) = 861.0390556714336
+ XLBTNA(8) = 860.9845598265405
+ XLBTNA(9) = 860.985248802222
+ XLBTNA(10) = 861.0390553559834
+ XLBTNA(11) = 817.3
+ XLBTNA(12) = 802.8
+ XLBTNA(13) = 802.8
+ XLBTNA(14) = 817.3
+!
+!    o Ion source elevation above midplane
+ XYBSCA(1) = 0.0
+ XYBSCA(2) = 0.0
+ XYBSCA(3) = 18.120011451696055
+ XYBSCA(4) = 6.120010501599217
+ XYBSCA(5) = -5.869989320602971
+ XYBSCA(6) = -17.8699902635303
+ XYBSCA(7) = 18.120011459714792
+ XYBSCA(8) = 6.1200105027145675
+ XYBSCA(9) = -5.8699892898392045
+ XYBSCA(10) = -17.869990244624525
+ XYBSCA(11) = 0.0
+ XYBSCA(12) = 0.0
+ XYBSCA(13) = 0.0
+ XYBSCA(14) = 0.0
+!
+!    o Beam injection w.r.t. plasma current
+ NLCO(1) = .true.
+ NLCO(2) = .true.
+ NLCO(3) = .true.
+ NLCO(4) = .true.
+ NLCO(5) = .true.
+ NLCO(6) = .true.
+ NLCO(7) = .true.
+ NLCO(8) = .true.
+ NLCO(9) = .true.
+ NLCO(10) = .true.
+ NLCO(11) = .false.
+ NLCO(12) = .false.
+ NLCO(13) = .true.
+ NLCO(14) = .true.
+!
+!    o Toroidal angle of ion source in (R,phi,Z) Right-handed coordinate system
+ XBZETA(1) = 44.28893
+ XBZETA(2) = 50.16021
+ XBZETA(3) = 284.10000492687294
+ XBZETA(4) = 284.10000489212734
+ XBZETA(5) = 284.10000489212746
+ XBZETA(6) = 284.100004926868
+ XBZETA(7) = 289.66999724834193
+ XBZETA(8) = 289.6699967711886
+ XBZETA(9) = 289.6699967712982
+ XBZETA(10) = 289.6699972484506
+ XBZETA(11) = 249.8398
+ XBZETA(12) = 255.7111
+ XBZETA(13) = 104.2889
+ XBZETA(14) = 110.1602
+!
+!    o Neutral beam source shape
+!      1 - Rectangular shape
+!      2 - Circular shape
+ NBSHAPA(1) = 1
+ NBSHAPA(2) = 1
+ NBSHAPA(3) = 1
+ NBSHAPA(4) = 1
+ NBSHAPA(5) = 1
+ NBSHAPA(6) = 1
+ NBSHAPA(7) = 1
+ NBSHAPA(8) = 1
+ NBSHAPA(9) = 1
+ NBSHAPA(10) = 1
+ NBSHAPA(11) = 1
+ NBSHAPA(12) = 1
+ NBSHAPA(13) = 1
+ NBSHAPA(14) = 1
+!
+!    o Neutral beam source radius (circular) or half-width (rectangular) (cm)
+ BMWIDRA(1) = 5.0
+ BMWIDRA(2) = 6.0
+ BMWIDRA(3) = 5.0
+ BMWIDRA(4) = 5.0
+ BMWIDRA(5) = 5.0
+ BMWIDRA(6) = 5.0
+ BMWIDRA(7) = 5.0
+ BMWIDRA(8) = 5.0
+ BMWIDRA(9) = 5.0
+ BMWIDRA(10) = 5.0
+ BMWIDRA(11) = 6.0
+ BMWIDRA(12) = 6.0
+ BMWIDRA(13) = 5.0
+ BMWIDRA(14) = 5.0
+!
+!    o Neutral beam source half-height (rectangular) (cm)
+ BMWIDZA(1) = 24.0
+ BMWIDZA(2) = 24.0
+ BMWIDZA(3) = 6.0
+ BMWIDZA(4) = 6.0
+ BMWIDZA(5) = 6.0
+ BMWIDZA(6) = 6.0
+ BMWIDZA(7) = 6.0
+ BMWIDZA(8) = 6.0
+ BMWIDZA(9) = 6.0
+ BMWIDZA(10) = 6.0
+ BMWIDZA(11) = 24.0
+ BMWIDZA(12) = 24.0
+ BMWIDZA(13) = 24.0
+ BMWIDZA(14) = 24.0
+!
+!    o Focal length in horizontal plane (1e33 infinity focus) (cm)
+ FOCLRA(1) = 1e+33
+ FOCLRA(2) = 1e+33
+ FOCLRA(3) = 1e+33
+ FOCLRA(4) = 1e+33
+ FOCLRA(5) = 1e+33
+ FOCLRA(6) = 1e+33
+ FOCLRA(7) = 1e+33
+ FOCLRA(8) = 1e+33
+ FOCLRA(9) = 1e+33
+ FOCLRA(10) = 1e+33
+ FOCLRA(11) = 1e+33
+ FOCLRA(12) = 1e+33
+ FOCLRA(13) = 1e+33
+ FOCLRA(14) = 1e+33
+!
+!    o Focal length in vertical plane for rectangular source (cm)
+ FOCLZA(1) = 1000.0
+ FOCLZA(2) = 1000.0
+ FOCLZA(3) = 1e+33
+ FOCLZA(4) = 1e+33
+ FOCLZA(5) = 1e+33
+ FOCLZA(6) = 1e+33
+ FOCLZA(7) = 1e+33
+ FOCLZA(8) = 1e+33
+ FOCLZA(9) = 1e+33
+ FOCLZA(10) = 1e+33
+ FOCLZA(11) = 1000.0
+ FOCLZA(12) = 1000.0
+ FOCLZA(13) = 1000.0
+ FOCLZA(14) = 1000.0
+!
+!    o Horizontal divergence (radians)
+ DIVRA(1) = 0.00873
+ DIVRA(2) = 0.00873
+ DIVRA(3) = 0.008727
+ DIVRA(4) = 0.008727
+ DIVRA(5) = 0.008727
+ DIVRA(6) = 0.008727
+ DIVRA(7) = 0.00873
+ DIVRA(8) = 0.00873
+ DIVRA(9) = 0.00873
+ DIVRA(10) = 0.00873
+ DIVRA(11) = 0.00873
+ DIVRA(12) = 0.00873
+ DIVRA(13) = 0.00873
+ DIVRA(14) = 0.00873
+!
+!    o Vertical divergence for rectangular source (radians)
+ DIVZA(1) = 0.0227
+ DIVZA(2) = 0.0227
+ DIVZA(3) = 0.017453
+ DIVZA(4) = 0.017453
+ DIVZA(5) = 0.017453
+ DIVZA(6) = 0.017453
+ DIVZA(7) = 0.0227
+ DIVZA(8) = 0.0227
+ DIVZA(9) = 0.0227
+ DIVZA(10) = 0.0227
+ DIVZA(11) = 0.0227
+ DIVZA(12) = 0.0227
+ DIVZA(13) = 0.0227
+ DIVZA(14) = 0.0227
+!
+!    - First aperture into vessel is required
+!     o Distance from ion source to aperture
+ XLBAPA(1) = 186.1
+ XLBAPA(2) = 186.1
+ XLBAPA(3) = 483.0
+ XLBAPA(4) = 483.0
+ XLBAPA(5) = 483.0
+ XLBAPA(6) = 483.0
+ XLBAPA(7) = 483.0
+ XLBAPA(8) = 483.0
+ XLBAPA(9) = 483.0
+ XLBAPA(10) = 483.0
+ XLBAPA(11) = 186.1
+ XLBAPA(12) = 186.1
+ XLBAPA(13) = 186.1
+ XLBAPA(14) = 186.1
+!
+!     o Elevation of beam when passing through aperture
+ XYBAPA(1) = 0.0
+ XYBAPA(2) = 0.0
+ XYBAPA(3) = 5.473710797952984
+ XYBAPA(4) = 1.4889274071723908
+ XYBAPA(5) = -1.233144434451147
+ XYBAPA(6) = -5.229519852772544
+ XYBAPA(7) = 5.479634372680965
+ XYBAPA(8) = 1.4893130114297537
+ XYBAPA(9) = -1.1991595957822747
+ XYBAPA(10) = -5.229647531303255
+ XYBAPA(11) = 0.0
+ XYBAPA(12) = 0.0
+ XYBAPA(13) = 0.0
+ XYBAPA(14) = 0.0
+!
+!     o Shape of aperture
+!      0 - Circular
+!      1 - Rectangular
+ NBAPSHA(1) = 1
+ NBAPSHA(2) = 1
+ NBAPSHA(3) = 1
+ NBAPSHA(4) = 1
+ NBAPSHA(5) = 1
+ NBAPSHA(6) = 1
+ NBAPSHA(7) = 1
+ NBAPSHA(8) = 1
+ NBAPSHA(9) = 1
+ NBAPSHA(10) = 1
+ NBAPSHA(11) = 1
+ NBAPSHA(12) = 1
+ NBAPSHA(13) = 1
+ NBAPSHA(14) = 1
+!
+!     o Aperture radius for circular or horizontal half-width for rectangular
+ RAPEDGA(1) = 8.85
+ RAPEDGA(2) = 8.85
+ RAPEDGA(3) = 14.335
+ RAPEDGA(4) = 14.335
+ RAPEDGA(5) = 14.335
+ RAPEDGA(6) = 14.335
+ RAPEDGA(7) = 14.335
+ RAPEDGA(8) = 14.335
+ RAPEDGA(9) = 14.335
+ RAPEDGA(10) = 14.335
+ RAPEDGA(11) = 8.85
+ RAPEDGA(12) = 8.85
+ RAPEDGA(13) = 8.85
+ RAPEDGA(14) = 8.85
+!
+!     o Aperture vertical half-height for rectangular
+ XZPEDGA(1) = 24.0
+ XZPEDGA(2) = 24.0
+ XZPEDGA(3) = 18.9835
+ XZPEDGA(4) = 18.9835
+ XZPEDGA(5) = 18.9835
+ XZPEDGA(6) = 18.9835
+ XZPEDGA(7) = 18.9835
+ XZPEDGA(8) = 18.9835
+ XZPEDGA(9) = 18.9835
+ XZPEDGA(10) = 18.9835
+ XZPEDGA(11) = 24.0
+ XZPEDGA(12) = 24.0
+ XZPEDGA(13) = 24.0
+ XZPEDGA(14) = 24.0
+!
+!     o Radial offset of aperture relative to beam centerline (cm).  Positive shifts
+!       aperture out in major radius favoring beam neutral trajectories with
+!       tangency radius greater than beam centerline trajectory
+ XRAPOFFA(1) = 0.0
+ XRAPOFFA(2) = 0.0
+ XRAPOFFA(3) = 2.11893
+ XRAPOFFA(4) = 2.11893
+ XRAPOFFA(5) = 2.11893
+ XRAPOFFA(6) = 2.11893
+ XRAPOFFA(7) = 2.11893
+ XRAPOFFA(8) = 2.11893
+ XRAPOFFA(9) = 2.11893
+ XRAPOFFA(10) = 2.11893
+ XRAPOFFA(11) = 0.0
+ XRAPOFFA(12) = 0.0
+ XRAPOFFA(13) = 0.0
+ XRAPOFFA(14) = 0.0
+!
+!     o Vertical offset of aperture relative to beam centerline (cm).  Positive shifts
+!       the aperture up relative to the beam centerline
+ XZAPOFFA(1) = 0.0
+ XZAPOFFA(2) = 0.0
+ XZAPOFFA(3) = -2.47104
+ XZAPOFFA(4) = 1.52075
+ XZAPOFFA(5) = 4.24756
+ XZAPOFFA(6) = 8.23764
+ XZAPOFFA(7) = -2.47104
+ XZAPOFFA(8) = 1.52075
+ XZAPOFFA(9) = 4.24756
+ XZAPOFFA(10) = 8.23764
+ XZAPOFFA(11) = 0.0
+ XZAPOFFA(12) = 0.0
+ XZAPOFFA(13) = 0.0
+ XZAPOFFA(14) = 0.0
+!
+!    - Second aperture into vessel is optional (see documnetation) and required
+!      to accurately model DIII-D 150 off-axis NBI
+ XLBAPA2(1) = 0.0
+ XLBAPA2(2) = 0.0
+ XLBAPA2(3) = 632.407
+ XLBAPA2(4) = 632.982
+ XLBAPA2(5) = 632.407
+ XLBAPA2(6) = 633.284
+ XLBAPA2(7) = 632.407
+ XLBAPA2(8) = 632.982
+ XLBAPA2(9) = 632.903
+ XLBAPA2(10) = 633.284
+ XLBAPA2(11) = 0.0
+ XLBAPA2(12) = 0.0
+ XLBAPA2(13) = 0.0
+ XLBAPA2(14) = 0.0
+ NBAPSH2(1) = 0
+ NBAPSH2(2) = 0
+ NBAPSH2(3) = 1
+ NBAPSH2(4) = 1
+ NBAPSH2(5) = 1
+ NBAPSH2(6) = 1
+ NBAPSH2(7) = 1
+ NBAPSH2(8) = 1
+ NBAPSH2(9) = 1
+ NBAPSH2(10) = 1
+ NBAPSH2(11) = 0
+ NBAPSH2(12) = 0
+ NBAPSH2(13) = 0
+ NBAPSH2(14) = 0
+ RAPEDG2(1) = 0.0
+ RAPEDG2(2) = 0.0
+ RAPEDG2(3) = 50.0
+ RAPEDG2(4) = 50.0
+ RAPEDG2(5) = 50.0
+ RAPEDG2(6) = 50.0
+ RAPEDG2(7) = 50.0
+ RAPEDG2(8) = 50.0
+ RAPEDG2(9) = 50.0
+ RAPEDG2(10) = 50.0
+ RAPEDG2(11) = 0.0
+ RAPEDG2(12) = 0.0
+ RAPEDG2(13) = 0.0
+ RAPEDG2(14) = 0.0
+ XZPEDG2(1) = 0.0
+ XZPEDG2(2) = 0.0
+ XZPEDG2(3) = 50.0
+ XZPEDG2(4) = 50.0
+ XZPEDG2(5) = 50.0
+ XZPEDG2(6) = 50.0
+ XZPEDG2(7) = 50.0
+ XZPEDG2(8) = 50.0
+ XZPEDG2(9) = 50.0
+ XZPEDG2(10) = 50.0
+ XZPEDG2(11) = 0.0
+ XZPEDG2(12) = 0.0
+ XZPEDG2(13) = 0.0
+ XZPEDG2(14) = 0.0
+ XRAPOFF2(1) = 0.0
+ XRAPOFF2(2) = 0.0
+ XRAPOFF2(3) = 0.0
+ XRAPOFF2(4) = 0.0
+ XRAPOFF2(5) = 0.0
+ XRAPOFF2(6) = 0.0
+ XRAPOFF2(7) = 0.0
+ XRAPOFF2(8) = 0.0
+ XRAPOFF2(9) = 0.0
+ XRAPOFF2(10) = 0.0
+ XRAPOFF2(11) = 0.0
+ XRAPOFF2(12) = 0.0
+ XRAPOFF2(13) = 0.0
+ XRAPOFF2(14) = 0.0
+ XZAPOFF2(1) = 0.0
+ XZAPOFF2(2) = 0.0
+ XZAPOFF2(3) = 32.3975
+ XZAPOFF2(4) = 34.026
+ XZAPOFF2(5) = 33.839
+ XZAPOFF2(6) = 35.2435
+ XZAPOFF2(7) = 32.3975
+ XZAPOFF2(8) = 34.0206
+ XZAPOFF2(9) = 33.839
+ XZAPOFF2(10) = 35.2435
+ XZAPOFF2(11) = 0.0
+ XZAPOFF2(12) = 0.0
+ XZAPOFF2(13) = 0.0
+ XZAPOFF2(14) = 0.0
+!
+!    - Beam trace elements (see documnetation)
+!   - Debug switches
+!   - Anomalous Diffusion
+!    o Anomalous diffusion model
+ NKDIFB = 3
+!
+!   - Fishbone loss
+!    o Enable fisbone loss
+ NLFBON = .false.
+!
+!   - Finite Larmor radius effects
+!    o Include finite Larmor radius
+ NLBFLR = .true.
+ &END
+ &FUSION_PRODUCTS
+!
+! Fusion_products
+! - Use simple analytic formula rather than Monte-Carlo
+ NALPHA = 1
+!
+ &END
+ &ICRF_HEATING
+!
+! ICRF Heating
+!
+ &END
+ &IBW_HEATING
+!
+! IBW Heating
+!
+ &END
+ &PELLETS
+!
+! PELLETS
+!  o Number of pellets
+ NPEL = 0
+!
+ &END
+ &SAWTOOTH_MODEL
+!
+! SAWTOOTH_MODEL
+!  o Use sawtooth model
+ NLSAW = .false.
+!
+!  o Use sawtooth model for electrons
+ NLSAWE = .false.
+!
+!  o Use sawtooth model for ions
+ NLSAWI = .false.
+!
+!  o Use sawtooth model for beam fast ions
+ NLSAWB = .false.
+!
+!  o Use sawtooth model for fusion product fast ions
+ NLSAWF = .false.
+!
+!  o Use sawtooth model for icrf minority fast ions
+ NLSAWIC = .false.
+!
+!  o Kadomtsev vs. Porcelli model controls
+!    has xswid1 controlling ion response.
+!    xswid1=0.0 as default meaning conserve total energy.
+!    xswid2 controlls the current density profile, where
+!    xswid2=0.0 (def.) gives full mixing where q=1 on axis and
+!    q>1  off axis.  xswid2=1.0 causes there to be no current mixing
+!    leaving the current profile unchanged by the sawtooth event.
+ XSWID1 = 0.0
+ XSWID2 = 0.0
+!
+!  o Safety interval around a sawtooth event (+/- dtsawd) where
+!    UFILE Data within this time of a crash is not used but extrapolated
+!    from before forward, and after backwards.
+ DTSAWD = 0.002
+!
+ NLSAW_TRIGGER = .false.
+ &END
+ &MSE_POINT_SIMULATIONS
+!
+! MSE POINT SIMULATIONS
+!
+ &END
+ &CHORDAL_SIMULATIONS
+!
+! CHORDAL_SIMULATIONS
+!
+! o Number of line density chord integrals to output
+ NLDA = 0
+!
+! o Number of VB arrays
+ NVBA = 0
+!
+! o Number of xray crystal detector arrays
+ NXCA = 0
+!
+! o Number of collimated neutron detector arrays
+ NNTA = 0
+!
+! o General chordal simulation array # of chords
+ NGCH = 0
+!
+! o Number of bolomoter chords
+ NBLANG = 0
+ &END
+ &EFLUX_SIMULATIONS
+! EFLUX_SIMULATION
+ NLEFLX = .false.
+ &END
+ &LIMITER_LOCATIONS
+! LIMITER_LOCATIONS
+! o Number of circle limiters
+ NCIRLM = 0
+!
+! o Circle limiter center of circle major radius (cm)
+ CRLMR1 = 0.0
+!
+! o Circle limiter center of circle elevation (cm)
+ CRLMY1 = 0.0
+!
+! o Circle limiter center of circle elevation (cm)
+ CRLMRD = 0.0
+!
+! o Number of infinite line limiters
+ NLINLM = 0
+!
+! o Radius of line limiter (cm)
+ ALNLMR = 0.0
+!
+! o Elevation of line limiter (cm)
+ ALNLMY = 0.0
+!
+! o Orientation of line (degrees)
+ ALNLMT = 0.0
+!
+ &END
+ &TIME_CONTROL
+! TIME_CONTROL
+! o tinit is the initial time in sec.
+ TINIT = 0.8
+!
+! o ftime is the final time in sec.
+ FTIME = 5.02
+!
+! - Data_interpolation
+!   THIS IS THE PRIMARY CONTROL OF THE TIME RESOLUTION OF
+!   INPUT DATA AS TRANSP SEES IT.
+!   Must be short for high time-resolution runs
+!   TRANSP will interpolate to this timebase witout smoothing.
+!  o Spacing between time points for scalar input data
+ TGRID1 = 0.01
+!
+!  o Spacing between time points for profile input data
+ TGRID2 = 0.01
+!
+! - timesteps
+!  o Max time step for equilibrium goemetry evaluation if LEVGEO>0.
+!    This step constrains all others.
+ DTMAXG = 0.01
+!
+! - Output_control
+!  o Time spacing between profile output
+ SEDIT = 0.01
+!
+!  o Time spacing between scalar output
+ STEDIT = 0.01
+ &END
+ &TRDATA
+!
+! &TRDATA
+!***********************************************************************
+! So begins the TRDATA namelist.
+! This is read by TRDAT and is not known to TRANSP.
+! This generally refers to input data (UFILEs).
+!***********************************************************************
+!
+! LFIXUP
+! o Control units conversion.
+!   (=2) is support conversion *1000.0 for keV->eV
+!   and support axis swap for profile data if needed
+ LFIXUP = 2
+!
+! Directory containing UFILES
+ INPUTDIR = '/fusion/projects/codes/transp/lestzj/153764C01_tmp/'
+!
+! Time limiters
+! o Set time for ignoring UFILE data
+!   Ignore UFILE data before TLIM1 (extrapolate backwards flat in time)
+!   Ignore UFILE data after TLIM2 (extrapolate forwards flat in time)
+!
+! Time offset
+ TIME0 = 0.0
+! Expert file
+!
+ PRECUR = 'OMF'
+ EXTCUR ='CUR'
+ PREBDI = 'OMF'
+ EXTBDI ='BDI'
+ PREDFL = 'OMF'
+ EXTDFL ='DFL'
+ PRERBZ = 'OMF'
+ EXTRBZ ='RBZ'
+ PREL2B = 'OMF'
+ EXTL2B ='L2B'
+ PREVSF = 'OMF'
+ EXTVSF ='VSF'
+ PREPLF = 'OMF'
+ EXTPLF ='PLF'
+ PRETRF = 'OMF'
+ EXTTRF ='TRF'
+ PREPF0 = 'OMF'
+ EXTPF0 ='PF0'
+ PREPRS = 'OMF'
+ EXTPRS ='PRS'
+ PREGRB = 'OMF'
+ EXTGRB ='GRB'
+ PREQPR = 'OMF'
+ EXTQPR ='QPR'
+ PREMMX = 'OMF'
+ EXTMMX ='MMX'
+ PRELIM = 'OMF'
+ EXTLIM ='LIM'
+ PRENER = 'OMF'
+ EXTNER ='NER'
+ PRETER = 'OMF'
+ EXTTER ='TER'
+ PRETI2 = 'OMF'
+ EXTTI2 ='TI2'
+ PREOMG = 'OMF'
+ EXTOMG ='OMG'
+ PRENIM = 'OMF'
+ EXTNIM ='NIM'
+ PREZF2 = 'OMF'
+ EXTZF2 ='ZF2'
+ PREBOL = 'OMF'
+ EXTBOL ='BOL'
+ PRENTX = 'OMF'
+ EXTNTX ='NTX'
+ PRERCY = 'OMF'
+ EXTRCY ='RCY'
+ PRENB2 = 'OMF'
+ EXTNB2 ='NB2'
+ &END

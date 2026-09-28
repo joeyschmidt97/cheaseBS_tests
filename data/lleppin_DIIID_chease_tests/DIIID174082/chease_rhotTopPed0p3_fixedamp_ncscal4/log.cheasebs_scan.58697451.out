@@ -1,0 +1,677 @@
+Ensuring baseline is ready at /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline (rebuild=False)
+Using existing baseline decomposition: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Baseline ready.
+Dispatching 14 case(s) across 14 worker(s)
+Test of quasineutrality (should be <<1):0.0
+Starting iterative CHEASE workflow (coordinate=rhot, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082_chease_rhotTopPed0p3_fixedamp_ncscal4/omt0p7_omne0p7
+Baseline directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Run targets: Ip=991046.912 A (source 991046.912 A), Bt=1.994957 T (source 1.994957 T)
+Using existing baseline decomposition: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Starting iterative replay with target Ip=991046.912 A and initial amplitude=1.000000
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+Test of quasineutrality (should be <<1):0.0
+Starting iterative CHEASE workflow (coordinate=rhot, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082_chease_rhotTopPed0p3_fixedamp_ncscal4/omt1p0_omne1p1
+Baseline directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Test of quasineutrality (should be <<1):0.0
+Starting iterative CHEASE workflow (coordinate=rhot, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082_chease_rhotTopPed0p3_fixedamp_ncscal4/omt0p9_omne1p0
+Baseline directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Test of quasineutrality (should be <<1):0.0
+Starting iterative CHEASE workflow (coordinate=rhot, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082_chease_rhotTopPed0p3_fixedamp_ncscal4/omt0p7_omne0p8
+Baseline directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Run targets: Ip=991046.912 A (source 991046.912 A), Bt=1.994957 T (source 1.994957 T)
+Using existing baseline decomposition: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Test of quasineutrality (should be <<1):0.0
+Starting iterative CHEASE workflow (coordinate=rhot, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082_chease_rhotTopPed0p3_fixedamp_ncscal4/omt0p8_omne0p9
+Baseline directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Test of quasineutrality (should be <<1):0.0
+Starting iterative CHEASE workflow (coordinate=rhot, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082_chease_rhotTopPed0p3_fixedamp_ncscal4/omt0p9_omne0p9
+Baseline directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Test of quasineutrality (should be <<1):0.0
+Starting iterative CHEASE workflow (coordinate=rhot, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082_chease_rhotTopPed0p3_fixedamp_ncscal4/omt1p1_omne1p0
+Baseline directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Test of quasineutrality (should be <<1):0.0
+Starting iterative CHEASE workflow (coordinate=rhot, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082_chease_rhotTopPed0p3_fixedamp_ncscal4/omt0p7_omne0p9
+Baseline directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Test of quasineutrality (should be <<1):0.0
+Starting iterative CHEASE workflow (coordinate=rhot, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082_chease_rhotTopPed0p3_fixedamp_ncscal4/omt1p0_omne1p0
+Baseline directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Test of quasineutrality (should be <<1):0.0
+Starting iterative CHEASE workflow (coordinate=rhot, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082_chease_rhotTopPed0p3_fixedamp_ncscal4/omt1p1_omne1p1
+Baseline directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Test of quasineutrality (should be <<1):0.0
+Starting iterative CHEASE workflow (coordinate=rhot, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082_chease_rhotTopPed0p3_fixedamp_ncscal4/omt0p8_omne1p1
+Baseline directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Test of quasineutrality (should be <<1):0.0
+Starting iterative CHEASE workflow (coordinate=rhot, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082_chease_rhotTopPed0p3_fixedamp_ncscal4/omt0p9_omne1p1
+Baseline directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Run targets: Ip=991046.912 A (source 991046.912 A), Bt=1.994957 T (source 1.994957 T)
+Run targets: Ip=991046.912 A (source 991046.912 A), Bt=1.994957 T (source 1.994957 T)
+Using existing baseline decomposition: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Using existing baseline decomposition: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Test of quasineutrality (should be <<1):0.0
+Starting iterative CHEASE workflow (coordinate=rhot, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082_chease_rhotTopPed0p3_fixedamp_ncscal4/omt0p8_omne0p8
+Baseline directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Run targets: Ip=991046.912 A (source 991046.912 A), Bt=1.994957 T (source 1.994957 T)
+Using existing baseline decomposition: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Run targets: Ip=991046.912 A (source 991046.912 A), Bt=1.994957 T (source 1.994957 T)
+Run targets: Ip=991046.912 A (source 991046.912 A), Bt=1.994957 T (source 1.994957 T)
+Run targets: Ip=991046.912 A (source 991046.912 A), Bt=1.994957 T (source 1.994957 T)
+Using existing baseline decomposition: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Using existing baseline decomposition: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Using existing baseline decomposition: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Test of quasineutrality (should be <<1):0.0
+Starting iterative CHEASE workflow (coordinate=rhot, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082_chease_rhotTopPed0p3_fixedamp_ncscal4/omt0p8_omne1p0
+Baseline directory: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Run targets: Ip=991046.912 A (source 991046.912 A), Bt=1.994957 T (source 1.994957 T)
+Run targets: Ip=991046.912 A (source 991046.912 A), Bt=1.994957 T (source 1.994957 T)
+Using existing baseline decomposition: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Using existing baseline decomposition: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Run targets: Ip=991046.912 A (source 991046.912 A), Bt=1.994957 T (source 1.994957 T)
+Using existing baseline decomposition: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Run targets: Ip=991046.912 A (source 991046.912 A), Bt=1.994957 T (source 1.994957 T)
+Using existing baseline decomposition: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Starting iterative replay with target Ip=991046.912 A and initial amplitude=1.000000
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+Run targets: Ip=991046.912 A (source 991046.912 A), Bt=1.994957 T (source 1.994957 T)
+Starting iterative replay with target Ip=991046.912 A and initial amplitude=1.000000
+Starting iterative replay with target Ip=991046.912 A and initial amplitude=1.000000
+Run targets: Ip=991046.912 A (source 991046.912 A), Bt=1.994957 T (source 1.994957 T)
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+Using existing baseline decomposition: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Using existing baseline decomposition: /pscratch/sd/l/lleppin/cheaseBS_runs/DIIID174082/baseline
+Starting iterative replay with target Ip=991046.912 A and initial amplitude=1.000000
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+Starting iterative replay with target Ip=991046.912 A and initial amplitude=1.000000
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+Starting iterative replay with target Ip=991046.912 A and initial amplitude=1.000000
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+Starting iterative replay with target Ip=991046.912 A and initial amplitude=1.000000
+Starting iterative replay with target Ip=991046.912 A and initial amplitude=1.000000
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+Starting iterative replay with target Ip=991046.912 A and initial amplitude=1.000000
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+Starting iterative replay with target Ip=991046.912 A and initial amplitude=1.000000
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+Starting iterative replay with target Ip=991046.912 A and initial amplitude=1.000000
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+Starting iterative replay with target Ip=991046.912 A and initial amplitude=1.000000
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+Starting iterative replay with target Ip=991046.912 A and initial amplitude=1.000000
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 00 complete: Ip=981888.748 A, rel_error=9.241e-03, bs_change=n/a, q_change=n/a, next_amplitude=1.000e+00, converged=no
+Iteration 00 complete: Ip=980343.275 A, rel_error=1.080e-02, bs_change=n/a, q_change=n/a, next_amplitude=1.000e+00, converged=no
+Iteration 01: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 01: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 00 complete: Ip=983566.687 A, rel_error=7.548e-03, bs_change=n/a, q_change=n/a, next_amplitude=1.000e+00, converged=no
+Iteration 01: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 00 complete: Ip=984183.482 A, rel_error=6.925e-03, bs_change=n/a, q_change=n/a, next_amplitude=1.000e+00, converged=no
+Iteration 01: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 00 complete: Ip=986062.468 A, rel_error=5.029e-03, bs_change=n/a, q_change=n/a, next_amplitude=1.000e+00, converged=no
+Iteration 01: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 00 complete: Ip=988101.521 A, rel_error=2.972e-03, bs_change=n/a, q_change=n/a, next_amplitude=1.000e+00, converged=no
+Iteration 01: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 00 complete: Ip=991186.945 A, rel_error=1.413e-04, bs_change=n/a, q_change=n/a, next_amplitude=1.000e+00, converged=no
+Iteration 01: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 00 complete: Ip=988900.235 A, rel_error=2.166e-03, bs_change=n/a, q_change=n/a, next_amplitude=1.000e+00, converged=no
+Iteration 01: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 00 complete: Ip=990313.890 A, rel_error=7.396e-04, bs_change=n/a, q_change=n/a, next_amplitude=1.000e+00, converged=no
+Iteration 01: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 00 complete: Ip=993668.302 A, rel_error=2.645e-03, bs_change=n/a, q_change=n/a, next_amplitude=1.000e+00, converged=no
+Iteration 01: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 00 complete: Ip=1001838.403 A, rel_error=1.089e-02, bs_change=n/a, q_change=n/a, next_amplitude=1.000e+00, converged=no
+Iteration 01: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 00 complete: Ip=997486.851 A, rel_error=6.498e-03, bs_change=n/a, q_change=n/a, next_amplitude=1.000e+00, converged=no
+Iteration 00 complete: Ip=994700.087 A, rel_error=3.686e-03, bs_change=n/a, q_change=n/a, next_amplitude=1.000e+00, converged=no
+Iteration 01: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 01: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 00 complete: Ip=998705.262 A, rel_error=7.728e-03, bs_change=n/a, q_change=n/a, next_amplitude=1.000e+00, converged=no
+Iteration 01: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 01 complete: Ip=955726.745 A, rel_error=3.564e-02, bs_change=4.019e-02, q_change=2.989e-02, next_amplitude=1.000e+00, converged=no
+Iteration 02: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 01 complete: Ip=931263.766 A, rel_error=6.032e-02, bs_change=4.609e-02, q_change=4.551e-02, next_amplitude=1.000e+00, converged=no
+Iteration 02: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 01 complete: Ip=994523.981 A, rel_error=3.508e-03, bs_change=3.502e-04, q_change=4.845e-04, next_amplitude=1.000e+00, converged=no
+Iteration 02: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 01 complete: Ip=936106.806 A, rel_error=5.544e-02, bs_change=4.734e-02, q_change=4.308e-02, next_amplitude=1.000e+00, converged=no
+Iteration 02: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 01 complete: Ip=943242.387 A, rel_error=4.824e-02, bs_change=4.360e-02, q_change=3.699e-02, next_amplitude=1.000e+00, converged=no
+Iteration 02: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 01 complete: Ip=949238.155 A, rel_error=4.219e-02, bs_change=4.246e-02, q_change=3.362e-02, next_amplitude=1.000e+00, converged=no
+Iteration 02: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 01 complete: Ip=973225.549 A, rel_error=1.798e-02, bs_change=2.522e-02, q_change=1.667e-02, next_amplitude=1.000e+00, converged=no
+Iteration 02: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 01 complete: Ip=926779.945 A, rel_error=6.485e-02, bs_change=4.398e-02, q_change=4.775e-02, next_amplitude=1.000e+00, converged=no
+Iteration 02: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 01 complete: Ip=965245.338 A, rel_error=2.603e-02, bs_change=3.130e-02, q_change=2.170e-02, next_amplitude=1.000e+00, converged=no
+Iteration 02: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 01 complete: Ip=962697.409 A, rel_error=2.861e-02, bs_change=3.684e-02, q_change=2.583e-02, next_amplitude=1.000e+00, converged=no
+Iteration 02: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 01 complete: Ip=1005196.155 A, rel_error=1.428e-02, bs_change=1.619e-02, q_change=7.561e-03, next_amplitude=1.000e+00, converged=no
+Iteration 02: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 01 complete: Ip=1020427.362 A, rel_error=2.965e-02, bs_change=3.873e-02, q_change=2.073e-02, next_amplitude=1.000e+00, converged=no
+Iteration 02: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 01 complete: Ip=981854.616 A, rel_error=9.275e-03, bs_change=1.672e-02, q_change=1.112e-02, next_amplitude=1.000e+00, converged=no
+Iteration 02: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 01 complete: Ip=1033610.513 A, rel_error=4.295e-02, bs_change=6.635e-02, q_change=3.079e-02, next_amplitude=1.000e+00, converged=no
+Iteration 02: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 02 complete: Ip=994395.626 A, rel_error=3.379e-03, bs_change=2.390e-04, q_change=3.255e-04, next_amplitude=1.000e+00, converged=no
+Iteration 03: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 02 complete: Ip=935298.757 A, rel_error=5.625e-02, bs_change=2.838e-02, q_change=2.030e-02, next_amplitude=1.000e+00, converged=no
+Iteration 03: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 02 complete: Ip=917336.913 A, rel_error=7.438e-02, bs_change=3.058e-02, q_change=2.573e-02, next_amplitude=1.000e+00, converged=no
+Iteration 03: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 02 complete: Ip=925980.957 A, rel_error=6.565e-02, bs_change=2.999e-02, q_change=2.311e-02, next_amplitude=1.000e+00, converged=no
+Iteration 03: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 02 complete: Ip=899015.817 A, rel_error=9.286e-02, bs_change=3.323e-02, q_change=3.251e-02, next_amplitude=1.000e+00, converged=no
+Iteration 03: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 02 complete: Ip=892592.288 A, rel_error=9.934e-02, bs_change=3.153e-02, q_change=3.437e-02, next_amplitude=1.000e+00, converged=no
+Iteration 03: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 02 complete: Ip=950399.078 A, rel_error=4.102e-02, bs_change=2.107e-02, q_change=1.439e-02, next_amplitude=1.000e+00, converged=no
+Iteration 03: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 02 complete: Ip=905923.766 A, rel_error=8.589e-02, bs_change=3.424e-02, q_change=3.052e-02, next_amplitude=1.000e+00, converged=no
+Iteration 03: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 02 complete: Ip=945305.279 A, rel_error=4.615e-02, bs_change=2.564e-02, q_change=1.730e-02, next_amplitude=1.000e+00, converged=no
+Iteration 03: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 02 complete: Ip=1009955.088 A, rel_error=1.908e-02, bs_change=9.197e-03, q_change=4.473e-03, next_amplitude=1.000e+00, converged=no
+Iteration 03: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 02 complete: Ip=974516.540 A, rel_error=1.668e-02, bs_change=1.082e-02, q_change=7.081e-03, next_amplitude=1.000e+00, converged=no
+Iteration 03: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 02 complete: Ip=962008.121 A, rel_error=2.930e-02, bs_change=1.684e-02, q_change=1.084e-02, next_amplitude=1.000e+00, converged=no
+Iteration 03: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 02 complete: Ip=1033605.107 A, rel_error=4.294e-02, bs_change=2.113e-02, q_change=1.185e-02, next_amplitude=1.000e+00, converged=no
+Iteration 03: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 02 complete: Ip=1052827.947 A, rel_error=6.234e-02, bs_change=3.553e-02, q_change=1.697e-02, next_amplitude=1.000e+00, converged=no
+Iteration 03: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 03 complete: Ip=994303.300 A, rel_error=3.286e-03, bs_change=1.647e-04, q_change=2.193e-04, next_amplitude=1.000e+00, converged=no
+Iteration 04: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 03 complete: Ip=940999.461 A, rel_error=5.050e-02, bs_change=1.385e-02, q_change=9.463e-03, next_amplitude=1.000e+00, converged=no
+Iteration 04: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 03 complete: Ip=922345.287 A, rel_error=6.932e-02, bs_change=1.874e-02, q_change=1.354e-02, next_amplitude=1.000e+00, converged=no
+Iteration 04: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 03 complete: Ip=954918.102 A, rel_error=3.646e-02, bs_change=1.080e-02, q_change=7.042e-03, next_amplitude=1.000e+00, converged=no
+Iteration 04: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 03 complete: Ip=1012901.141 A, rel_error=2.205e-02, bs_change=5.351e-03, q_change=2.702e-03, next_amplitude=1.000e+00, converged=no
+Iteration 04: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 03 complete: Ip=969905.501 A, rel_error=2.133e-02, bs_change=6.660e-03, q_change=4.529e-03, next_amplitude=1.000e+00, converged=no
+Iteration 04: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 03 complete: Ip=900830.889 A, rel_error=9.103e-02, bs_change=2.103e-02, q_change=1.751e-02, next_amplitude=1.000e+00, converged=no
+Iteration 04: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 03 complete: Ip=911193.534 A, rel_error=8.057e-02, bs_change=2.023e-02, q_change=1.558e-02, next_amplitude=1.000e+00, converged=no
+Iteration 04: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 03 complete: Ip=934314.455 A, rel_error=5.724e-02, bs_change=1.648e-02, q_change=1.141e-02, next_amplitude=1.000e+00, converged=no
+Iteration 04: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 03 complete: Ip=878377.117 A, rel_error=1.137e-01, bs_change=2.361e-02, q_change=2.267e-02, next_amplitude=1.000e+00, converged=no
+Iteration 04: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 03 complete: Ip=870685.262 A, rel_error=1.214e-01, bs_change=2.285e-02, q_change=2.411e-02, next_amplitude=1.000e+00, converged=no
+Iteration 04: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 03 complete: Ip=1041587.536 A, rel_error=5.100e-02, bs_change=1.293e-02, q_change=6.973e-03, next_amplitude=1.000e+00, converged=no
+Iteration 04: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 03 complete: Ip=886640.628 A, rel_error=1.053e-01, bs_change=2.396e-02, q_change=2.113e-02, next_amplitude=1.000e+00, converged=no
+Iteration 04: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 03 complete: Ip=1064309.648 A, rel_error=7.392e-02, bs_change=2.012e-02, q_change=9.691e-03, next_amplitude=1.000e+00, converged=no
+Iteration 04: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 04 complete: Ip=994237.558 A, rel_error=3.219e-03, bs_change=1.140e-04, q_change=1.482e-04, next_amplitude=1.000e+00, converged=no
+Iteration 05: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 04 complete: Ip=950448.321 A, rel_error=4.097e-02, bs_change=6.661e-03, q_change=4.542e-03, next_amplitude=1.000e+00, converged=no
+Iteration 05: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 04 complete: Ip=935057.049 A, rel_error=5.650e-02, bs_change=8.603e-03, q_change=6.158e-03, next_amplitude=1.000e+00, converged=no
+Iteration 05: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 04 complete: Ip=967001.643 A, rel_error=2.426e-02, bs_change=4.182e-03, q_change=2.901e-03, next_amplitude=1.000e+00, converged=no
+Iteration 05: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 04 complete: Ip=914150.551 A, rel_error=7.759e-02, bs_change=1.197e-02, q_change=8.931e-03, next_amplitude=1.000e+00, converged=no
+Iteration 05: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 04 complete: Ip=1014738.489 A, rel_error=2.391e-02, bs_change=3.145e-03, q_change=1.666e-03, next_amplitude=1.000e+00, converged=no
+Iteration 05: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 04 complete: Ip=927374.225 A, rel_error=6.425e-02, bs_change=1.070e-02, q_change=7.448e-03, next_amplitude=1.000e+00, converged=no
+Iteration 05: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 04 complete: Ip=1046374.968 A, rel_error=5.583e-02, bs_change=7.025e-03, q_change=4.147e-03, next_amplitude=1.000e+00, converged=no
+Iteration 05: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 04 complete: Ip=901820.253 A, rel_error=9.003e-02, bs_change=1.288e-02, q_change=1.036e-02, next_amplitude=1.000e+00, converged=no
+Iteration 05: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 04 complete: Ip=890347.621 A, rel_error=1.016e-01, bs_change=1.344e-02, q_change=1.174e-02, next_amplitude=1.000e+00, converged=no
+Iteration 05: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 04 complete: Ip=874379.854 A, rel_error=1.177e-01, bs_change=1.389e-02, q_change=1.425e-02, next_amplitude=1.000e+00, converged=no
+Iteration 05: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 04 complete: Ip=865225.721 A, rel_error=1.270e-01, bs_change=1.376e-02, q_change=1.537e-02, next_amplitude=1.000e+00, converged=no
+Iteration 05: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 04 complete: Ip=856697.421 A, rel_error=1.356e-01, bs_change=1.343e-02, q_change=1.644e-02, next_amplitude=1.000e+00, converged=no
+Iteration 05: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 04 complete: Ip=1071193.475 A, rel_error=8.087e-02, bs_change=1.041e-02, q_change=5.727e-03, next_amplitude=1.000e+00, converged=no
+Iteration 05: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 05 complete: Ip=994191.111 A, rel_error=3.173e-03, bs_change=7.903e-05, q_change=1.003e-04, next_amplitude=1.000e+00, converged=no
+Iteration 06: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 05 complete: Ip=965174.674 A, rel_error=2.611e-02, bs_change=2.537e-03, q_change=1.858e-03, next_amplitude=1.000e+00, converged=no
+Iteration 06: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 05 complete: Ip=947622.575 A, rel_error=4.382e-02, bs_change=4.091e-03, q_change=2.933e-03, next_amplitude=1.000e+00, converged=no
+Iteration 06: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 05 complete: Ip=931290.792 A, rel_error=6.030e-02, bs_change=5.333e-03, q_change=4.001e-03, next_amplitude=1.000e+00, converged=no
+Iteration 06: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 05 complete: Ip=1015891.501 A, rel_error=2.507e-02, bs_change=1.862e-03, q_change=1.045e-03, next_amplitude=1.000e+00, converged=no
+Iteration 06: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 05 complete: Ip=908979.337 A, rel_error=8.281e-02, bs_change=7.288e-03, q_change=5.828e-03, next_amplitude=1.000e+00, converged=no
+Iteration 06: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 05 complete: Ip=1049274.295 A, rel_error=5.875e-02, bs_change=3.859e-03, q_change=2.525e-03, next_amplitude=1.000e+00, converged=no
+Iteration 06: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 05 complete: Ip=922999.250 A, rel_error=6.866e-02, bs_change=6.342e-03, q_change=4.854e-03, next_amplitude=1.000e+00, converged=no
+Iteration 06: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 05 complete: Ip=895895.076 A, rel_error=9.601e-02, bs_change=7.978e-03, q_change=6.781e-03, next_amplitude=1.000e+00, converged=no
+Iteration 06: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 05 complete: Ip=883706.974 A, rel_error=1.083e-01, bs_change=7.848e-03, q_change=7.707e-03, next_amplitude=1.000e+00, converged=no
+Iteration 06: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 05 complete: Ip=856809.043 A, rel_error=1.355e-01, bs_change=8.801e-03, q_change=1.028e-02, next_amplitude=1.000e+00, converged=no
+Iteration 06: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 05 complete: Ip=866547.977 A, rel_error=1.256e-01, bs_change=8.772e-03, q_change=9.489e-03, next_amplitude=1.000e+00, converged=no
+Iteration 06: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 05 complete: Ip=847731.873 A, rel_error=1.446e-01, bs_change=8.670e-03, q_change=1.104e-02, next_amplitude=1.000e+00, converged=no
+Iteration 06: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 05 complete: Ip=1075402.555 A, rel_error=8.512e-02, bs_change=5.806e-03, q_change=3.507e-03, next_amplitude=1.000e+00, converged=no
+Iteration 06: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 06 complete: Ip=994158.499 A, rel_error=3.140e-03, bs_change=5.477e-05, q_change=6.797e-05, next_amplitude=1.000e+00, converged=no
+Iteration 07: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 06 complete: Ip=964020.421 A, rel_error=2.727e-02, bs_change=1.548e-03, q_change=1.197e-03, next_amplitude=1.000e+00, converged=no
+Iteration 07: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 06 complete: Ip=945829.952 A, rel_error=4.563e-02, bs_change=2.520e-03, q_change=1.901e-03, next_amplitude=1.000e+00, converged=no
+Iteration 07: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 06 complete: Ip=928897.608 A, rel_error=6.271e-02, bs_change=3.402e-03, q_change=2.600e-03, next_amplitude=1.000e+00, converged=no
+Iteration 07: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 06 complete: Ip=1016619.416 A, rel_error=2.580e-02, bs_change=1.111e-03, q_change=6.645e-04, next_amplitude=1.000e+00, converged=no
+Iteration 07: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 06 complete: Ip=1051046.828 A, rel_error=6.054e-02, bs_change=2.144e-03, q_change=1.567e-03, next_amplitude=1.000e+00, converged=no
+Iteration 07: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 06 complete: Ip=905716.379 A, rel_error=8.610e-02, bs_change=4.469e-03, q_change=3.772e-03, next_amplitude=1.000e+00, converged=no
+Iteration 07: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 06 complete: Ip=920245.186 A, rel_error=7.144e-02, bs_change=3.855e-03, q_change=3.131e-03, next_amplitude=1.000e+00, converged=no
+Iteration 07: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 06 complete: Ip=892147.566 A, rel_error=9.979e-02, bs_change=4.573e-03, q_change=4.401e-03, next_amplitude=1.000e+00, converged=no
+Iteration 07: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 06 complete: Ip=879479.812 A, rel_error=1.126e-01, bs_change=4.744e-03, q_change=5.041e-03, next_amplitude=1.000e+00, converged=no
+Iteration 07: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 06 complete: Ip=861535.310 A, rel_error=1.307e-01, bs_change=5.595e-03, q_change=6.269e-03, next_amplitude=1.000e+00, converged=no
+Iteration 07: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 06 complete: Ip=851417.457 A, rel_error=1.409e-01, bs_change=5.635e-03, q_change=6.806e-03, next_amplitude=1.000e+00, converged=no
+Iteration 07: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 06 complete: Ip=841983.303 A, rel_error=1.504e-01, bs_change=5.575e-03, q_change=7.320e-03, next_amplitude=1.000e+00, converged=no
+Iteration 07: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 06 complete: Ip=1078002.952 A, rel_error=8.774e-02, bs_change=3.292e-03, q_change=2.195e-03, next_amplitude=1.000e+00, converged=no
+Iteration 07: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 07 complete: Ip=994135.715 A, rel_error=3.117e-03, bs_change=3.791e-05, q_change=4.611e-05, next_amplitude=1.000e+00, converged=no
+Iteration 08: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 07 complete: Ip=963288.088 A, rel_error=2.801e-02, bs_change=9.504e-04, q_change=7.749e-04, next_amplitude=1.000e+00, converged=no
+Iteration 08: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 07 complete: Ip=944688.708 A, rel_error=4.678e-02, bs_change=1.559e-03, q_change=1.236e-03, next_amplitude=1.000e+00, converged=no
+Iteration 08: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 07 complete: Ip=927376.824 A, rel_error=6.425e-02, bs_change=2.128e-03, q_change=1.689e-03, next_amplitude=1.000e+00, converged=no
+Iteration 08: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 07 complete: Ip=1017081.620 A, rel_error=2.627e-02, bs_change=6.690e-04, q_change=4.280e-04, next_amplitude=1.000e+00, converged=no
+Iteration 08: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 07 complete: Ip=1052140.294 A, rel_error=6.165e-02, bs_change=1.208e-03, q_change=9.867e-04, next_amplitude=1.000e+00, converged=no
+Iteration 08: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 07 complete: Ip=903653.476 A, rel_error=8.818e-02, bs_change=2.736e-03, q_change=2.438e-03, next_amplitude=1.000e+00, converged=no
+Iteration 08: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 07 complete: Ip=918507.238 A, rel_error=7.319e-02, bs_change=2.345e-03, q_change=2.021e-03, next_amplitude=1.000e+00, converged=no
+Iteration 08: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 07 complete: Ip=889762.132 A, rel_error=1.022e-01, bs_change=2.748e-03, q_change=2.863e-03, next_amplitude=1.000e+00, converged=no
+Iteration 08: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 07 complete: Ip=876774.888 A, rel_error=1.153e-01, bs_change=2.993e-03, q_change=3.299e-03, next_amplitude=1.000e+00, converged=no
+Iteration 08: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 07 complete: Ip=858325.336 A, rel_error=1.339e-01, bs_change=3.552e-03, q_change=4.115e-03, next_amplitude=1.000e+00, converged=no
+Iteration 08: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 07 complete: Ip=847961.984 A, rel_error=1.444e-01, bs_change=3.592e-03, q_change=4.472e-03, next_amplitude=1.000e+00, converged=no
+Iteration 08: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 07 complete: Ip=838295.991 A, rel_error=1.541e-01, bs_change=3.567e-03, q_change=4.816e-03, next_amplitude=1.000e+00, converged=no
+Iteration 08: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 07 complete: Ip=1079625.254 A, rel_error=8.938e-02, bs_change=1.900e-03, q_change=1.397e-03, next_amplitude=1.000e+00, converged=no
+Iteration 08: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 08 complete: Ip=994119.860 A, rel_error=3.101e-03, bs_change=2.620e-05, q_change=3.131e-05, next_amplitude=1.000e+00, converged=no
+Iteration 09: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 08 complete: Ip=962821.482 A, rel_error=2.848e-02, bs_change=5.882e-04, q_change=5.046e-04, next_amplitude=1.000e+00, converged=no
+Iteration 09: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 08 complete: Ip=943959.583 A, rel_error=4.751e-02, bs_change=9.695e-04, q_change=8.075e-04, next_amplitude=1.000e+00, converged=no
+Iteration 09: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 08 complete: Ip=926408.480 A, rel_error=6.522e-02, bs_change=1.312e-03, q_change=1.100e-03, next_amplitude=1.000e+00, converged=no
+Iteration 09: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 08 complete: Ip=1017376.738 A, rel_error=2.657e-02, bs_change=4.064e-04, q_change=2.785e-04, next_amplitude=1.000e+00, converged=no
+Iteration 09: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 08 complete: Ip=1052820.435 A, rel_error=6.233e-02, bs_change=6.906e-04, q_change=6.283e-04, next_amplitude=1.000e+00, converged=no
+Iteration 09: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 08 complete: Ip=902346.305 A, rel_error=8.950e-02, bs_change=1.676e-03, q_change=1.577e-03, next_amplitude=1.000e+00, converged=no
+Iteration 09: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 08 complete: Ip=917407.823 A, rel_error=7.430e-02, bs_change=1.427e-03, q_change=1.307e-03, next_amplitude=1.000e+00, converged=no
+Iteration 09: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 08 complete: Ip=888234.655 A, rel_error=1.037e-01, bs_change=1.726e-03, q_change=1.870e-03, next_amplitude=1.000e+00, converged=no
+Iteration 09: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 08 complete: Ip=875042.085 A, rel_error=1.171e-01, bs_change=1.887e-03, q_change=2.154e-03, next_amplitude=1.000e+00, converged=no
+Iteration 09: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 09 complete: Ip=994108.864 A, rel_error=3.090e-03, bs_change=1.807e-05, q_change=2.127e-05, next_amplitude=1.000e+00, converged=no
+Iteration 10: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 08 complete: Ip=856268.116 A, rel_error=1.360e-01, bs_change=2.250e-03, q_change=2.691e-03, next_amplitude=1.000e+00, converged=no
+Iteration 09: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 08 complete: Ip=845746.010 A, rel_error=1.466e-01, bs_change=2.282e-03, q_change=2.925e-03, next_amplitude=1.000e+00, converged=no
+Iteration 09: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 08 complete: Ip=1080646.587 A, rel_error=9.041e-02, bs_change=1.118e-03, q_change=9.001e-04, next_amplitude=1.000e+00, converged=no
+Iteration 09: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 08 complete: Ip=835929.721 A, rel_error=1.565e-01, bs_change=2.314e-03, q_change=3.150e-03, next_amplitude=1.000e+00, converged=no
+Iteration 09: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 09 complete: Ip=962522.949 A, rel_error=2.878e-02, bs_change=3.670e-04, q_change=3.302e-04, next_amplitude=1.000e+00, converged=no
+Iteration 10: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 09 complete: Ip=943492.109 A, rel_error=4.798e-02, bs_change=6.064e-04, q_change=5.296e-04, next_amplitude=1.000e+00, converged=no
+Iteration 10: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 09 complete: Ip=925789.863 A, rel_error=6.585e-02, bs_change=8.130e-04, q_change=7.187e-04, next_amplitude=1.000e+00, converged=no
+Iteration 10: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 09 complete: Ip=1017566.167 A, rel_error=2.676e-02, bs_change=2.493e-04, q_change=1.827e-04, next_amplitude=1.000e+00, converged=no
+Iteration 10: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 09 complete: Ip=1053246.765 A, rel_error=6.276e-02, bs_change=4.016e-04, q_change=4.035e-04, next_amplitude=1.000e+00, converged=no
+Iteration 10: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 09 complete: Ip=901516.083 A, rel_error=9.034e-02, bs_change=1.029e-03, q_change=1.022e-03, next_amplitude=1.000e+00, converged=no
+Iteration 10: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 09 complete: Ip=916710.394 A, rel_error=7.501e-02, bs_change=8.715e-04, q_change=8.469e-04, next_amplitude=1.000e+00, converged=no
+Iteration 10: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 09 complete: Ip=887255.146 A, rel_error=1.047e-01, bs_change=1.084e-03, q_change=1.221e-03, next_amplitude=1.000e+00, converged=no
+Iteration 10: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 09 complete: Ip=873930.953 A, rel_error=1.182e-01, bs_change=1.192e-03, q_change=1.406e-03, next_amplitude=1.000e+00, converged=no
+Iteration 10: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 10 complete: Ip=994101.258 A, rel_error=3.082e-03, bs_change=1.245e-05, q_change=1.446e-05, next_amplitude=1.000e+00, converged=no
+Iteration 11: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 10 complete: Ip=962331.174 A, rel_error=2.898e-02, bs_change=2.310e-04, q_change=2.170e-04, next_amplitude=1.000e+00, converged=no
+Iteration 11: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 09 complete: Ip=854948.569 A, rel_error=1.373e-01, bs_change=1.424e-03, q_change=1.756e-03, next_amplitude=1.000e+00, converged=no
+Iteration 10: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 09 complete: Ip=844323.955 A, rel_error=1.480e-01, bs_change=1.450e-03, q_change=1.908e-03, next_amplitude=1.000e+00, converged=no
+Iteration 10: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 09 complete: Ip=1081294.871 A, rel_error=9.106e-02, bs_change=6.700e-04, q_change=5.852e-04, next_amplitude=1.000e+00, converged=no
+Iteration 10: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 09 complete: Ip=834410.071 A, rel_error=1.581e-01, bs_change=1.554e-03, q_change=2.054e-03, next_amplitude=1.000e+00, converged=no
+Iteration 10: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 10 complete: Ip=943191.360 A, rel_error=4.829e-02, bs_change=3.817e-04, q_change=3.487e-04, next_amplitude=1.000e+00, converged=no
+Iteration 11: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 10 complete: Ip=925393.386 A, rel_error=6.625e-02, bs_change=5.063e-04, q_change=4.712e-04, next_amplitude=1.000e+00, converged=no
+Iteration 11: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 10 complete: Ip=1017688.355 A, rel_error=2.688e-02, bs_change=1.544e-04, q_change=1.207e-04, next_amplitude=1.000e+00, converged=no
+Iteration 11: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 10 complete: Ip=1053515.923 A, rel_error=6.303e-02, bs_change=2.378e-04, q_change=2.608e-04, next_amplitude=1.000e+00, converged=no
+Iteration 11: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 10 complete: Ip=900987.565 A, rel_error=9.087e-02, bs_change=6.328e-04, q_change=6.632e-04, next_amplitude=1.000e+00, converged=no
+Iteration 11: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 10 complete: Ip=916266.727 A, rel_error=7.546e-02, bs_change=5.342e-04, q_change=5.504e-04, next_amplitude=1.000e+00, converged=no
+Iteration 11: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 11 complete: Ip=994096.010 A, rel_error=3.077e-03, bs_change=8.558e-06, q_change=9.834e-06, next_amplitude=1.000e+00, converged=no
+Iteration 12: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 10 complete: Ip=886626.128 A, rel_error=1.054e-01, bs_change=6.825e-04, q_change=7.978e-04, next_amplitude=1.000e+00, converged=no
+Iteration 11: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 10 complete: Ip=873218.022 A, rel_error=1.189e-01, bs_change=7.503e-04, q_change=9.165e-04, next_amplitude=1.000e+00, converged=no
+Iteration 11: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 11 complete: Ip=962207.492 A, rel_error=2.910e-02, bs_change=1.467e-04, q_change=1.432e-04, next_amplitude=1.000e+00, converged=no
+Iteration 12: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 10 complete: Ip=854101.474 A, rel_error=1.382e-01, bs_change=9.004e-04, q_change=1.145e-03, next_amplitude=1.000e+00, converged=no
+Iteration 11: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 11 complete: Ip=942997.228 A, rel_error=4.848e-02, bs_change=2.418e-04, q_change=2.303e-04, next_amplitude=1.000e+00, converged=no
+Iteration 12: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 10 complete: Ip=843410.971 A, rel_error=1.490e-01, bs_change=9.387e-04, q_change=1.243e-03, next_amplitude=1.000e+00, converged=no
+Iteration 11: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 10 complete: Ip=1081709.512 A, rel_error=9.148e-02, bs_change=4.094e-04, q_change=3.829e-04, next_amplitude=1.000e+00, converged=no
+Iteration 11: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 10 complete: Ip=833430.064 A, rel_error=1.590e-01, bs_change=9.916e-04, q_change=1.344e-03, next_amplitude=1.000e+00, converged=no
+Iteration 11: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 11 complete: Ip=1017767.534 A, rel_error=2.696e-02, bs_change=9.659e-05, q_change=8.009e-05, next_amplitude=1.000e+00, converged=no
+Iteration 12: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 11 complete: Ip=925138.482 A, rel_error=6.650e-02, bs_change=3.172e-04, q_change=3.099e-04, next_amplitude=1.000e+00, converged=no
+Iteration 12: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 11 complete: Ip=1053686.979 A, rel_error=6.321e-02, bs_change=1.435e-04, q_change=1.694e-04, next_amplitude=1.000e+00, converged=no
+Iteration 12: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 11 complete: Ip=900650.345 A, rel_error=9.121e-02, bs_change=3.905e-04, q_change=4.314e-04, next_amplitude=1.000e+00, converged=no
+Iteration 12: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 11 complete: Ip=915983.715 A, rel_error=7.574e-02, bs_change=3.289e-04, q_change=3.586e-04, next_amplitude=1.000e+00, converged=no
+Iteration 12: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 12 complete: Ip=994092.394 A, rel_error=3.073e-03, bs_change=5.875e-06, q_change=6.689e-06, next_amplitude=1.000e+00, converged=no
+Iteration 13: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 11 complete: Ip=886221.612 A, rel_error=1.058e-01, bs_change=4.303e-04, q_change=5.218e-04, next_amplitude=1.000e+00, converged=no
+Iteration 12: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 12 complete: Ip=962127.421 A, rel_error=2.918e-02, bs_change=9.392e-05, q_change=9.484e-05, next_amplitude=1.000e+00, converged=no
+Iteration 13: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 11 complete: Ip=872760.034 A, rel_error=1.194e-01, bs_change=4.730e-04, q_change=5.980e-04, next_amplitude=1.000e+00, converged=no
+Iteration 12: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 12 complete: Ip=942871.511 A, rel_error=4.861e-02, bs_change=1.542e-04, q_change=1.526e-04, next_amplitude=1.000e+00, converged=no
+Iteration 13: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 11 complete: Ip=853557.179 A, rel_error=1.387e-01, bs_change=5.696e-04, q_change=7.464e-04, next_amplitude=1.000e+00, converged=no
+Iteration 12: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 12 complete: Ip=1017819.060 A, rel_error=2.701e-02, bs_change=6.101e-05, q_change=5.335e-05, next_amplitude=1.000e+00, converged=no
+Iteration 13: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 12 complete: Ip=924974.096 A, rel_error=6.667e-02, bs_change=1.999e-04, q_change=2.044e-04, next_amplitude=1.000e+00, converged=no
+Iteration 13: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 12 complete: Ip=1053796.349 A, rel_error=6.332e-02, bs_change=8.826e-05, q_change=1.104e-04, next_amplitude=1.000e+00, converged=no
+Iteration 13: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 11 complete: Ip=842825.364 A, rel_error=1.496e-01, bs_change=6.171e-04, q_change=8.074e-04, next_amplitude=1.000e+00, converged=no
+Iteration 12: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 11 complete: Ip=1081976.542 A, rel_error=9.175e-02, bs_change=2.547e-04, q_change=2.518e-04, next_amplitude=1.000e+00, converged=no
+Iteration 12: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 11 complete: Ip=832797.634 A, rel_error=1.597e-01, bs_change=6.327e-04, q_change=8.791e-04, next_amplitude=1.000e+00, converged=no
+Iteration 12: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 13 complete: Ip=994089.907 A, rel_error=3.070e-03, bs_change=4.028e-06, q_change=4.551e-06, next_amplitude=1.000e+00, converged=no
+Iteration 14: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 12 complete: Ip=900434.703 A, rel_error=9.143e-02, bs_change=2.355e-04, q_change=2.813e-04, next_amplitude=1.000e+00, converged=no
+Iteration 13: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 12 complete: Ip=915802.696 A, rel_error=7.592e-02, bs_change=2.035e-04, q_change=2.343e-04, next_amplitude=1.000e+00, converged=no
+Iteration 13: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 13 complete: Ip=962075.395 A, rel_error=2.923e-02, bs_change=6.062e-05, q_change=6.300e-05, next_amplitude=1.000e+00, converged=no
+Iteration 14: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 12 complete: Ip=885961.107 A, rel_error=1.060e-01, bs_change=2.719e-04, q_change=3.417e-04, next_amplitude=1.000e+00, converged=no
+Iteration 13: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 12 complete: Ip=872465.470 A, rel_error=1.197e-01, bs_change=2.986e-04, q_change=3.905e-04, next_amplitude=1.000e+00, converged=no
+Iteration 13: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 13 complete: Ip=942789.846 A, rel_error=4.869e-02, bs_change=9.897e-05, q_change=1.014e-04, next_amplitude=1.000e+00, converged=no
+Iteration 14: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 13 complete: Ip=1017852.724 A, rel_error=2.705e-02, bs_change=3.890e-05, q_change=3.564e-05, next_amplitude=1.000e+00, converged=no
+Iteration 14: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 13 complete: Ip=924867.774 A, rel_error=6.678e-02, bs_change=1.267e-04, q_change=1.352e-04, next_amplitude=1.000e+00, converged=no
+Iteration 14: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 13 complete: Ip=1053866.660 A, rel_error=6.339e-02, bs_change=5.520e-05, q_change=7.220e-05, next_amplitude=1.000e+00, converged=no
+Iteration 14: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 12 complete: Ip=853207.141 A, rel_error=1.391e-01, bs_change=3.605e-04, q_change=4.867e-04, next_amplitude=1.000e+00, converged=no
+Iteration 13: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 12 complete: Ip=842447.283 A, rel_error=1.499e-01, bs_change=3.963e-04, q_change=5.285e-04, next_amplitude=1.000e+00, converged=no
+Iteration 13: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 12 complete: Ip=1082149.552 A, rel_error=9.193e-02, bs_change=1.611e-04, q_change=1.661e-04, next_amplitude=1.000e+00, converged=no
+Iteration 13: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 14 complete: Ip=994088.200 A, rel_error=3.069e-03, bs_change=2.758e-06, q_change=3.096e-06, next_amplitude=1.000e+00, converged=no
+Iteration 15: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 12 complete: Ip=832389.235 A, rel_error=1.601e-01, bs_change=4.038e-04, q_change=5.747e-04, next_amplitude=1.000e+00, converged=no
+Iteration 13: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 13 complete: Ip=900296.322 A, rel_error=9.157e-02, bs_change=1.356e-04, q_change=1.840e-04, next_amplitude=1.000e+00, converged=no
+Iteration 14: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 13 complete: Ip=915686.610 A, rel_error=7.604e-02, bs_change=1.266e-04, q_change=1.534e-04, next_amplitude=1.000e+00, converged=no
+Iteration 14: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 14 complete: Ip=962041.474 A, rel_error=2.927e-02, bs_change=3.942e-05, q_change=4.196e-05, next_amplitude=1.000e+00, converged=no
+Iteration 15: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 13 complete: Ip=885793.105 A, rel_error=1.062e-01, bs_change=1.722e-04, q_change=2.241e-04, next_amplitude=1.000e+00, converged=no
+Iteration 14: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 13 complete: Ip=872275.784 A, rel_error=1.198e-01, bs_change=1.889e-04, q_change=2.553e-04, next_amplitude=1.000e+00, converged=no
+Iteration 14: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 14 complete: Ip=942736.640 A, rel_error=4.875e-02, bs_change=6.391e-05, q_change=6.752e-05, next_amplitude=1.000e+00, converged=no
+Iteration 15: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 14 complete: Ip=1017874.797 A, rel_error=2.707e-02, bs_change=2.501e-05, q_change=2.386e-05, next_amplitude=1.000e+00, converged=no
+Iteration 15: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 14 complete: Ip=924798.815 A, rel_error=6.685e-02, bs_change=8.082e-05, q_change=8.963e-05, next_amplitude=1.000e+00, converged=no
+Iteration 15: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 14 complete: Ip=1053912.085 A, rel_error=6.343e-02, bs_change=3.504e-05, q_change=4.733e-05, next_amplitude=1.000e+00, converged=no
+Iteration 15: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 15 complete: Ip=994087.028 A, rel_error=3.068e-03, bs_change=1.887e-06, q_change=2.107e-06, next_amplitude=1.000e+00, converged=no
+Iteration 16: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 13 complete: Ip=852981.830 A, rel_error=1.393e-01, bs_change=2.284e-04, q_change=3.175e-04, next_amplitude=1.000e+00, converged=no
+Iteration 14: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 13 complete: Ip=1082262.252 A, rel_error=9.204e-02, bs_change=1.033e-04, q_change=1.099e-04, next_amplitude=1.000e+00, converged=no
+Iteration 14: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 13 complete: Ip=842202.892 A, rel_error=1.502e-01, bs_change=2.529e-04, q_change=3.462e-04, next_amplitude=1.000e+00, converged=no
+Iteration 14: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 14 complete: Ip=900206.823 A, rel_error=9.166e-02, bs_change=8.635e-05, q_change=1.211e-04, next_amplitude=1.000e+00, converged=no
+Iteration 15: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 13 complete: Ip=832125.325 A, rel_error=1.604e-01, bs_change=2.579e-04, q_change=3.759e-04, next_amplitude=1.000e+00, converged=no
+Iteration 14: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 14 complete: Ip=915611.977 A, rel_error=7.612e-02, bs_change=7.920e-05, q_change=1.007e-04, next_amplitude=1.000e+00, converged=no
+Iteration 15: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 15 complete: Ip=962019.284 A, rel_error=2.929e-02, bs_change=2.581e-05, q_change=2.802e-05, next_amplitude=1.000e+00, converged=no
+Iteration 16: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 14 complete: Ip=885684.609 A, rel_error=1.063e-01, bs_change=1.093e-04, q_change=1.471e-04, next_amplitude=1.000e+00, converged=no
+Iteration 15: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 15 complete: Ip=942701.877 A, rel_error=4.878e-02, bs_change=4.150e-05, q_change=4.506e-05, next_amplitude=1.000e+00, converged=no
+Iteration 16: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 14 complete: Ip=872153.490 A, rel_error=1.200e-01, bs_change=1.197e-04, q_change=1.671e-04, next_amplitude=1.000e+00, converged=no
+Iteration 15: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 15 complete: Ip=1017889.317 A, rel_error=2.708e-02, bs_change=1.621e-05, q_change=1.600e-05, next_amplitude=1.000e+00, converged=no
+Iteration 16: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 15 complete: Ip=924753.968 A, rel_error=6.689e-02, bs_change=5.185e-05, q_change=5.953e-05, next_amplitude=1.000e+00, converged=no
+Iteration 16: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 15 complete: Ip=1053941.563 A, rel_error=6.346e-02, bs_change=2.253e-05, q_change=3.109e-05, next_amplitude=1.000e+00, converged=no
+Iteration 16: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 16 complete: Ip=994086.225 A, rel_error=3.067e-03, bs_change=1.290e-06, q_change=1.434e-06, next_amplitude=1.000e+00, converged=no
+Iteration 17: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 14 complete: Ip=852836.672 A, rel_error=1.395e-01, bs_change=1.449e-04, q_change=2.074e-04, next_amplitude=1.000e+00, converged=no
+Iteration 15: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 15 complete: Ip=900148.849 A, rel_error=9.172e-02, bs_change=5.518e-05, q_change=7.981e-05, next_amplitude=1.000e+00, converged=no
+Iteration 16: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 14 complete: Ip=1082336.015 A, rel_error=9.211e-02, bs_change=6.700e-05, q_change=7.287e-05, next_amplitude=1.000e+00, converged=no
+Iteration 15: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 14 complete: Ip=842044.787 A, rel_error=1.503e-01, bs_change=1.615e-04, q_change=2.270e-04, next_amplitude=1.000e+00, converged=no
+Iteration 15: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 14 complete: Ip=831954.669 A, rel_error=1.605e-01, bs_change=1.648e-04, q_change=2.459e-04, next_amplitude=1.000e+00, converged=no
+Iteration 15: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 15 complete: Ip=915563.878 A, rel_error=7.616e-02, bs_change=4.983e-05, q_change=6.619e-05, next_amplitude=1.000e+00, converged=no
+Iteration 16: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 16 complete: Ip=962004.724 A, rel_error=2.930e-02, bs_change=1.700e-05, q_change=1.874e-05, next_amplitude=1.000e+00, converged=no
+Iteration 17: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 16 complete: Ip=942679.104 A, rel_error=4.880e-02, bs_change=2.710e-05, q_change=3.012e-05, next_amplitude=1.000e+00, converged=no
+Iteration 17: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 15 complete: Ip=885614.447 A, rel_error=1.064e-01, bs_change=6.959e-05, q_change=9.675e-05, next_amplitude=1.000e+00, converged=no
+Iteration 16: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 16 complete: Ip=1017898.897 A, rel_error=2.709e-02, bs_change=1.057e-05, q_change=1.074e-05, next_amplitude=1.000e+00, converged=no
+Iteration 17: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 16 complete: Ip=1053960.767 A, rel_error=6.348e-02, bs_change=1.464e-05, q_change=2.046e-05, next_amplitude=1.000e+00, converged=no
+Iteration 17: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 15 complete: Ip=872074.553 A, rel_error=1.200e-01, bs_change=7.599e-05, q_change=1.095e-04, next_amplitude=1.000e+00, converged=no
+Iteration 16: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 16 complete: Ip=924724.729 A, rel_error=6.692e-02, bs_change=3.346e-05, q_change=3.961e-05, next_amplitude=1.000e+00, converged=no
+Iteration 17: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 17 complete: Ip=994085.675 A, rel_error=3.066e-03, bs_change=8.806e-07, q_change=9.761e-07, next_amplitude=1.000e+00, converged=no
+Iteration 18: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 16 complete: Ip=900111.238 A, rel_error=9.176e-02, bs_change=3.538e-05, q_change=5.266e-05, next_amplitude=1.000e+00, converged=no
+Iteration 17: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 15 complete: Ip=852743.071 A, rel_error=1.396e-01, bs_change=9.202e-05, q_change=1.355e-04, next_amplitude=1.000e+00, converged=no
+Iteration 16: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 15 complete: Ip=1082384.494 A, rel_error=9.216e-02, bs_change=4.389e-05, q_change=4.840e-05, next_amplitude=1.000e+00, converged=no
+Iteration 16: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 17 complete: Ip=961995.142 A, rel_error=2.931e-02, bs_change=1.126e-05, q_change=1.256e-05, next_amplitude=1.000e+00, converged=no
+Iteration 18: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 15 complete: Ip=841942.419 A, rel_error=1.505e-01, bs_change=1.033e-04, q_change=1.489e-04, next_amplitude=1.000e+00, converged=no
+Iteration 16: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 16 complete: Ip=915532.808 A, rel_error=7.620e-02, bs_change=3.152e-05, q_change=4.359e-05, next_amplitude=1.000e+00, converged=no
+Iteration 17: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 15 complete: Ip=831844.238 A, rel_error=1.606e-01, bs_change=1.054e-04, q_change=1.610e-04, next_amplitude=1.000e+00, converged=no
+Iteration 16: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 17 complete: Ip=942664.148 A, rel_error=4.882e-02, bs_change=1.778e-05, q_change=2.017e-05, next_amplitude=1.000e+00, converged=no
+Iteration 18: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 17 complete: Ip=1017905.234 A, rel_error=2.710e-02, bs_change=6.938e-06, q_change=7.219e-06, next_amplitude=1.000e+00, converged=no
+Iteration 18: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 16 complete: Ip=885569.014 A, rel_error=1.064e-01, bs_change=4.442e-05, q_change=6.370e-05, next_amplitude=1.000e+00, converged=no
+Iteration 17: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 17 complete: Ip=1053973.323 A, rel_error=6.349e-02, bs_change=9.590e-06, q_change=1.348e-05, next_amplitude=1.000e+00, converged=no
+Iteration 18: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 18 complete: Ip=994085.298 A, rel_error=3.066e-03, bs_change=6.008e-07, q_change=6.643e-07, next_amplitude=1.000e+00, converged=no
+Iteration 19: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 17 complete: Ip=924705.620 A, rel_error=6.694e-02, bs_change=2.170e-05, q_change=2.640e-05, next_amplitude=1.000e+00, converged=no
+Iteration 18: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 16 complete: Ip=872023.543 A, rel_error=1.201e-01, bs_change=4.836e-05, q_change=7.189e-05, next_amplitude=1.000e+00, converged=no
+Iteration 17: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 17 complete: Ip=900086.801 A, rel_error=9.178e-02, bs_change=2.277e-05, q_change=3.479e-05, next_amplitude=1.000e+00, converged=no
+Iteration 18: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 18 complete: Ip=961988.820 A, rel_error=2.932e-02, bs_change=7.487e-06, q_change=8.435e-06, next_amplitude=1.000e+00, converged=no
+Iteration 19: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 16 complete: Ip=852682.664 A, rel_error=1.396e-01, bs_change=5.853e-05, q_change=8.867e-05, next_amplitude=1.000e+00, converged=no
+Iteration 17: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 17 complete: Ip=915512.694 A, rel_error=7.622e-02, bs_change=2.005e-05, q_change=2.875e-05, next_amplitude=1.000e+00, converged=no
+Iteration 18: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 16 complete: Ip=1082416.473 A, rel_error=9.219e-02, bs_change=2.897e-05, q_change=3.220e-05, next_amplitude=1.000e+00, converged=no
+Iteration 17: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 16 complete: Ip=841876.086 A, rel_error=1.505e-01, bs_change=6.616e-05, q_change=9.778e-05, next_amplitude=1.000e+00, converged=no
+Iteration 17: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 18 complete: Ip=942654.302 A, rel_error=4.883e-02, bs_change=1.172e-05, q_change=1.352e-05, next_amplitude=1.000e+00, converged=no
+Iteration 19: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 16 complete: Ip=831772.736 A, rel_error=1.607e-01, bs_change=6.748e-05, q_change=1.055e-04, next_amplitude=1.000e+00, converged=no
+Iteration 17: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 18 complete: Ip=1017909.436 A, rel_error=2.711e-02, bs_change=4.577e-06, q_change=4.856e-06, next_amplitude=1.000e+00, converged=no
+Iteration 19: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 19 complete: Ip=994085.041 A, rel_error=3.066e-03, bs_change=4.101e-07, q_change=4.523e-07, next_amplitude=n/a, converged=no
+Iteration 18 complete: Ip=1053981.557 A, rel_error=6.350e-02, bs_change=6.324e-06, q_change=8.901e-06, next_amplitude=1.000e+00, converged=no
+Iteration 19: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 18 complete: Ip=924693.104 A, rel_error=6.695e-02, bs_change=1.414e-05, q_change=1.762e-05, next_amplitude=1.000e+00, converged=no
+Iteration 19: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 17 complete: Ip=885539.556 A, rel_error=1.065e-01, bs_change=2.843e-05, q_change=4.199e-05, next_amplitude=1.000e+00, converged=no
+Iteration 18: running CHEASE (amplitude=1.000000, qspec=on)
+case omt1p0_omne1p0: done
+Iteration 17 complete: Ip=871990.542 A, rel_error=1.201e-01, bs_change=3.084e-05, q_change=4.722e-05, next_amplitude=1.000e+00, converged=no
+Iteration 18: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 18 complete: Ip=900070.902 A, rel_error=9.180e-02, bs_change=1.469e-05, q_change=2.300e-05, next_amplitude=1.000e+00, converged=no
+Iteration 19: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 19 complete: Ip=961984.637 A, rel_error=2.932e-02, bs_change=5.000e-06, q_change=5.671e-06, next_amplitude=n/a, converged=no
+case omt0p9_omne1p1: done
+Iteration 18 complete: Ip=915499.645 A, rel_error=7.623e-02, bs_change=1.282e-05, q_change=1.899e-05, next_amplitude=1.000e+00, converged=no
+Iteration 19: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 17 complete: Ip=852643.645 A, rel_error=1.397e-01, bs_change=3.728e-05, q_change=5.806e-05, next_amplitude=1.000e+00, converged=no
+Iteration 18: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 19 complete: Ip=942647.807 A, rel_error=4.884e-02, bs_change=7.752e-06, q_change=9.076e-06, next_amplitude=n/a, converged=no
+case omt0p9_omne1p0: done
+Iteration 17 complete: Ip=1082437.635 A, rel_error=9.222e-02, bs_change=1.924e-05, q_change=2.146e-05, next_amplitude=1.000e+00, converged=no
+Iteration 18: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 19 complete: Ip=1017912.229 A, rel_error=2.711e-02, bs_change=3.032e-06, q_change=3.268e-06, next_amplitude=n/a, converged=no
+Iteration 17 complete: Ip=841833.066 A, rel_error=1.506e-01, bs_change=4.243e-05, q_change=6.426e-05, next_amplitude=1.000e+00, converged=no
+Iteration 18: running CHEASE (amplitude=1.000000, qspec=on)
+case omt1p0_omne1p1: done
+Iteration 19 complete: Ip=1053986.972 A, rel_error=6.351e-02, bs_change=4.193e-06, q_change=5.885e-06, next_amplitude=n/a, converged=no
+case omt1p1_omne1p0: done
+Iteration 17 complete: Ip=831726.409 A, rel_error=1.608e-01, bs_change=4.325e-05, q_change=6.916e-05, next_amplitude=1.000e+00, converged=no
+Iteration 18: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 19 complete: Ip=924684.888 A, rel_error=6.696e-02, bs_change=9.257e-06, q_change=1.177e-05, next_amplitude=n/a, converged=no
+case omt0p9_omne0p9: done
+Iteration 18 complete: Ip=885520.432 A, rel_error=1.065e-01, bs_change=1.825e-05, q_change=2.770e-05, next_amplitude=1.000e+00, converged=no
+Iteration 19: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 18 complete: Ip=871969.168 A, rel_error=1.202e-01, bs_change=1.971e-05, q_change=3.106e-05, next_amplitude=1.000e+00, converged=no
+Iteration 19: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 19 complete: Ip=900060.543 A, rel_error=9.181e-02, bs_change=9.514e-06, q_change=1.523e-05, next_amplitude=n/a, converged=no
+case omt0p8_omne1p0: done
+Iteration 19 complete: Ip=915491.163 A, rel_error=7.624e-02, bs_change=8.235e-06, q_change=1.255e-05, next_amplitude=n/a, converged=no
+case omt0p8_omne1p1: done
+Iteration 18 complete: Ip=852618.421 A, rel_error=1.397e-01, bs_change=2.378e-05, q_change=3.806e-05, next_amplitude=1.000e+00, converged=no
+Iteration 19: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 18 complete: Ip=1082451.677 A, rel_error=9.223e-02, bs_change=1.284e-05, q_change=1.432e-05, next_amplitude=1.000e+00, converged=no
+Iteration 19: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 18 complete: Ip=841805.147 A, rel_error=1.506e-01, bs_change=2.724e-05, q_change=4.227e-05, next_amplitude=1.000e+00, converged=no
+Iteration 19: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 19 complete: Ip=885508.001 A, rel_error=1.065e-01, bs_change=1.174e-05, q_change=1.830e-05, next_amplitude=n/a, converged=no
+Iteration 18 complete: Ip=831696.372 A, rel_error=1.608e-01, bs_change=2.775e-05, q_change=4.537e-05, next_amplitude=1.000e+00, converged=no
+Iteration 19: running CHEASE (amplitude=1.000000, qspec=on)
+case omt0p8_omne0p9: done
+Iteration 19 complete: Ip=871955.310 A, rel_error=1.202e-01, bs_change=1.263e-05, q_change=2.044e-05, next_amplitude=n/a, converged=no
+case omt0p8_omne0p8: done
+Iteration 19 complete: Ip=852602.100 A, rel_error=1.397e-01, bs_change=1.519e-05, q_change=2.496e-05, next_amplitude=n/a, converged=no
+case omt0p7_omne0p9: done
+Iteration 19 complete: Ip=1082461.017 A, rel_error=9.224e-02, bs_change=8.606e-06, q_change=9.564e-06, next_amplitude=n/a, converged=no
+case omt1p1_omne1p1: done
+Iteration 19 complete: Ip=841787.013 A, rel_error=1.506e-01, bs_change=1.752e-05, q_change=2.783e-05, next_amplitude=n/a, converged=no
+case omt0p7_omne0p8: done
+Iteration 19 complete: Ip=831676.886 A, rel_error=1.608e-01, bs_change=1.782e-05, q_change=2.979e-05, next_amplitude=n/a, converged=no
+case omt0p7_omne0p7: done
+Finished: 14 case(s), 0 failed.
