@@ -1,0 +1,355 @@
+[
+  {
+    "shot": "DIIID153764",
+    "a": "chease",
+    "b": "chease_ncscal4",
+    "both_converged": 11,
+    "cases": [
+      {
+        "case": "omt0p7_omne0p7",
+        "max_relative_q_pct": 0.3799334257759468,
+        "max_absolute_shear_difference": 0.2832452419743765
+      },
+      {
+        "case": "omt0p8_omne0p9",
+        "max_relative_q_pct": 0.46314806438804146,
+        "max_absolute_shear_difference": 0.2927417957452043
+      },
+      {
+        "case": "omt0p8_omne1p0",
+        "max_relative_q_pct": 0.4943753335376333,
+        "max_absolute_shear_difference": 0.3141717310729186
+      },
+      {
+        "case": "omt0p8_omne1p1",
+        "max_relative_q_pct": 0.5512057363768363,
+        "max_absolute_shear_difference": 0.34042719385386633
+      },
+      {
+        "case": "omt0p9_omne0p9",
+        "max_relative_q_pct": 0.28425269618190807,
+        "max_absolute_shear_difference": 0.16957083523096905
+      },
+      {
+        "case": "omt0p9_omne1p0",
+        "max_relative_q_pct": 0.35245759127950915,
+        "max_absolute_shear_difference": 0.17356919956185513
+      },
+      {
+        "case": "omt0p9_omne1p1",
+        "max_relative_q_pct": 0.23563926011622716,
+        "max_absolute_shear_difference": 0.18001280913352025
+      },
+      {
+        "case": "omt1p0_omne1p0",
+        "max_relative_q_pct": 0.07034344941405646,
+        "max_absolute_shear_difference": 0.008086337035190017
+      },
+      {
+        "case": "omt1p0_omne1p1",
+        "max_relative_q_pct": 0.1352472277373229,
+        "max_absolute_shear_difference": 0.10465513894641498
+      },
+      {
+        "case": "omt1p1_omne1p0",
+        "max_relative_q_pct": 0.6604635651617841,
+        "max_absolute_shear_difference": 0.4291385225091826
+      },
+      {
+        "case": "omt1p1_omne1p1",
+        "max_relative_q_pct": 0.7473715835225159,
+        "max_absolute_shear_difference": 0.5028935093702527
+      }
+    ]
+  },
+  {
+    "shot": "DIIID153764",
+    "a": "chease_ncscal4",
+    "b": "chease_rhotTopPed0p3_ncscal4",
+    "both_converged": 6,
+    "cases": [
+      {
+        "case": "omt0p8_omne1p0",
+        "max_relative_q_pct": 0.4498753720008408,
+        "max_absolute_shear_difference": 0.06202296400038776
+      },
+      {
+        "case": "omt0p8_omne1p1",
+        "max_relative_q_pct": 0.29614976633643986,
+        "max_absolute_shear_difference": 0.04955966771107523
+      },
+      {
+        "case": "omt0p9_omne1p0",
+        "max_relative_q_pct": 0.24953605915507548,
+        "max_absolute_shear_difference": 0.03755642309092888
+      },
+      {
+        "case": "omt0p9_omne1p1",
+        "max_relative_q_pct": 0.06878755385688606,
+        "max_absolute_shear_difference": 0.020737283546955254
+      },
+      {
+        "case": "omt1p0_omne1p0",
+        "max_relative_q_pct": 8.682704555340592e-08,
+        "max_absolute_shear_difference": 1.7375189020896187e-07
+      },
+      {
+        "case": "omt1p0_omne1p1",
+        "max_relative_q_pct": 0.32962445780591043,
+        "max_absolute_shear_difference": 0.09120424970671737
+      }
+    ]
+  },
+  {
+    "shot": "DIIID162940",
+    "a": "chease",
+    "b": "chease_ncscal4",
+    "both_converged": 8,
+    "cases": [
+      {
+        "case": "omt0p7_omne0p7",
+        "max_relative_q_pct": 0.6483596321629426,
+        "max_absolute_shear_difference": 0.6239708757406985
+      },
+      {
+        "case": "omt0p8_omne0p8",
+        "max_relative_q_pct": 0.7120074776515883,
+        "max_absolute_shear_difference": 0.5196064460810437
+      },
+      {
+        "case": "omt0p9_omne0p9",
+        "max_relative_q_pct": 0.48561318833414413,
+        "max_absolute_shear_difference": 0.31944342266103476
+      },
+      {
+        "case": "omt0p9_omne1p1",
+        "max_relative_q_pct": 0.5369835245685461,
+        "max_absolute_shear_difference": 0.3864486939056846
+      },
+      {
+        "case": "omt1p0_omne1p0",
+        "max_relative_q_pct": 0.06322529059061832,
+        "max_absolute_shear_difference": 0.02604137132608475
+      },
+      {
+        "case": "omt1p0_omne1p1",
+        "max_relative_q_pct": 0.0700585119426389,
+        "max_absolute_shear_difference": 0.04541567140306446
+      },
+      {
+        "case": "omt1p1_omne1p0",
+        "max_relative_q_pct": 0.9083031066345448,
+        "max_absolute_shear_difference": 0.6257966349478408
+      },
+      {
+        "case": "omt1p1_omne1p1",
+        "max_relative_q_pct": 1.1834413722046522,
+        "max_absolute_shear_difference": 0.6136098762097446
+      }
+    ]
+  },
+  {
+    "shot": "DIIID162940",
+    "a": "chease_ncscal4",
+    "b": "chease_rhotTopPed0p3_ncscal4",
+    "both_converged": 11,
+    "cases": [
+      {
+        "case": "omt0p7_omne0p7",
+        "max_relative_q_pct": 0.9259427900261352,
+        "max_absolute_shear_difference": 0.2388479612274219
+      },
+      {
+        "case": "omt0p7_omne0p8",
+        "max_relative_q_pct": 0.7732416632814654,
+        "max_absolute_shear_difference": 0.2372402838944847
+      },
+      {
+        "case": "omt0p7_omne0p9",
+        "max_relative_q_pct": 0.7634271274404525,
+        "max_absolute_shear_difference": 0.24522362972192369
+      },
+      {
+        "case": "omt0p8_omne0p8",
+        "max_relative_q_pct": 1.003221541898247,
+        "max_absolute_shear_difference": 0.3064067469387277
+      },
+      {
+        "case": "omt0p9_omne0p9",
+        "max_relative_q_pct": 0.7028669218758776,
+        "max_absolute_shear_difference": 0.15849454175194122
+      },
+      {
+        "case": "omt0p9_omne1p0",
+        "max_relative_q_pct": 0.43410589346908335,
+        "max_absolute_shear_difference": 0.119573989870843
+      },
+      {
+        "case": "omt0p9_omne1p1",
+        "max_relative_q_pct": 0.13327347791797228,
+        "max_absolute_shear_difference": 0.04433430970540808
+      },
+      {
+        "case": "omt1p0_omne1p0",
+        "max_relative_q_pct": 3.750255661572055e-08,
+        "max_absolute_shear_difference": 1.2211463396027966e-07
+      },
+      {
+        "case": "omt1p0_omne1p1",
+        "max_relative_q_pct": 0.6949539268751082,
+        "max_absolute_shear_difference": 0.23995982585334108
+      },
+      {
+        "case": "omt1p1_omne1p0",
+        "max_relative_q_pct": 1.116078148238775,
+        "max_absolute_shear_difference": 0.272029967037835
+      },
+      {
+        "case": "omt1p1_omne1p1",
+        "max_relative_q_pct": 2.1363993752562926,
+        "max_absolute_shear_difference": 0.5681931360590307
+      }
+    ]
+  },
+  {
+    "shot": "DIIID174082",
+    "a": "chease",
+    "b": "chease_ncscal4",
+    "both_converged": 12,
+    "cases": [
+      {
+        "case": "omt0p7_omne0p7",
+        "max_relative_q_pct": 1.0773229935704398,
+        "max_absolute_shear_difference": 0.5258699883987337
+      },
+      {
+        "case": "omt0p7_omne0p8",
+        "max_relative_q_pct": 1.1677632355204803,
+        "max_absolute_shear_difference": 0.5881737831973961
+      },
+      {
+        "case": "omt0p8_omne0p8",
+        "max_relative_q_pct": 0.9906262578780245,
+        "max_absolute_shear_difference": 0.5434712895211349
+      },
+      {
+        "case": "omt0p8_omne0p9",
+        "max_relative_q_pct": 1.2000088587006852,
+        "max_absolute_shear_difference": 0.5987590496623958
+      },
+      {
+        "case": "omt0p8_omne1p0",
+        "max_relative_q_pct": 1.3488944050198848,
+        "max_absolute_shear_difference": 0.5822217172621511
+      },
+      {
+        "case": "omt0p8_omne1p1",
+        "max_relative_q_pct": 1.2459858414878733,
+        "max_absolute_shear_difference": 0.7155603842484262
+      },
+      {
+        "case": "omt0p9_omne0p9",
+        "max_relative_q_pct": 0.5427678858407115,
+        "max_absolute_shear_difference": 0.3249174772417389
+      },
+      {
+        "case": "omt0p9_omne1p0",
+        "max_relative_q_pct": 0.6812920540840595,
+        "max_absolute_shear_difference": 0.37270287885722264
+      },
+      {
+        "case": "omt0p9_omne1p1",
+        "max_relative_q_pct": 0.714242140075938,
+        "max_absolute_shear_difference": 0.40169647954760845
+      },
+      {
+        "case": "omt1p0_omne1p0",
+        "max_relative_q_pct": 0.1709473605234102,
+        "max_absolute_shear_difference": 0.13472559604009277
+      },
+      {
+        "case": "omt1p0_omne1p1",
+        "max_relative_q_pct": 0.3620051107268041,
+        "max_absolute_shear_difference": 0.2892018588772237
+      },
+      {
+        "case": "omt1p1_omne1p0",
+        "max_relative_q_pct": 1.699551821594536,
+        "max_absolute_shear_difference": 0.9631855863518677
+      }
+    ]
+  },
+  {
+    "shot": "DIIID174082",
+    "a": "chease_ncscal4",
+    "b": "chease_rhotTopPed0p3_ncscal4",
+    "both_converged": 13,
+    "cases": [
+      {
+        "case": "omt0p7_omne0p7",
+        "max_relative_q_pct": 2.3471331342061363,
+        "max_absolute_shear_difference": 1.1948550934351863
+      },
+      {
+        "case": "omt0p7_omne0p8",
+        "max_relative_q_pct": 2.091735037295961,
+        "max_absolute_shear_difference": 1.0802425962651006
+      },
+      {
+        "case": "omt0p7_omne0p9",
+        "max_relative_q_pct": 1.8270616212638813,
+        "max_absolute_shear_difference": 0.9758450572839941
+      },
+      {
+        "case": "omt0p8_omne0p8",
+        "max_relative_q_pct": 1.2772201531925487,
+        "max_absolute_shear_difference": 0.46715963211617506
+      },
+      {
+        "case": "omt0p8_omne0p9",
+        "max_relative_q_pct": 1.1505808655478456,
+        "max_absolute_shear_difference": 0.352682117927527
+      },
+      {
+        "case": "omt0p8_omne1p0",
+        "max_relative_q_pct": 0.8610130870596366,
+        "max_absolute_shear_difference": 0.28843851380441077
+      },
+      {
+        "case": "omt0p8_omne1p1",
+        "max_relative_q_pct": 0.8383382649002957,
+        "max_absolute_shear_difference": 0.4856477261221297
+      },
+      {
+        "case": "omt0p9_omne0p9",
+        "max_relative_q_pct": 1.1360853520306802,
+        "max_absolute_shear_difference": 0.4299920533510635
+      },
+      {
+        "case": "omt0p9_omne1p0",
+        "max_relative_q_pct": 0.8937561829073792,
+        "max_absolute_shear_difference": 0.30445393203638504
+      },
+      {
+        "case": "omt0p9_omne1p1",
+        "max_relative_q_pct": 0.37809513295231634,
+        "max_absolute_shear_difference": 0.19751729819793684
+      },
+      {
+        "case": "omt1p0_omne1p0",
+        "max_relative_q_pct": 0.08793839356748823,
+        "max_absolute_shear_difference": 0.06611859862695457
+      },
+      {
+        "case": "omt1p0_omne1p1",
+        "max_relative_q_pct": 1.0465584954956197,
+        "max_absolute_shear_difference": 0.21661732849046544
+      },
+      {
+        "case": "omt1p1_omne1p0",
+        "max_relative_q_pct": 1.1141372722258902,
+        "max_absolute_shear_difference": 0.2489809996202097
+      }
+    ]
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "shot": "129015",
+    "kind": "source",
+    "old": "C:\\Users\\joesc\\git\\cheaseBS_tests\\data\\129015_129038\\pm0.2_ncscal4_warmup0\\129015\\omt_1.000\\g129015.00409",
+    "new": "C:\\Users\\joesc\\git\\cheaseBS_tests\\data\\lleppin_NSTX_chease_tests\\NSTX129015\\g129015.00409",
+    "old_sha256": "401d7c56c81d92eaabb64edfff84ce2f518be14b0132acbb7c44c1fe79d099c9",
+    "new_sha256": "401d7c56c81d92eaabb64edfff84ce2f518be14b0132acbb7c44c1fe79d099c9",
+    "equal": true
+  },
+  {
+    "shot": "129015",
+    "kind": "profile_e",
+    "old": "C:\\Users\\joesc\\git\\cheaseBS_tests\\data\\129015_129038\\pm0.2_ncscal4_warmup0\\129015\\omt_1.000\\reference_profiles\\REF_profiles_e",
+    "new": "C:\\Users\\joesc\\git\\cheaseBS_tests\\data\\lleppin_NSTX_chease_tests\\NSTX129015\\REF_profiles_e",
+    "old_sha256": "c29d892887ab8bb5b4b6f9aff971a2c921df13555bc6ab4bd807163e095b8c25",
+    "new_sha256": "c29d892887ab8bb5b4b6f9aff971a2c921df13555bc6ab4bd807163e095b8c25",
+    "equal": true
+  },
+  {
+    "shot": "129015",
+    "kind": "profile_i",
+    "old": "C:\\Users\\joesc\\git\\cheaseBS_tests\\data\\129015_129038\\pm0.2_ncscal4_warmup0\\129015\\omt_1.000\\reference_profiles\\REF_profiles_i",
+    "new": "C:\\Users\\joesc\\git\\cheaseBS_tests\\data\\lleppin_NSTX_chease_tests\\NSTX129015\\REF_profiles_i",
+    "old_sha256": "61d927dda614e9ffa03ae1782f9578b55d322f4a2f8d2df749c288f6625f7b61",
+    "new_sha256": "61d927dda614e9ffa03ae1782f9578b55d322f4a2f8d2df749c288f6625f7b61",
+    "equal": true
+  },
+  {
+    "shot": "129015",
+    "kind": "profile_z",
+    "old": "C:\\Users\\joesc\\git\\cheaseBS_tests\\data\\129015_129038\\pm0.2_ncscal4_warmup0\\129015\\omt_1.000\\reference_profiles\\REF_profiles_z",
+    "new": "C:\\Users\\joesc\\git\\cheaseBS_tests\\data\\lleppin_NSTX_chease_tests\\NSTX129015\\REF_profiles_z",
+    "old_sha256": "12b8b35477741a7f3355b4daa886aa4fd82d691e3b82101e84931334bba4b47c",
+    "new_sha256": "12b8b35477741a7f3355b4daa886aa4fd82d691e3b82101e84931334bba4b47c",
+    "equal": true
+  },
+  {
+    "shot": "129038",
+    "kind": "source",
+    "old": "C:\\Users\\joesc\\git\\cheaseBS_tests\\data\\129015_129038\\pm0.2_ncscal4_warmup0\\129038\\omt_1.000\\g129038.00110",
+    "new": "C:\\Users\\joesc\\git\\cheaseBS_tests\\data\\lleppin_NSTX_chease_tests\\NSTX129038\\g129038.00110",
+    "old_sha256": "8178b8f6ae7e2d9be219979a58f15f3822597266067e955f17200fc491e54a46",
+    "new_sha256": "8178b8f6ae7e2d9be219979a58f15f3822597266067e955f17200fc491e54a46",
+    "equal": true
+  },
+  {
+    "shot": "129038",
+    "kind": "profile_e",
+    "old": "C:\\Users\\joesc\\git\\cheaseBS_tests\\data\\129015_129038\\pm0.2_ncscal4_warmup0\\129038\\omt_1.000\\reference_profiles\\REF_profiles_e",
+    "new": "C:\\Users\\joesc\\git\\cheaseBS_tests\\data\\lleppin_NSTX_chease_tests\\NSTX129038\\REF_profiles_e",
+    "old_sha256": "77cc5f016f1fe7f8450ac3cefbeb6e1fc59cdf52e51d1a55d141d4be8f43ee3d",
+    "new_sha256": "77cc5f016f1fe7f8450ac3cefbeb6e1fc59cdf52e51d1a55d141d4be8f43ee3d",
+    "equal": true
+  },
+  {
+    "shot": "129038",
+    "kind": "profile_i",
+    "old": "C:\\Users\\joesc\\git\\cheaseBS_tests\\data\\129015_129038\\pm0.2_ncscal4_warmup0\\129038\\omt_1.000\\reference_profiles\\REF_profiles_i",
+    "new": "C:\\Users\\joesc\\git\\cheaseBS_tests\\data\\lleppin_NSTX_chease_tests\\NSTX129038\\REF_profiles_i",
+    "old_sha256": "b0020c5d179fcd904ed18c5964cfa6cd78751a9f873f2b26987a25a965814fef",
+    "new_sha256": "b0020c5d179fcd904ed18c5964cfa6cd78751a9f873f2b26987a25a965814fef",
+    "equal": true
+  },
+  {
+    "shot": "129038",
+    "kind": "profile_z",
+    "old": "C:\\Users\\joesc\\git\\cheaseBS_tests\\data\\129015_129038\\pm0.2_ncscal4_warmup0\\129038\\omt_1.000\\reference_profiles\\REF_profiles_z",
+    "new": "C:\\Users\\joesc\\git\\cheaseBS_tests\\data\\lleppin_NSTX_chease_tests\\NSTX129038\\REF_profiles_z",
+    "old_sha256": "06bf14f5779c2486ba7e7d14f1ec682eecd8d456bae3939f0c4eab65b7bc95e0",
+    "new_sha256": "06bf14f5779c2486ba7e7d14f1ec682eecd8d456bae3939f0c4eab65b7bc95e0",
+    "equal": true
+  }
+]
