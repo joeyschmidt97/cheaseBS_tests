@@ -1,0 +1,39 @@
+{
+  "test": "G",
+  "shot": 132588,
+  "results": {
+    "omt_1.000": "ok",
+    "Te_ped_scale_1.000": "ok"
+  },
+  "settings": {
+    "replay_representation": "istar",
+    "coordinate": "rhop",
+    "bootstrap_mix": 0.1,
+    "amplitude_warmup_iters": 0,
+    "tol_bs": 0.001,
+    "tol_q": 0.001,
+    "tol_ip_rel": 0.001,
+    "max_iter": 40
+  },
+  "namelist": {
+    "NCSCAL": 4
+  },
+  "cases": {
+    "omt_1.000": [
+      [
+        "omt",
+        1.0,
+        {}
+      ]
+    ],
+    "Te_ped_scale_1.000": [
+      [
+        "Te_ped_scale",
+        1.0,
+        {}
+      ]
+    ]
+  },
+  "NSTXU_lithium_study": "569e448",
+  "finished": "2026-10-10T13:37:32"
+}
