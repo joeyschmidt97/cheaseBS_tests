@@ -1,0 +1,165 @@
+{
+    "schema_version": 1,
+    "generated": "2026-10-10T04:20:43",
+    "generated_by": "TPED discharge_tools output_gfile",
+    "discharge": {
+        "shot": 132588,
+        "time_ms": 650,
+        "machine": null,
+        "input_dir": "/global/homes/j/joeschm/data/ST_research/NSTXU_discharges/132588",
+        "source_gfile": "/global/homes/j/joeschm/data/ST_research/NSTXU_discharges/132588/g132588.00650",
+        "source_pfile": "/global/homes/j/joeschm/data/ST_research/NSTXU_discharges/132588/p132588.00650"
+    },
+    "command": {
+        "lines": [
+            "discharge = DischargeData(input_dir='/global/homes/j/joeschm/data/ST_research/NSTXU_discharges/132588')",
+            "phys = DischargePhysics(discharge)",
+            "# fit= was not recorded as an argument; re-running refits from the same data (coefficients under transform_history[].fit_params)",
+            "phys = phys.apply_mtanh_full(var='Te', scale_height=1.0, scale_sol=1.0, scale_width=1.0, shift_pos=0.0, scale_slope=1.0, scale_core_height=1.17, scale_core_width=1.0, pedestal_weight=1.0, ped_threshold=0.85, edge_weight=1.0, edge_threshold=0.99, enforce_quasineutrality=True, qz=6.0)"
+        ],
+        "text": "discharge = DischargeData(input_dir='/global/homes/j/joeschm/data/ST_research/NSTXU_discharges/132588')\nphys = DischargePhysics(discharge)\n# fit= was not recorded as an argument; re-running refits from the same data (coefficients under transform_history[].fit_params)\nphys = phys.apply_mtanh_full(var='Te', scale_height=1.0, scale_sol=1.0, scale_width=1.0, shift_pos=0.0, scale_slope=1.0, scale_core_height=1.17, scale_core_width=1.0, pedestal_weight=1.0, ped_threshold=0.85, edge_weight=1.0, edge_threshold=0.99, enforce_quasineutrality=True, qz=6.0)"
+    },
+    "transform_history": [
+        {
+            "transform": "apply_mtanh_full",
+            "var": "Te",
+            "form": "stefanikova2016_Ffull",
+            "fit_source": "user_supplied",
+            "fit_params": {
+                "b_height": 155.41266392118786,
+                "b_sol": 11.763496201766964,
+                "b_pos": 0.9578835481363622,
+                "b_width": 0.01963846440192659,
+                "b_slope": -0.24787722552483277,
+                "a_height": 1040.0368035832973,
+                "a_width": 0.7952477083985892,
+                "a_exp": 7.287627963654063
+            },
+            "applied_params": {
+                "b_height": 155.41266392118786,
+                "b_sol": 11.763496201766964,
+                "b_pos": 0.9578835481363622,
+                "b_width": 0.01963846440192659,
+                "b_slope": -0.24787722552483277,
+                "a_height": 1216.8430601924579,
+                "a_width": 0.7952477083985892,
+                "a_exp": 7.287627963654063
+            },
+            "rms_residual": 35.77703627675145,
+            "rms_relative": 0.030227558763382123,
+            "scale_height": 1.0,
+            "scale_sol": 1.0,
+            "scale_width": 1.0,
+            "shift_pos": 0.0,
+            "scale_slope": 1.0,
+            "scale_core_height": 1.17,
+            "scale_core_width": 1.0,
+            "pedestal_weight": 1.0,
+            "ped_threshold": 0.85,
+            "edge_weight": 1.0,
+            "edge_threshold": 0.99,
+            "enforce_quasineutrality": true,
+            "qz": 6.0,
+            "quasineutrality_error": null
+        }
+    ],
+    "cheasebs": {
+        "config_template": "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/configs/nstx_cheasebs_config.json",
+        "overrides": {
+            "replay_representation": "jparallel",
+            "coordinate": "rhot",
+            "bootstrap_mix": 0.35,
+            "amplitude_warmup_iters": 0,
+            "tol_bs": 0.001,
+            "tol_q": 0.001,
+            "tol_ip_rel": 0.001,
+            "max_iter": 40
+        },
+        "baseline_dir": null,
+        "baseline_gfile": null,
+        "strict": false,
+        "acceptance": null,
+        "script": "/global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py",
+        "chease_binary": "/global/homes/j/joeschm/simulators/chease/src-f90/chease",
+        "chease_namelist": "/global/homes/j/joeschm/projects/cheaseBS_tests/data/profile_base_132588/I_rawcore/chease_namelist_nstx_ncscal4",
+        "chease_namelist_values": {
+            "RELAX": 0.0,
+            "NDIAGOP": 1,
+            "NBSEXPQ": 0,
+            "NPROPT": 2,
+            "NIDEAL": 6,
+            "NS": 60,
+            "NT": 60,
+            "NPSI": 220,
+            "NCHI": 220,
+            "NISO": 220,
+            "NTNOVA": 12,
+            "NCSCAL": 4,
+            "NOPT": 0,
+            "NSURF": 6,
+            "NPPFUN": 4,
+            "NFUNC": 4,
+            "NDIFPS": 0,
+            "NDIFT": 1,
+            "NMESHC": 1,
+            "NPOIDC": 2,
+            "SOLPDC": 0.7,
+            "CPLACE": [
+                0.95,
+                0.99,
+                1.0
+            ],
+            "CWIDTH": [
+                0.1,
+                0.02,
+                0.05
+            ],
+            "NTURN": 20,
+            "NBLC0": 16,
+            "NPPR": 24,
+            "NINMAP": 40,
+            "NINSCA": 40,
+            "NSYM": 0,
+            "NEGP": -1,
+            "NER": 1,
+            "NEQDSK": 1,
+            "NRBOX": 513,
+            "NZBOX": 513,
+            "EPSLON": 1e-10,
+            "ETAEI": 0.33,
+            "RPEOP": 0.5,
+            "RZION": 1.5,
+            "GAMMA": 1.6666666667,
+            "TENSPROF": 0.0,
+            "TENSBND": [
+                -0.3,
+                "/"
+            ]
+        },
+        "reference_profiles_used": true
+    },
+    "outputs": {
+        "baseline_gfile_written": "/global/homes/j/joeschm/projects/cheaseBS_tests/data/profile_base_132588/I_rawcore/132588/fitTe_rawcore_1.17/g132588.00650",
+        "run_dir": "/pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-20-43-132588_fitTe_rawcore_1.17",
+        "final_dir": "/global/homes/j/joeschm/projects/cheaseBS_tests/data/profile_base_132588/I_rawcore/132588/fitTe_rawcore_1.17",
+        "comment": "132588_fitTe_rawcore_1.17"
+    },
+    "environment": {
+        "tped_repo": "/global/homes/j/joeschm/tools/TPED",
+        "tped_git": {
+            "commit": "562a7acc13d9dff554f5dba636143637d76bcfcc",
+            "branch": "gene_datatree",
+            "dirty": true
+        },
+        "python": "3.10.14",
+        "platform": "Linux-6.4.0-150600.23.125_15.0.29-cray_shasta_c-x86_64-with-glibc2.38",
+        "hostname": "login35",
+        "user": "joeschm",
+        "cwd": "/global/u1/j/joeschm/projects/NSTXU_lithium_study",
+        "argv": [
+            "/global/homes/j/joeschm/projects/NSTXU_lithium_study/scripts/profile_base_tests.py",
+            "I"
+        ]
+    },
+    "plot_caption": "mtanh_full-Te"
+}

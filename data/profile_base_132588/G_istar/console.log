@@ -1,0 +1,36 @@
+=== test G: 2 case(s) -> /global/homes/j/joeschm/projects/cheaseBS_tests/data/profile_base_132588/G_istar ===
+settings: {"replay_representation": "istar", "coordinate": "rhop", "bootstrap_mix": 0.1, "amplitude_warmup_iters": 0, "tol_bs": 0.001, "tol_q": 0.001, "tol_ip_rel": 0.001, "max_iter": 40}
+--- 132588 omt_1.000 : omt 1  ---
+[TPED] transform log: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-15-43-132588_omt_1.000/TPED_transform_log.json
+[cheaseBS] reference profiles: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-15-43-132588_omt_1.000/reference_profiles
+[cheaseBS] running: /global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py --config /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-15-43-132588_omt_1.000/cheasebs_run_config.json
+[cheaseBS] acceptance: ACCEPTED
+[cheaseBS]   Ip error         0.053%  (final 982814.9 A vs reference 983334.8 A)
+[cheaseBS]   q95 error        1.237%
+[cheaseBS]   q edge error    21.366%   <- separatrix-adjacent, see module docstring
+[cheaseBS]   solver flag    converged=True (2 iteration(s)) — recorded, not gated by default
+[cheaseBS] run summary: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-15-43-132588_omt_1.000/run_summary.png
+[cheaseBS]   note: after EQDSK taken from a per-iteration artifact (iteration_01/artifacts/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT) — the run directory root holds no EQDSK*.OUT, so this is the last iteration solved, not necessarily a converged result
+[TPED] iterdb: /global/homes/j/joeschm/projects/cheaseBS_tests/data/profile_base_132588/G_istar/132588/omt_1.000/profiles.iterdb
+[cheaseBS] scratch run directory: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-15-43-132588_omt_1.000
+[cheaseBS] new equilibrium written to: /global/homes/j/joeschm/projects/cheaseBS_tests/data/profile_base_132588/G_istar/132588/omt_1.000/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT
+  gfile   /global/homes/j/joeschm/projects/cheaseBS_tests/data/profile_base_132588/G_istar/132588/omt_1.000/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT
+--- 132588 Te_ped_scale_1.000 : Te_ped_scale 1  ---
+[TPED] transform log: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-17-55-132588_Te_ped_scale_1.000/TPED_transform_log.json
+[cheaseBS] reference profiles: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-17-55-132588_Te_ped_scale_1.000/reference_profiles
+[cheaseBS] running: /global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py --config /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-17-55-132588_Te_ped_scale_1.000/cheasebs_run_config.json
+[cheaseBS] acceptance: REJECTED
+[cheaseBS]   Ip error        17.761%  (final 1157981.4 A vs reference 983334.8 A)
+[cheaseBS]   q95 error       20.497%
+[cheaseBS]   q edge error    35.912%   <- separatrix-adjacent, see module docstring
+[cheaseBS]   solver flag    converged=False (40 iteration(s)) — recorded, not gated by default
+[cheaseBS]   REJECT: Ip error 17.761% exceeds tolerance 3.000% (got 1157981.4 A, target 983334.8 A)
+[cheaseBS] run summary: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-17-55-132588_Te_ped_scale_1.000/run_summary.png
+[cheaseBS]   note: after EQDSK taken from a per-iteration artifact (iteration_39/artifacts/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT) — the run directory root holds no EQDSK*.OUT, so this is the last iteration solved, not necessarily a converged result
+[TPED] iterdb: /global/homes/j/joeschm/projects/cheaseBS_tests/data/profile_base_132588/G_istar/132588/Te_ped_scale_1.000/profiles.iterdb
+[cheaseBS] scratch run directory: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-17-55-132588_Te_ped_scale_1.000
+[cheaseBS] new equilibrium written to: /global/homes/j/joeschm/projects/cheaseBS_tests/data/profile_base_132588/G_istar/132588/Te_ped_scale_1.000/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT
+  gfile   /global/homes/j/joeschm/projects/cheaseBS_tests/data/profile_base_132588/G_istar/132588/Te_ped_scale_1.000/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT
+=== test G: 2/2 ok ===
+compare: /global/cfs/cdirs/m2116/software/conda/envs/TPED/bin/python /global/homes/j/joeschm/tools/TPED/projects/discharge_tools/scripts/compare_cheasebs_runs.py --baseline /global/homes/j/joeschm/data/ST_research/NSTXU_discharges/132588 --variations /global/homes/j/joeschm/projects/cheaseBS_tests/data/profile_base_132588/G_istar/132588 /global/homes/j/joeschm/projects/cheaseBS_tests/data/jparallel_box/132588/132588/omt_1.000 /global/homes/j/joeschm/projects/cheaseBS_tests/data/jparallel_box/132588/132588/Te_ped_scale_1.000 --outdir /global/homes/j/joeschm/projects/cheaseBS_tests/data/profile_base_132588/G_istar --plot-combine mtanh om --edge-by replay_representation --pedestal 0.8,0.98 --slices 0.85 0.9 0.95 0.975
+compare exit 0; figures in /global/homes/j/joeschm/projects/cheaseBS_tests/data/profile_base_132588/G_istar

@@ -1,0 +1,31 @@
+{
+  "test": "I",
+  "shot": 132588,
+  "results": {
+    "fitTe_rawcore_1.17": "ok"
+  },
+  "settings": {
+    "replay_representation": "jparallel",
+    "coordinate": "rhot",
+    "bootstrap_mix": 0.35,
+    "amplitude_warmup_iters": 0,
+    "tol_bs": 0.001,
+    "tol_q": 0.001,
+    "tol_ip_rel": 0.001,
+    "max_iter": 40
+  },
+  "ncscal": 4,
+  "cases": {
+    "fitTe_rawcore_1.17": [
+      [
+        "Te_ped_scale",
+        1.0,
+        {
+          "scale_core_height": 1.17
+        }
+      ]
+    ]
+  },
+  "NSTXU_lithium_study": "80c2b2e",
+  "finished": "2026-10-10T04:42:00"
+}

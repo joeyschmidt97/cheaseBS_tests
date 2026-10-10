@@ -1,0 +1,116 @@
+=== test H: 9 case(s) -> /global/homes/j/joeschm/projects/cheaseBS_tests/data/profile_base_132588/H_fitbase ===
+settings: {"replay_representation": "jparallel", "coordinate": "rhot", "bootstrap_mix": 0.35, "amplitude_warmup_iters": 0, "tol_bs": 0.001, "tol_q": 0.001, "tol_ip_rel": 0.001, "max_iter": 40}
+--- 132588 fitTe_omt_1.000 : Te_ped_scale 1  -> omt 1  ---
+[TPED] transform log: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-16-14-132588_fitTe_omt_1.000/TPED_transform_log.json
+[cheaseBS] reference profiles: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-16-14-132588_fitTe_omt_1.000/reference_profiles
+[cheaseBS] running: /global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py --config /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-16-14-132588_fitTe_omt_1.000/cheasebs_run_config.json
+[cheaseBS] acceptance: ACCEPTED
+[cheaseBS]   Ip error         0.023%  (final 983565.0 A vs reference 983334.8 A)
+[cheaseBS]   q95 error        1.609%
+[cheaseBS]   q edge error    22.550%   <- separatrix-adjacent, see module docstring
+[cheaseBS]   solver flag    converged=True (16 iteration(s)) — recorded, not gated by default
+[cheaseBS] run summary: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-16-14-132588_fitTe_omt_1.000/run_summary.png
+[cheaseBS]   note: after EQDSK taken from a per-iteration artifact (iteration_15/artifacts/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT) — the run directory root holds no EQDSK*.OUT, so this is the last iteration solved, not necessarily a converged result
+[TPED] iterdb: /global/homes/j/joeschm/projects/cheaseBS_tests/data/profile_base_132588/H_fitbase/132588/fitTe_omt_1.000/profiles.iterdb
+[cheaseBS] scratch run directory: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-16-14-132588_fitTe_omt_1.000
+[cheaseBS] new equilibrium written to: /global/homes/j/joeschm/projects/cheaseBS_tests/data/profile_base_132588/H_fitbase/132588/fitTe_omt_1.000/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT
+  gfile   /global/homes/j/joeschm/projects/cheaseBS_tests/data/profile_base_132588/H_fitbase/132588/fitTe_omt_1.000/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT
+--- 132588 fitTe_omt_0.800 : Te_ped_scale 1  -> omt 0.8  ---
+[TPED] transform log: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-31-45-132588_fitTe_omt_0.800/TPED_transform_log.json
+[cheaseBS] reference profiles: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-31-45-132588_fitTe_omt_0.800/reference_profiles
+[cheaseBS] running: /global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py --config /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-31-45-132588_fitTe_omt_0.800/cheasebs_run_config.json
+Traceback (most recent call last):
+  File "/global/homes/j/joeschm/projects/NSTXU_lithium_study/scripts/profile_base_tests.py", line 172, in run_test
+    path = q.output_gfile(savedir=case, run_cheasebs=True,
+  File "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/discharge_io.py", line 522, in output_gfile
+    chease_eqdsk = run_cheasebs_workflow(
+  File "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/cheasebs_runner.py", line 753, in run_cheasebs_workflow
+    raise RuntimeError(
+RuntimeError: cheaseBS exited with code 1. Check output above for details.
+--- 132588 fitTe_omt_1.200 : Te_ped_scale 1  -> omt 1.2  ---
+[TPED] transform log: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-33-20-132588_fitTe_omt_1.200/TPED_transform_log.json
+[cheaseBS] reference profiles: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-33-20-132588_fitTe_omt_1.200/reference_profiles
+[cheaseBS] running: /global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py --config /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-33-20-132588_fitTe_omt_1.200/cheasebs_run_config.json
+Traceback (most recent call last):
+  File "/global/homes/j/joeschm/projects/NSTXU_lithium_study/scripts/profile_base_tests.py", line 172, in run_test
+    path = q.output_gfile(savedir=case, run_cheasebs=True,
+  File "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/discharge_io.py", line 522, in output_gfile
+    chease_eqdsk = run_cheasebs_workflow(
+  File "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/cheasebs_runner.py", line 753, in run_cheasebs_workflow
+    raise RuntimeError(
+RuntimeError: cheaseBS exited with code 1. Check output above for details.
+--- 132588 fitTe_omne_1.000 : Te_ped_scale 1  -> omne 1  ---
+[TPED] transform log: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-34-32-132588_fitTe_omne_1.000/TPED_transform_log.json
+[cheaseBS] reference profiles: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-34-32-132588_fitTe_omne_1.000/reference_profiles
+[cheaseBS] running: /global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py --config /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-34-32-132588_fitTe_omne_1.000/cheasebs_run_config.json
+Traceback (most recent call last):
+  File "/global/homes/j/joeschm/projects/NSTXU_lithium_study/scripts/profile_base_tests.py", line 172, in run_test
+    path = q.output_gfile(savedir=case, run_cheasebs=True,
+  File "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/discharge_io.py", line 522, in output_gfile
+    chease_eqdsk = run_cheasebs_workflow(
+  File "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/cheasebs_runner.py", line 753, in run_cheasebs_workflow
+    raise RuntimeError(
+RuntimeError: cheaseBS exited with code 1. Check output above for details.
+--- 132588 fitTe_omne_0.800 : Te_ped_scale 1  -> omne 0.8  ---
+[TPED] transform log: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-37-15-132588_fitTe_omne_0.800/TPED_transform_log.json
+[cheaseBS] reference profiles: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-37-15-132588_fitTe_omne_0.800/reference_profiles
+[cheaseBS] running: /global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py --config /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-37-15-132588_fitTe_omne_0.800/cheasebs_run_config.json
+Traceback (most recent call last):
+  File "/global/homes/j/joeschm/projects/NSTXU_lithium_study/scripts/profile_base_tests.py", line 172, in run_test
+    path = q.output_gfile(savedir=case, run_cheasebs=True,
+  File "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/discharge_io.py", line 522, in output_gfile
+    chease_eqdsk = run_cheasebs_workflow(
+  File "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/cheasebs_runner.py", line 753, in run_cheasebs_workflow
+    raise RuntimeError(
+RuntimeError: cheaseBS exited with code 1. Check output above for details.
+--- 132588 fitTe_omne_1.200 : Te_ped_scale 1  -> omne 1.2  ---
+[TPED] transform log: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-39-37-132588_fitTe_omne_1.200/TPED_transform_log.json
+[cheaseBS] reference profiles: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-39-37-132588_fitTe_omne_1.200/reference_profiles
+[cheaseBS] running: /global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py --config /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-39-37-132588_fitTe_omne_1.200/cheasebs_run_config.json
+Traceback (most recent call last):
+  File "/global/homes/j/joeschm/projects/NSTXU_lithium_study/scripts/profile_base_tests.py", line 172, in run_test
+    path = q.output_gfile(savedir=case, run_cheasebs=True,
+  File "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/discharge_io.py", line 522, in output_gfile
+    chease_eqdsk = run_cheasebs_workflow(
+  File "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/cheasebs_runner.py", line 753, in run_cheasebs_workflow
+    raise RuntimeError(
+RuntimeError: cheaseBS exited with code 1. Check output above for details.
+--- 132588 fitTe_ne_ped_scale_1.000 : Te_ped_scale 1  -> ne_ped_scale 1  ---
+[TPED] transform log: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-46-27-132588_fitTe_ne_ped_scale_1.000/TPED_transform_log.json
+[cheaseBS] reference profiles: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-46-27-132588_fitTe_ne_ped_scale_1.000/reference_profiles
+[cheaseBS] running: /global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py --config /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-46-27-132588_fitTe_ne_ped_scale_1.000/cheasebs_run_config.json
+Traceback (most recent call last):
+  File "/global/homes/j/joeschm/projects/NSTXU_lithium_study/scripts/profile_base_tests.py", line 172, in run_test
+    path = q.output_gfile(savedir=case, run_cheasebs=True,
+  File "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/discharge_io.py", line 522, in output_gfile
+    chease_eqdsk = run_cheasebs_workflow(
+  File "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/cheasebs_runner.py", line 753, in run_cheasebs_workflow
+    raise RuntimeError(
+RuntimeError: cheaseBS exited with code 1. Check output above for details.
+--- 132588 fitTe_ne_ped_scale_0.800 : Te_ped_scale 1  -> ne_ped_scale 0.8  ---
+[TPED] transform log: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-47-02-132588_fitTe_ne_ped_scale_0.800/TPED_transform_log.json
+[cheaseBS] reference profiles: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-47-02-132588_fitTe_ne_ped_scale_0.800/reference_profiles
+[cheaseBS] running: /global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py --config /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-47-02-132588_fitTe_ne_ped_scale_0.800/cheasebs_run_config.json
+Traceback (most recent call last):
+  File "/global/homes/j/joeschm/projects/NSTXU_lithium_study/scripts/profile_base_tests.py", line 172, in run_test
+    path = q.output_gfile(savedir=case, run_cheasebs=True,
+  File "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/discharge_io.py", line 522, in output_gfile
+    chease_eqdsk = run_cheasebs_workflow(
+  File "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/cheasebs_runner.py", line 753, in run_cheasebs_workflow
+    raise RuntimeError(
+RuntimeError: cheaseBS exited with code 1. Check output above for details.
+--- 132588 fitTe_ne_ped_scale_1.200 : Te_ped_scale 1  -> ne_ped_scale 1.2  ---
+[TPED] transform log: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-47-39-132588_fitTe_ne_ped_scale_1.200/TPED_transform_log.json
+[cheaseBS] reference profiles: /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-47-39-132588_fitTe_ne_ped_scale_1.200/reference_profiles
+[cheaseBS] running: /global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py --config /pscratch/sd/j/joeschm/cheaseBS_runs/20261010/20261010_04-47-39-132588_fitTe_ne_ped_scale_1.200/cheasebs_run_config.json
+Traceback (most recent call last):
+  File "/global/homes/j/joeschm/projects/NSTXU_lithium_study/scripts/profile_base_tests.py", line 172, in run_test
+    path = q.output_gfile(savedir=case, run_cheasebs=True,
+  File "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/discharge_io.py", line 522, in output_gfile
+    chease_eqdsk = run_cheasebs_workflow(
+  File "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/cheasebs_runner.py", line 753, in run_cheasebs_workflow
+    raise RuntimeError(
+RuntimeError: cheaseBS exited with code 1. Check output above for details.
+=== test H: 1/9 ok ===
+compare: /global/cfs/cdirs/m2116/software/conda/envs/TPED/bin/python /global/homes/j/joeschm/tools/TPED/projects/discharge_tools/scripts/compare_cheasebs_runs.py --baseline /global/homes/j/joeschm/data/ST_research/NSTXU_discharges/132588 --variations /global/homes/j/joeschm/projects/cheaseBS_tests/data/profile_base_132588/H_fitbase/132588 --outdir /global/homes/j/joeschm/projects/cheaseBS_tests/data/profile_base_132588/H_fitbase --plot-combine mtanh om --edge-by replay_representation --pedestal 0.8,0.98 --slices 0.85 0.9 0.95 0.975
+compare exit 0; figures in /global/homes/j/joeschm/projects/cheaseBS_tests/data/profile_base_132588/H_fitbase
