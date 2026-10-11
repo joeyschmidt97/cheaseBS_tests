@@ -1,0 +1,165 @@
+{
+    "schema_version": 1,
+    "generated": "2026-10-11T10:04:45",
+    "generated_by": "TPED discharge_tools output_gfile",
+    "discharge": {
+        "shot": 132543,
+        "time_ms": 700,
+        "machine": null,
+        "input_dir": "/global/homes/j/joeschm/data/ST_research/NSTXU_discharges/132543",
+        "source_gfile": "/global/homes/j/joeschm/data/ST_research/NSTXU_discharges/132543/g132543.00700",
+        "source_pfile": "/global/homes/j/joeschm/data/ST_research/NSTXU_discharges/132543/p132543.00700"
+    },
+    "command": {
+        "lines": [
+            "discharge = DischargeData(input_dir='/global/homes/j/joeschm/data/ST_research/NSTXU_discharges/132543')",
+            "phys = DischargePhysics(discharge)",
+            "# fit= was not recorded as an argument; re-running refits from the same data (coefficients under transform_history[].fit_params)",
+            "phys = phys.apply_mtanh_full(var='Te', scale_height=1.1, scale_sol=1.0, scale_width=1.0, shift_pos=0.0, scale_slope=1.0, scale_core_height=1.0, scale_core_width=1.0, pedestal_weight=1.0, ped_threshold=0.85, edge_weight=1.0, edge_threshold=0.99, enforce_quasineutrality=True, qz=6.0)"
+        ],
+        "text": "discharge = DischargeData(input_dir='/global/homes/j/joeschm/data/ST_research/NSTXU_discharges/132543')\nphys = DischargePhysics(discharge)\n# fit= was not recorded as an argument; re-running refits from the same data (coefficients under transform_history[].fit_params)\nphys = phys.apply_mtanh_full(var='Te', scale_height=1.1, scale_sol=1.0, scale_width=1.0, shift_pos=0.0, scale_slope=1.0, scale_core_height=1.0, scale_core_width=1.0, pedestal_weight=1.0, ped_threshold=0.85, edge_weight=1.0, edge_threshold=0.99, enforce_quasineutrality=True, qz=6.0)"
+    },
+    "transform_history": [
+        {
+            "transform": "apply_mtanh_full",
+            "var": "Te",
+            "form": "stefanikova2016_Ffull",
+            "fit_source": "user_supplied",
+            "fit_params": {
+                "b_height": 258.17518916519197,
+                "b_sol": 1.3038834859209077e-15,
+                "b_pos": 0.871977956872166,
+                "b_width": 0.03218610796271823,
+                "b_slope": -0.9524751716658145,
+                "a_height": 969.678919107724,
+                "a_width": 0.7236387099487085,
+                "a_exp": 3.715301039604261
+            },
+            "applied_params": {
+                "b_height": 283.9927080817112,
+                "b_sol": 1.3038834859209077e-15,
+                "b_pos": 0.871977956872166,
+                "b_width": 0.03218610796271823,
+                "b_slope": -0.9524751716658145,
+                "a_height": 969.678919107724,
+                "a_width": 0.7236387099487085,
+                "a_exp": 3.715301039604261
+            },
+            "rms_residual": 5.566445216998263,
+            "rms_relative": 0.005855089414977841,
+            "scale_height": 1.1,
+            "scale_sol": 1.0,
+            "scale_width": 1.0,
+            "shift_pos": 0.0,
+            "scale_slope": 1.0,
+            "scale_core_height": 1.0,
+            "scale_core_width": 1.0,
+            "pedestal_weight": 1.0,
+            "ped_threshold": 0.85,
+            "edge_weight": 1.0,
+            "edge_threshold": 0.99,
+            "enforce_quasineutrality": true,
+            "qz": 6.0,
+            "quasineutrality_error": null
+        }
+    ],
+    "cheasebs": {
+        "config_template": "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/configs/nstx_cheasebs_config.json",
+        "overrides": {
+            "replay_representation": "jparallel",
+            "coordinate": "rhot",
+            "bootstrap_mix": 0.35,
+            "amplitude_warmup_iters": 0,
+            "tol_bs": 0.001,
+            "tol_q": 0.001,
+            "tol_ip_rel": 0.001,
+            "max_iter": 40
+        },
+        "baseline_dir": null,
+        "baseline_gfile": null,
+        "strict": false,
+        "acceptance": null,
+        "script": "/global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py",
+        "chease_binary": "/global/homes/j/joeschm/simulators/chease/src-f90/chease",
+        "chease_namelist": "/global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/T_tensbnd/chease_namelist_nstx_ncscal4_tensbnd-1.0",
+        "chease_namelist_values": {
+            "RELAX": 0.0,
+            "NDIAGOP": 1,
+            "NBSEXPQ": 0,
+            "NPROPT": 2,
+            "NIDEAL": 6,
+            "NS": 60,
+            "NT": 60,
+            "NPSI": 220,
+            "NCHI": 220,
+            "NISO": 220,
+            "NTNOVA": 12,
+            "NCSCAL": 4,
+            "NOPT": 0,
+            "NSURF": 6,
+            "NPPFUN": 4,
+            "NFUNC": 4,
+            "NDIFPS": 0,
+            "NDIFT": 1,
+            "NMESHC": 1,
+            "NPOIDC": 2,
+            "SOLPDC": 0.7,
+            "CPLACE": [
+                0.95,
+                0.99,
+                1.0
+            ],
+            "CWIDTH": [
+                0.1,
+                0.02,
+                0.05
+            ],
+            "NTURN": 20,
+            "NBLC0": 16,
+            "NPPR": 24,
+            "NINMAP": 40,
+            "NINSCA": 40,
+            "NSYM": 0,
+            "NEGP": -1,
+            "NER": 1,
+            "NEQDSK": 1,
+            "NRBOX": 513,
+            "NZBOX": 513,
+            "EPSLON": 1e-10,
+            "ETAEI": 0.33,
+            "RPEOP": 0.5,
+            "RZION": 1.5,
+            "GAMMA": 1.6666666667,
+            "TENSPROF": 0.0,
+            "TENSBND": [
+                -1.0,
+                "/"
+            ]
+        },
+        "reference_profiles_used": true
+    },
+    "outputs": {
+        "baseline_gfile_written": "/global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/T_tensbnd/132543/Te_ped_scale_1.100/g132543.00700",
+        "run_dir": "/pscratch/sd/j/joeschm/cheaseBS_runs/20261011/20261011_10-04-45-132543_Te_ped_scale_1.100",
+        "final_dir": "/global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/T_tensbnd/132543/Te_ped_scale_1.100",
+        "comment": "132543_Te_ped_scale_1.100"
+    },
+    "environment": {
+        "tped_repo": "/global/homes/j/joeschm/tools/TPED",
+        "tped_git": {
+            "commit": "be30d82adc38135462d7ae66757c5bb441ed247b",
+            "branch": "gene_datatree",
+            "dirty": true
+        },
+        "python": "3.10.14",
+        "platform": "Linux-6.4.0-150600.23.125_15.0.29-cray_shasta_c-x86_64-with-glibc2.38",
+        "hostname": "login18",
+        "user": "joeschm",
+        "cwd": "/global/u1/j/joeschm/projects/NSTXU_lithium_study",
+        "argv": [
+            "/global/homes/j/joeschm/projects/NSTXU_lithium_study/scripts/cheasebs_132xxx_tests.py",
+            "T"
+        ]
+    },
+    "plot_caption": "mtanh_full-Te-sh1.1"
+}

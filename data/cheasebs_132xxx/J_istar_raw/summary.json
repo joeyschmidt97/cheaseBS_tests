@@ -1,0 +1,59 @@
+{
+  "test": "J",
+  "shot": 132588,
+  "results": {
+    "omt_0.800": "rejected: not converged after 40 iterations; Ip error 20.614% exceeds tolerance 3.000% (got 780632.6 A, target 983334.8 A)",
+    "omt_1.200": "rejected: not converged after 40 iterations; Ip error 19.138% exceeds tolerance 3.000% (got 795147.3 A, target 983334.8 A)",
+    "omne_0.800_noqn": "rejected: not converged after 40 iterations; Ip error 15.442% exceeds tolerance 3.000% (got 831490.1 A, target 983334.8 A)",
+    "omne_1.200_noqn": "accepted"
+  },
+  "settings": {
+    "replay_representation": "istar",
+    "coordinate": "rhop",
+    "bootstrap_mix": 0.1,
+    "amplitude_warmup_iters": 0,
+    "tol_bs": 0.001,
+    "tol_q": 0.001,
+    "tol_ip_rel": 0.001,
+    "max_iter": 40
+  },
+  "namelist": {
+    "NCSCAL": 4
+  },
+  "cases": {
+    "omt_0.800": [
+      [
+        "omt",
+        0.8,
+        {}
+      ]
+    ],
+    "omt_1.200": [
+      [
+        "omt",
+        1.2,
+        {}
+      ]
+    ],
+    "omne_0.800_noqn": [
+      [
+        "omne",
+        0.8,
+        {
+          "enforce_quasineutrality": false
+        }
+      ]
+    ],
+    "omne_1.200_noqn": [
+      [
+        "omne",
+        1.2,
+        {
+          "enforce_quasineutrality": false
+        }
+      ]
+    ]
+  },
+  "NSTXU_lithium_study": "74446e7",
+  "finished": "2026-10-11T11:54:30"
+}

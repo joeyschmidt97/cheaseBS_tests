@@ -1,0 +1,83 @@
+{
+  "test": "Q",
+  "shot": 132588,
+  "results": {
+    "fitTe_omne_1.000_noqn": "accepted",
+    "fitTe_omne_0.800_noqn": "crashed: RuntimeError('cheaseBS exited with code 1. Check output above for details.')",
+    "fitTe_omne_1.200_noqn": "accepted",
+    "fitTe_ne_ped_scale_1.000_noqn": "crashed: RuntimeError('cheaseBS exited with code 1. Check output above for details.')"
+  },
+  "settings": {
+    "replay_representation": "jparallel",
+    "coordinate": "rhot",
+    "bootstrap_mix": 0.35,
+    "amplitude_warmup_iters": 0,
+    "tol_bs": 0.001,
+    "tol_q": 0.001,
+    "tol_ip_rel": 0.001,
+    "max_iter": 40
+  },
+  "namelist": {
+    "NCSCAL": 4
+  },
+  "cases": {
+    "fitTe_omne_1.000_noqn": [
+      [
+        "Te_ped_scale",
+        1.0,
+        {}
+      ],
+      [
+        "omne",
+        1.0,
+        {
+          "enforce_quasineutrality": false
+        }
+      ]
+    ],
+    "fitTe_omne_0.800_noqn": [
+      [
+        "Te_ped_scale",
+        1.0,
+        {}
+      ],
+      [
+        "omne",
+        0.8,
+        {
+          "enforce_quasineutrality": false
+        }
+      ]
+    ],
+    "fitTe_omne_1.200_noqn": [
+      [
+        "Te_ped_scale",
+        1.0,
+        {}
+      ],
+      [
+        "omne",
+        1.2,
+        {
+          "enforce_quasineutrality": false
+        }
+      ]
+    ],
+    "fitTe_ne_ped_scale_1.000_noqn": [
+      [
+        "Te_ped_scale",
+        1.0,
+        {}
+      ],
+      [
+        "ne_ped_scale",
+        1.0,
+        {
+          "enforce_quasineutrality": false
+        }
+      ]
+    ]
+  },
+  "NSTXU_lithium_study": "74446e7",
+  "finished": "2026-10-11T10:46:11"
+}

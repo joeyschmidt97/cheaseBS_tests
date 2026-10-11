@@ -1,0 +1,131 @@
+{
+    "schema_version": 1,
+    "generated": "2026-10-11T11:14:54",
+    "generated_by": "TPED discharge_tools output_gfile",
+    "discharge": {
+        "shot": 132588,
+        "time_ms": 650,
+        "machine": null,
+        "input_dir": "/global/homes/j/joeschm/data/ST_research/NSTXU_discharges/132588",
+        "source_gfile": "/global/homes/j/joeschm/data/ST_research/NSTXU_discharges/132588/g132588.00650",
+        "source_pfile": "/global/homes/j/joeschm/data/ST_research/NSTXU_discharges/132588/p132588.00650"
+    },
+    "command": {
+        "lines": [
+            "discharge = DischargeData(input_dir='/global/homes/j/joeschm/data/ST_research/NSTXU_discharges/132588')",
+            "phys = DischargePhysics(discharge)",
+            "phys = phys.apply_omne(alpha=0.8, rhot_midped=1.0, rhot_topped=0.8, qz=6.0, enforce_quasineutrality=False)"
+        ],
+        "text": "discharge = DischargeData(input_dir='/global/homes/j/joeschm/data/ST_research/NSTXU_discharges/132588')\nphys = DischargePhysics(discharge)\nphys = phys.apply_omne(alpha=0.8, rhot_midped=1.0, rhot_topped=0.8, qz=6.0, enforce_quasineutrality=False)"
+    },
+    "transform_history": [
+        {
+            "transform": "apply_omne",
+            "alpha": 0.8,
+            "rhot_midped": 1.0,
+            "rhot_topped": 0.8,
+            "qz": 6.0,
+            "enforce_quasineutrality": false,
+            "quasineutrality_error": null
+        }
+    ],
+    "cheasebs": {
+        "config_template": "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/configs/nstx_cheasebs_config.json",
+        "overrides": {
+            "replay_representation": "istar",
+            "coordinate": "rhop",
+            "bootstrap_mix": 0.1,
+            "amplitude_warmup_iters": 0,
+            "tol_bs": 0.001,
+            "tol_q": 0.001,
+            "tol_ip_rel": 0.001,
+            "max_iter": 40
+        },
+        "baseline_dir": null,
+        "baseline_gfile": null,
+        "strict": false,
+        "acceptance": null,
+        "script": "/global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py",
+        "chease_binary": "/global/homes/j/joeschm/simulators/chease/src-f90/chease",
+        "chease_namelist": "/global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/J_istar_raw/chease_namelist_nstx_ncscal4",
+        "chease_namelist_values": {
+            "RELAX": 0.0,
+            "NDIAGOP": 1,
+            "NBSEXPQ": 0,
+            "NPROPT": 2,
+            "NIDEAL": 6,
+            "NS": 60,
+            "NT": 60,
+            "NPSI": 220,
+            "NCHI": 220,
+            "NISO": 220,
+            "NTNOVA": 12,
+            "NCSCAL": 4,
+            "NOPT": 0,
+            "NSURF": 6,
+            "NPPFUN": 4,
+            "NFUNC": 4,
+            "NDIFPS": 0,
+            "NDIFT": 1,
+            "NMESHC": 1,
+            "NPOIDC": 2,
+            "SOLPDC": 0.7,
+            "CPLACE": [
+                0.95,
+                0.99,
+                1.0
+            ],
+            "CWIDTH": [
+                0.1,
+                0.02,
+                0.05
+            ],
+            "NTURN": 20,
+            "NBLC0": 16,
+            "NPPR": 24,
+            "NINMAP": 40,
+            "NINSCA": 40,
+            "NSYM": 0,
+            "NEGP": -1,
+            "NER": 1,
+            "NEQDSK": 1,
+            "NRBOX": 513,
+            "NZBOX": 513,
+            "EPSLON": 1e-10,
+            "ETAEI": 0.33,
+            "RPEOP": 0.5,
+            "RZION": 1.5,
+            "GAMMA": 1.6666666667,
+            "TENSPROF": 0.0,
+            "TENSBND": [
+                -0.3,
+                "/"
+            ]
+        },
+        "reference_profiles_used": true
+    },
+    "outputs": {
+        "baseline_gfile_written": "/global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/J_istar_raw/132588/omne_0.800_noqn/g132588.00650",
+        "run_dir": "/pscratch/sd/j/joeschm/cheaseBS_runs/20261011/20261011_11-14-54-132588_omne_0.800_noqn",
+        "final_dir": "/global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/J_istar_raw/132588/omne_0.800_noqn",
+        "comment": "132588_omne_0.800_noqn"
+    },
+    "environment": {
+        "tped_repo": "/global/homes/j/joeschm/tools/TPED",
+        "tped_git": {
+            "commit": "be30d82adc38135462d7ae66757c5bb441ed247b",
+            "branch": "gene_datatree",
+            "dirty": true
+        },
+        "python": "3.10.14",
+        "platform": "Linux-6.4.0-150600.23.125_15.0.29-cray_shasta_c-x86_64-with-glibc2.38",
+        "hostname": "login13",
+        "user": "joeschm",
+        "cwd": "/global/u1/j/joeschm/projects/NSTXU_lithium_study",
+        "argv": [
+            "/global/homes/j/joeschm/projects/NSTXU_lithium_study/scripts/cheasebs_132xxx_tests.py",
+            "J"
+        ]
+    },
+    "plot_caption": "omne-a0.8"
+}
