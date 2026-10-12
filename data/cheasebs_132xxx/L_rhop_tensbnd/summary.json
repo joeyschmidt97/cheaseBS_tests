@@ -1,0 +1,85 @@
+{
+  "test": "L",
+  "shot": 132588,
+  "results": {
+    "Te_ped_scale_1.000": "accepted",
+    "Te_ped_scale_1.200": "accepted",
+    "fitTe_ne_ped_scale_1.000_noqn": "accepted",
+    "fitTe_ne_ped_scale_0.800_noqn": "accepted",
+    "fitTe_ne_ped_scale_1.200_noqn": "accepted"
+  },
+  "settings": {
+    "replay_representation": "jparallel",
+    "coordinate": "rhop",
+    "bootstrap_mix": 0.35,
+    "amplitude_warmup_iters": 0,
+    "tol_bs": 0.001,
+    "tol_q": 0.001,
+    "tol_ip_rel": 0.001,
+    "max_iter": 40
+  },
+  "namelist": {
+    "NCSCAL": 4,
+    "TENSBND": -1.0
+  },
+  "cases": {
+    "Te_ped_scale_1.000": [
+      [
+        "Te_ped_scale",
+        1.0,
+        {}
+      ]
+    ],
+    "Te_ped_scale_1.200": [
+      [
+        "Te_ped_scale",
+        1.2,
+        {}
+      ]
+    ],
+    "fitTe_ne_ped_scale_1.000_noqn": [
+      [
+        "Te_ped_scale",
+        1.0,
+        {}
+      ],
+      [
+        "ne_ped_scale",
+        1.0,
+        {
+          "enforce_quasineutrality": false
+        }
+      ]
+    ],
+    "fitTe_ne_ped_scale_0.800_noqn": [
+      [
+        "Te_ped_scale",
+        1.0,
+        {}
+      ],
+      [
+        "ne_ped_scale",
+        0.8,
+        {
+          "enforce_quasineutrality": false
+        }
+      ]
+    ],
+    "fitTe_ne_ped_scale_1.200_noqn": [
+      [
+        "Te_ped_scale",
+        1.0,
+        {}
+      ],
+      [
+        "ne_ped_scale",
+        1.2,
+        {
+          "enforce_quasineutrality": false
+        }
+      ]
+    ]
+  },
+  "NSTXU_lithium_study": "561509b",
+  "finished": "2026-10-11T19:17:14"
+}
