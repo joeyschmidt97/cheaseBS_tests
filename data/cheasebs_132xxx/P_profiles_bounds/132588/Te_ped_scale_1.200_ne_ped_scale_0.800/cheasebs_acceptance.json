@@ -1,0 +1,17 @@
+{
+    "accepted": true,
+    "cheasebs_converged": true,
+    "cheasebs_iterations": 17,
+    "eqdsk": "/pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_22-06-05-132588_Te_ped_scale_1.200_ne_ped_scale_0.800/iteration_16/artifacts/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT",
+    "final_ip_a": 982893.9016,
+    "ip_error_rel": 0.00044831976089527715,
+    "ip_reference_valid": true,
+    "q95_error_rel": 0.030774185148644558,
+    "q_edge_error_rel": 0.24434175765198243,
+    "q_errors_rel": {},
+    "reasons": [],
+    "reload_ok": true,
+    "run_dir": "/pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_22-06-05-132588_Te_ped_scale_1.200_ne_ped_scale_0.800",
+    "source_eqdsk": "/global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/P_profiles_bounds/132588/Te_ped_scale_1.200_ne_ped_scale_0.800/g132588.00650",
+    "target_ip_a": 983334.75
+}

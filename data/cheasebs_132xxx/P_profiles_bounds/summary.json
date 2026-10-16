@@ -1,0 +1,121 @@
+{
+  "test": "P",
+  "shot": 132588,
+  "results": {
+    "Te_ne_ped_scale_1.000": "accepted",
+    "Te_ped_scale_0.800": "accepted",
+    "Te_ped_scale_1.200": "accepted",
+    "ne_ped_scale_0.800": "accepted",
+    "ne_ped_scale_1.200": "accepted",
+    "Te_ped_scale_0.800_ne_ped_scale_0.800": "accepted",
+    "Te_ped_scale_0.800_ne_ped_scale_1.200": "accepted",
+    "Te_ped_scale_1.200_ne_ped_scale_0.800": "accepted",
+    "Te_ped_scale_1.200_ne_ped_scale_1.200": "crashed: RuntimeError('cheaseBS exited with code 1. Check output above for details.')"
+  },
+  "settings": {
+    "replay_representation": "jparallel",
+    "coordinate": "rhop",
+    "bootstrap_mix": 0.35,
+    "amplitude_warmup_iters": 0,
+    "tol_bs": 0.001,
+    "tol_q": 0.001,
+    "tol_ip_rel": 0.001,
+    "max_iter": 40
+  },
+  "namelist": {
+    "NCSCAL": 4,
+    "TENSBND": -1.0
+  },
+  "cases": {
+    "Te_ne_ped_scale_1.000": [
+      [
+        "Te_ped_scale",
+        1.0,
+        {}
+      ],
+      [
+        "ne_ped_scale",
+        1.0,
+        {}
+      ]
+    ],
+    "Te_ped_scale_0.800": [
+      [
+        "Te_ped_scale",
+        0.8,
+        {}
+      ]
+    ],
+    "Te_ped_scale_1.200": [
+      [
+        "Te_ped_scale",
+        1.2,
+        {}
+      ]
+    ],
+    "ne_ped_scale_0.800": [
+      [
+        "ne_ped_scale",
+        0.8,
+        {}
+      ]
+    ],
+    "ne_ped_scale_1.200": [
+      [
+        "ne_ped_scale",
+        1.2,
+        {}
+      ]
+    ],
+    "Te_ped_scale_0.800_ne_ped_scale_0.800": [
+      [
+        "Te_ped_scale",
+        0.8,
+        {}
+      ],
+      [
+        "ne_ped_scale",
+        0.8,
+        {}
+      ]
+    ],
+    "Te_ped_scale_0.800_ne_ped_scale_1.200": [
+      [
+        "Te_ped_scale",
+        0.8,
+        {}
+      ],
+      [
+        "ne_ped_scale",
+        1.2,
+        {}
+      ]
+    ],
+    "Te_ped_scale_1.200_ne_ped_scale_0.800": [
+      [
+        "Te_ped_scale",
+        1.2,
+        {}
+      ],
+      [
+        "ne_ped_scale",
+        0.8,
+        {}
+      ]
+    ],
+    "Te_ped_scale_1.200_ne_ped_scale_1.200": [
+      [
+        "Te_ped_scale",
+        1.2,
+        {}
+      ],
+      [
+        "ne_ped_scale",
+        1.2,
+        {}
+      ]
+    ]
+  },
+  "NSTXU_lithium_study": "c3d4d2b",
+  "finished": "2026-10-15T22:29:27"
+}
