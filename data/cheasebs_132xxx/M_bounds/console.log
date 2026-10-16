@@ -1,0 +1,319 @@
+=== test M (132543): 5 case(s) -> /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds ===
+settings: {"replay_representation": "jparallel", "coordinate": "rhop", "bootstrap_mix": 0.35, "amplitude_warmup_iters": 0, "tol_bs": 0.001, "tol_q": 0.001, "tol_ip_rel": 0.001, "max_iter": 40}  namelist: {"NCSCAL": 4, "TENSBND": -1.0}
+--- 132543 Te_ped_scale_1.000 : Te_ped_scale 1  ---
+[TPED] transform log: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-37-01-132543_Te_ped_scale_1.000/TPED_transform_log.json
+[cheaseBS] reference profiles: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-37-01-132543_Te_ped_scale_1.000/reference_profiles
+[cheaseBS] running: /global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py --config /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-37-01-132543_Te_ped_scale_1.000/cheasebs_run_config.json
+Starting iterative CHEASE workflow (coordinate=rhop, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-37-01-132543_Te_ped_scale_1.000
+Baseline directory: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-37-01-132543_Te_ped_scale_1.000/cheasebs_baseline
+Run targets: Ip=947061.789 A (source 947061.789 A), Bt=-0.439262 T (source -0.439262 T)
+Rebuilding baseline decomposition from reference profiles
+Preparing baseline inputs from g132543.00700
+Baseline radial mapping complete
+Baseline Step 1 complete: thermal/fast pressure split and Zeff
+Baseline Step 2 complete: bootstrap/driven current decomposition
+Baseline outputs written
+Baseline rebuild complete: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-37-01-132543_Te_ped_scale_1.000/cheasebs_baseline
+Starting iterative replay with target Ip=947061.789 A and initial amplitude=1.000000
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 00 complete: Ip=931194.721 A, rel_error=1.675e-02, bs_change=n/a, q_change=n/a, next_amplitude=1.009e+00, converged=no
+Iteration 01: running CHEASE (amplitude=1.008520, qspec=on)
+Iteration 01 complete: Ip=906015.352 A, rel_error=4.334e-02, bs_change=9.122e-03, q_change=2.506e-02, next_amplitude=9.988e-01, converged=no
+Iteration 02: running CHEASE (amplitude=0.998798, qspec=on)
+Iteration 02 complete: Ip=881241.439 A, rel_error=6.950e-02, bs_change=3.543e-03, q_change=2.455e-02, next_amplitude=1.017e+00, converged=no
+Iteration 03: running CHEASE (amplitude=1.016879, qspec=on)
+Iteration 03 complete: Ip=876357.559 A, rel_error=7.466e-02, bs_change=5.504e-03, q_change=7.375e-03, next_amplitude=8.336e-01, converged=no
+Iteration 04: running CHEASE (amplitude=0.833648, qspec=on)
+Iteration 04 complete: Ip=776309.849 A, rel_error=1.803e-01, bs_change=2.464e-02, q_change=1.193e-01, next_amplitude=1.053e+00, converged=no
+Iteration 05: running CHEASE (amplitude=1.052552, qspec=on)
+Iteration 05 complete: Ip=880024.120 A, rel_error=7.078e-02, bs_change=3.314e-02, q_change=1.445e-01, next_amplitude=1.152e+00, converged=no
+Iteration 06: running CHEASE (amplitude=1.151597, qspec=on)
+Iteration 06 complete: Ip=921731.355 A, rel_error=2.675e-02, bs_change=1.373e-02, q_change=4.981e-02, next_amplitude=1.194e+00, converged=no
+Iteration 07: running CHEASE (amplitude=1.193705, qspec=on)
+Iteration 07 complete: Ip=937053.396 A, rel_error=1.057e-02, bs_change=5.662e-03, q_change=1.777e-02, next_amplitude=1.213e+00, converged=no
+Iteration 08: running CHEASE (amplitude=1.212958, qspec=on)
+Iteration 08 complete: Ip=942804.329 A, rel_error=4.495e-03, bs_change=2.581e-03, q_change=6.896e-03, next_amplitude=1.223e+00, converged=no
+Iteration 09: running CHEASE (amplitude=1.222936, qspec=on)
+Iteration 09 complete: Ip=945185.913 A, rel_error=1.981e-03, bs_change=1.340e-03, q_change=3.068e-03, next_amplitude=1.228e+00, converged=no
+Iteration 10: running CHEASE (amplitude=1.228437, qspec=on)
+Iteration 10 complete: Ip=946188.070 A, rel_error=9.226e-04, bs_change=7.408e-04, q_change=1.455e-03, next_amplitude=1.232e+00, converged=no
+Iteration 11: running CHEASE (amplitude=1.231794, qspec=on)
+Iteration 11 complete: Ip=946688.773 A, rel_error=3.939e-04, bs_change=4.499e-04, q_change=8.091e-04, next_amplitude=1.232e+00, converged=yes
+Completed iterative workflow after 12 iteration(s): Ip=946688.773 A, rel_error=3.939e-04, converged=yes
+Final EQDSK: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-37-01-132543_Te_ped_scale_1.000/iteration_11/artifacts/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT
+[cheaseBS] acceptance: ACCEPTED
+[cheaseBS]   Ip error         0.039%  (final 946688.8 A vs reference 947061.8 A)
+[cheaseBS]   q95 error        3.599%
+[cheaseBS]   q edge error    23.355%   <- separatrix-adjacent, see module docstring
+[cheaseBS]   solver flag    converged=True (12 iteration(s)) — recorded, not gated by default
+[cheaseBS] run summary: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-37-01-132543_Te_ped_scale_1.000/run_summary.png
+[cheaseBS]   note: after EQDSK taken from a per-iteration artifact (iteration_11/artifacts/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT) — the run directory root holds no EQDSK*.OUT, so this is the last iteration solved, not necessarily a converged result
+[TPED] iterdb: /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/Te_ped_scale_1.000/profiles.iterdb
+[cheaseBS] scratch run directory: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-37-01-132543_Te_ped_scale_1.000
+[cheaseBS] new equilibrium written to: /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/Te_ped_scale_1.000/g132543.00700_CH_COCOS02_mtanh_full_Te.geqdsk
+  gfile   /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/Te_ped_scale_1.000/g132543.00700_CH_COCOS02_mtanh_full_Te.geqdsk
+  run dir /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-37-01-132543_Te_ped_scale_1.000 (copied: chease_logs/iteration_00__artifacts__chease.log, chease_logs/iteration_00__chease_closure_6il9v5up__stage__chease.log, chease_logs/iteration_11__artifacts__chease.log, chease_logs/iteration_11__chease_closure_61qyrlys__stage__chease.log)
+  result  accepted
+--- 132543 Te_ped_scale_0.800 : Te_ped_scale 0.8  ---
+[TPED] transform log: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-44-24-132543_Te_ped_scale_0.800/TPED_transform_log.json
+[cheaseBS] reference profiles: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-44-24-132543_Te_ped_scale_0.800/reference_profiles
+[cheaseBS] running: /global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py --config /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-44-24-132543_Te_ped_scale_0.800/cheasebs_run_config.json
+Starting iterative CHEASE workflow (coordinate=rhop, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-44-24-132543_Te_ped_scale_0.800
+Baseline directory: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-44-24-132543_Te_ped_scale_0.800/cheasebs_baseline
+Run targets: Ip=947061.789 A (source 947061.789 A), Bt=-0.439262 T (source -0.439262 T)
+Rebuilding baseline decomposition from reference profiles
+Preparing baseline inputs from g132543.00700
+Baseline radial mapping complete
+Baseline Step 1 complete: thermal/fast pressure split and Zeff
+Baseline Step 2 complete: bootstrap/driven current decomposition
+Baseline outputs written
+Baseline rebuild complete: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-44-24-132543_Te_ped_scale_0.800/cheasebs_baseline
+Starting iterative replay with target Ip=947061.789 A and initial amplitude=1.000000
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 00 complete: Ip=929603.087 A, rel_error=1.843e-02, bs_change=n/a, q_change=n/a, next_amplitude=1.009e+00, converged=no
+Iteration 01: running CHEASE (amplitude=1.009390, qspec=on)
+Iteration 01 complete: Ip=896540.517 A, rel_error=5.335e-02, bs_change=9.636e-03, q_change=3.239e-02, next_amplitude=9.993e-01, converged=no
+Iteration 02: running CHEASE (amplitude=0.999346, qspec=on)
+Iteration 02 complete: Ip=865867.552 A, rel_error=8.573e-02, bs_change=4.151e-03, q_change=3.051e-02, next_amplitude=1.018e+00, converged=no
+Iteration 03: running CHEASE (amplitude=1.017958, qspec=on)
+Iteration 03 complete: Ip=857358.856 A, rel_error=9.472e-02, bs_change=5.428e-03, q_change=1.048e-02, next_amplitude=8.806e-01, converged=no
+Iteration 04: running CHEASE (amplitude=0.880608, qspec=on)
+Iteration 04 complete: Ip=777512.344 A, rel_error=1.790e-01, bs_change=1.448e-02, q_change=9.484e-02, next_amplitude=1.085e+00, converged=no
+Iteration 05: running CHEASE (amplitude=1.084766, qspec=on)
+Iteration 05 complete: Ip=870919.752 A, rel_error=8.040e-02, bs_change=2.553e-02, q_change=1.284e-01, next_amplitude=1.201e+00, converged=no
+Iteration 06: running CHEASE (amplitude=1.201262, qspec=on)
+Iteration 06 complete: Ip=919782.303 A, rel_error=2.880e-02, bs_change=1.333e-02, q_change=5.810e-02, next_amplitude=1.247e+00, converged=no
+Iteration 07: running CHEASE (amplitude=1.246789, qspec=on)
+Iteration 07 complete: Ip=936126.932 A, rel_error=1.155e-02, bs_change=5.095e-03, q_change=1.871e-02, next_amplitude=1.268e+00, converged=no
+Iteration 08: running CHEASE (amplitude=1.268109, qspec=on)
+Iteration 08 complete: Ip=942563.107 A, rel_error=4.750e-03, bs_change=2.394e-03, q_change=7.531e-03, next_amplitude=1.279e+00, converged=no
+Iteration 09: running CHEASE (amplitude=1.278541, qspec=on)
+Iteration 09 complete: Ip=945020.017 A, rel_error=2.156e-03, bs_change=1.191e-03, q_change=3.099e-03, next_amplitude=1.285e+00, converged=no
+Iteration 10: running CHEASE (amplitude=1.284610, qspec=on)
+Iteration 10 complete: Ip=946217.556 A, rel_error=8.914e-04, bs_change=6.955e-04, q_change=1.617e-03, next_amplitude=1.288e+00, converged=no
+Iteration 11: running CHEASE (amplitude=1.287604, qspec=on)
+Iteration 11 complete: Ip=946520.500 A, rel_error=5.715e-04, bs_change=3.553e-04, q_change=6.103e-04, next_amplitude=1.288e+00, converged=yes
+Completed iterative workflow after 12 iteration(s): Ip=946520.500 A, rel_error=5.715e-04, converged=yes
+Final EQDSK: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-44-24-132543_Te_ped_scale_0.800/iteration_11/artifacts/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT
+[cheaseBS] acceptance: ACCEPTED
+[cheaseBS]   Ip error         0.057%  (final 946520.5 A vs reference 947061.8 A)
+[cheaseBS]   q95 error        3.326%
+[cheaseBS]   q edge error    22.257%   <- separatrix-adjacent, see module docstring
+[cheaseBS]   solver flag    converged=True (12 iteration(s)) — recorded, not gated by default
+/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/equilibrium_geometry.py:170: UserWarning: 
+The maximal number of iterations maxit (set to 20 by the program)
+allowed for finding a smoothing spline with fp=s has been reached: s
+too small.
+There is an approximation returned but the corresponding weighted sum
+of squared residuals does not satisfy the condition abs(fp-s)/s < tol.
+  spl = UnivariateSpline(levels[good], np.asarray(sampled[k])[good],
+[cheaseBS] run summary: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-44-24-132543_Te_ped_scale_0.800/run_summary.png
+[cheaseBS]   note: after EQDSK taken from a per-iteration artifact (iteration_11/artifacts/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT) — the run directory root holds no EQDSK*.OUT, so this is the last iteration solved, not necessarily a converged result
+[TPED] iterdb: /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/Te_ped_scale_0.800/profiles.iterdb
+[cheaseBS] scratch run directory: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-44-24-132543_Te_ped_scale_0.800
+[cheaseBS] new equilibrium written to: /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/Te_ped_scale_0.800/g132543.00700_CH_COCOS02_mtanh_full_Te-sh0.8.geqdsk
+  gfile   /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/Te_ped_scale_0.800/g132543.00700_CH_COCOS02_mtanh_full_Te-sh0.8.geqdsk
+  run dir /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-44-24-132543_Te_ped_scale_0.800 (copied: chease_logs/iteration_00__artifacts__chease.log, chease_logs/iteration_00__chease_closure_46gyj803__stage__chease.log, chease_logs/iteration_11__artifacts__chease.log, chease_logs/iteration_11__chease_closure_ityajze2__stage__chease.log)
+  result  accepted
+--- 132543 Te_ped_scale_1.200 : Te_ped_scale 1.2  ---
+[TPED] transform log: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-51-00-132543_Te_ped_scale_1.200/TPED_transform_log.json
+[cheaseBS] reference profiles: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-51-00-132543_Te_ped_scale_1.200/reference_profiles
+[cheaseBS] running: /global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py --config /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-51-00-132543_Te_ped_scale_1.200/cheasebs_run_config.json
+Starting iterative CHEASE workflow (coordinate=rhop, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-51-00-132543_Te_ped_scale_1.200
+Baseline directory: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-51-00-132543_Te_ped_scale_1.200/cheasebs_baseline
+Run targets: Ip=947061.789 A (source 947061.789 A), Bt=-0.439262 T (source -0.439262 T)
+Rebuilding baseline decomposition from reference profiles
+Preparing baseline inputs from g132543.00700
+Baseline radial mapping complete
+Baseline Step 1 complete: thermal/fast pressure split and Zeff
+Baseline Step 2 complete: bootstrap/driven current decomposition
+Baseline outputs written
+Baseline rebuild complete: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-51-00-132543_Te_ped_scale_1.200/cheasebs_baseline
+Starting iterative replay with target Ip=947061.789 A and initial amplitude=1.000000
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 00 complete: Ip=932775.324 A, rel_error=1.509e-02, bs_change=n/a, q_change=n/a, next_amplitude=1.008e+00, converged=no
+Iteration 01: running CHEASE (amplitude=1.007658, qspec=on)
+Iteration 01 complete: Ip=915706.668 A, rel_error=3.311e-02, bs_change=8.107e-03, q_change=1.865e-02, next_amplitude=9.978e-01, converged=no
+Iteration 02: running CHEASE (amplitude=0.997811, qspec=on)
+Iteration 02 complete: Ip=896706.193 A, rel_error=5.317e-02, bs_change=2.587e-03, q_change=1.951e-02, next_amplitude=1.016e+00, converged=no
+Iteration 03: running CHEASE (amplitude=1.016079, qspec=on)
+Iteration 03 complete: Ip=895838.436 A, rel_error=5.409e-02, bs_change=5.522e-03, q_change=6.078e-03, next_amplitude=6.774e-01, converged=no
+Iteration 04: running CHEASE (amplitude=0.677386, qspec=on)
+Iteration 04 complete: Ip=718326.711 A, rel_error=2.415e-01, bs_change=5.800e-02, q_change=2.176e-01, next_amplitude=9.829e-01, converged=no
+Iteration 05: running CHEASE (amplitude=0.982885, qspec=on)
+Iteration 05 complete: Ip=873582.799 A, rel_error=7.759e-02, bs_change=5.794e-02, q_change=2.452e-01, next_amplitude=1.084e+00, converged=no
+Iteration 06: running CHEASE (amplitude=1.084095, qspec=on)
+Iteration 06 complete: Ip=917676.237 A, rel_error=3.103e-02, bs_change=1.704e-02, q_change=5.396e-02, next_amplitude=1.131e+00, converged=no
+Iteration 07: running CHEASE (amplitude=1.131310, qspec=on)
+Iteration 07 complete: Ip=935778.725 A, rel_error=1.191e-02, bs_change=7.586e-03, q_change=2.128e-02, next_amplitude=1.152e+00, converged=no
+Iteration 08: running CHEASE (amplitude=1.151910, qspec=on)
+Iteration 08 complete: Ip=942181.477 A, rel_error=5.153e-03, bs_change=3.256e-03, q_change=7.778e-03, next_amplitude=1.163e+00, converged=no
+Iteration 09: running CHEASE (amplitude=1.162901, qspec=on)
+Iteration 09 complete: Ip=944971.817 A, rel_error=2.207e-03, bs_change=1.719e-03, q_change=3.610e-03, next_amplitude=1.169e+00, converged=no
+Iteration 10: running CHEASE (amplitude=1.168664, qspec=on)
+Iteration 10 complete: Ip=946014.141 A, rel_error=1.106e-03, bs_change=8.966e-04, q_change=1.576e-03, next_amplitude=1.173e+00, converged=no
+Iteration 11: running CHEASE (amplitude=1.172719, qspec=on)
+Iteration 11 complete: Ip=946767.922 A, rel_error=3.103e-04, bs_change=6.206e-04, q_change=1.117e-03, next_amplitude=1.174e+00, converged=no
+Iteration 12: running CHEASE (amplitude=1.173825, qspec=on)
+Iteration 12 complete: Ip=946503.712 A, rel_error=5.893e-04, bs_change=1.784e-04, q_change=2.955e-04, next_amplitude=1.174e+00, converged=yes
+Completed iterative workflow after 13 iteration(s): Ip=946503.712 A, rel_error=5.893e-04, converged=yes
+Final EQDSK: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-51-00-132543_Te_ped_scale_1.200/iteration_12/artifacts/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT
+[cheaseBS] acceptance: ACCEPTED
+[cheaseBS]   Ip error         0.059%  (final 946503.7 A vs reference 947061.8 A)
+[cheaseBS]   q95 error        3.780%
+[cheaseBS]   q edge error    24.413%   <- separatrix-adjacent, see module docstring
+[cheaseBS]   solver flag    converged=True (13 iteration(s)) — recorded, not gated by default
+[cheaseBS] run summary: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-51-00-132543_Te_ped_scale_1.200/run_summary.png
+[cheaseBS]   note: after EQDSK taken from a per-iteration artifact (iteration_12/artifacts/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT) — the run directory root holds no EQDSK*.OUT, so this is the last iteration solved, not necessarily a converged result
+[TPED] iterdb: /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/Te_ped_scale_1.200/profiles.iterdb
+[cheaseBS] scratch run directory: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-51-00-132543_Te_ped_scale_1.200
+[cheaseBS] new equilibrium written to: /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/Te_ped_scale_1.200/g132543.00700_CH_COCOS02_mtanh_full_Te-sh1.2.geqdsk
+  gfile   /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/Te_ped_scale_1.200/g132543.00700_CH_COCOS02_mtanh_full_Te-sh1.2.geqdsk
+  run dir /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-51-00-132543_Te_ped_scale_1.200 (copied: chease_logs/iteration_00__artifacts__chease.log, chease_logs/iteration_00__chease_closure_9wbq3sji__stage__chease.log, chease_logs/iteration_12__artifacts__chease.log, chease_logs/iteration_12__chease_closure_crqdgi____stage__chease.log)
+  result  accepted
+--- 132543 ne_ped_scale_0.800 : ne_ped_scale 0.8  ---
+[TPED] transform log: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-58-27-132543_ne_ped_scale_0.800/TPED_transform_log.json
+[cheaseBS] reference profiles: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-58-27-132543_ne_ped_scale_0.800/reference_profiles
+[cheaseBS] running: /global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py --config /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-58-27-132543_ne_ped_scale_0.800/cheasebs_run_config.json
+Starting iterative CHEASE workflow (coordinate=rhop, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-58-27-132543_ne_ped_scale_0.800
+Baseline directory: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-58-27-132543_ne_ped_scale_0.800/cheasebs_baseline
+Run targets: Ip=947061.789 A (source 947061.789 A), Bt=-0.439262 T (source -0.439262 T)
+Rebuilding baseline decomposition from reference profiles
+Preparing baseline inputs from g132543.00700
+Baseline radial mapping complete
+Baseline Step 1 complete: thermal/fast pressure split and Zeff
+Baseline Step 2 complete: bootstrap/driven current decomposition
+Baseline outputs written
+Baseline rebuild complete: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-58-27-132543_ne_ped_scale_0.800/cheasebs_baseline
+Starting iterative replay with target Ip=947061.789 A and initial amplitude=1.000000
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 00 complete: Ip=940651.644 A, rel_error=6.768e-03, bs_change=n/a, q_change=n/a, next_amplitude=1.003e+00, converged=no
+Iteration 01: running CHEASE (amplitude=1.003407, qspec=on)
+Iteration 01 complete: Ip=938303.611 A, rel_error=9.248e-03, bs_change=4.716e-03, q_change=6.906e-03, next_amplitude=9.945e-01, converged=no
+Iteration 02: running CHEASE (amplitude=0.994511, qspec=on)
+Iteration 02 complete: Ip=931126.023 A, rel_error=1.683e-02, bs_change=8.598e-04, q_change=7.208e-03, next_amplitude=1.008e+00, converged=no
+Iteration 03: running CHEASE (amplitude=1.008337, qspec=on)
+Iteration 03 complete: Ip=935481.073 A, rel_error=1.223e-02, bs_change=4.424e-03, q_change=7.351e-03, next_amplitude=1.034e+00, converged=no
+Iteration 04: running CHEASE (amplitude=1.034074, qspec=on)
+Iteration 04 complete: Ip=945631.751 A, rel_error=1.510e-03, bs_change=6.103e-03, q_change=1.285e-02, next_amplitude=1.037e+00, converged=no
+Iteration 05: running CHEASE (amplitude=1.036612, qspec=on)
+Iteration 05 complete: Ip=945120.203 A, rel_error=2.050e-03, bs_change=1.130e-03, q_change=1.548e-03, next_amplitude=1.030e+00, converged=no
+Iteration 06: running CHEASE (amplitude=1.029869, qspec=on)
+Iteration 06 complete: Ip=940812.146 A, rel_error=6.599e-03, bs_change=9.117e-04, q_change=4.359e-03, next_amplitude=1.037e+00, converged=no
+Iteration 07: running CHEASE (amplitude=1.036716, qspec=on)
+Iteration 07 complete: Ip=943270.486 A, rel_error=4.003e-03, bs_change=1.593e-03, q_change=3.181e-03, next_amplitude=1.044e+00, converged=no
+Iteration 08: running CHEASE (amplitude=1.044109, qspec=on)
+Iteration 08 complete: Ip=946079.536 A, rel_error=1.037e-03, bs_change=1.588e-03, q_change=3.428e-03, next_amplitude=1.046e+00, converged=no
+Iteration 09: running CHEASE (amplitude=1.045918, qspec=on)
+Iteration 09 complete: Ip=946385.383 A, rel_error=7.142e-04, bs_change=4.454e-04, q_change=6.392e-04, next_amplitude=1.046e+00, converged=yes
+Completed iterative workflow after 10 iteration(s): Ip=946385.383 A, rel_error=7.142e-04, converged=yes
+Final EQDSK: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-58-27-132543_ne_ped_scale_0.800/iteration_09/artifacts/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT
+[cheaseBS] acceptance: ACCEPTED
+[cheaseBS]   Ip error         0.071%  (final 946385.4 A vs reference 947061.8 A)
+[cheaseBS]   q95 error        1.714%
+[cheaseBS]   q edge error    21.015%   <- separatrix-adjacent, see module docstring
+[cheaseBS]   solver flag    converged=True (10 iteration(s)) — recorded, not gated by default
+[cheaseBS] run summary: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-58-27-132543_ne_ped_scale_0.800/run_summary.png
+[cheaseBS]   note: after EQDSK taken from a per-iteration artifact (iteration_09/artifacts/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT) — the run directory root holds no EQDSK*.OUT, so this is the last iteration solved, not necessarily a converged result
+[TPED] iterdb: /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/ne_ped_scale_0.800/profiles.iterdb
+[cheaseBS] scratch run directory: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-58-27-132543_ne_ped_scale_0.800
+[cheaseBS] new equilibrium written to: /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/ne_ped_scale_0.800/g132543.00700_CH_COCOS02_mtanh_full_ne-sh0.8.geqdsk
+  gfile   /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/ne_ped_scale_0.800/g132543.00700_CH_COCOS02_mtanh_full_ne-sh0.8.geqdsk
+  run dir /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_18-58-27-132543_ne_ped_scale_0.800 (copied: chease_logs/iteration_00__artifacts__chease.log, chease_logs/iteration_00__chease_closure_345am_19__stage__chease.log, chease_logs/iteration_09__artifacts__chease.log, chease_logs/iteration_09__chease_closure_flmjs9cn__stage__chease.log)
+  result  accepted
+--- 132543 ne_ped_scale_1.200 : ne_ped_scale 1.2  ---
+[TPED] transform log: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_19-03-56-132543_ne_ped_scale_1.200/TPED_transform_log.json
+[cheaseBS] reference profiles: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_19-03-56-132543_ne_ped_scale_1.200/reference_profiles
+[cheaseBS] running: /global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py --config /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_19-03-56-132543_ne_ped_scale_1.200/cheasebs_run_config.json
+Starting iterative CHEASE workflow (coordinate=rhop, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_19-03-56-132543_ne_ped_scale_1.200
+Baseline directory: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_19-03-56-132543_ne_ped_scale_1.200/cheasebs_baseline
+Run targets: Ip=947061.789 A (source 947061.789 A), Bt=-0.439262 T (source -0.439262 T)
+Rebuilding baseline decomposition from reference profiles
+Preparing baseline inputs from g132543.00700
+Baseline radial mapping complete
+Baseline Step 1 complete: thermal/fast pressure split and Zeff
+Baseline Step 2 complete: bootstrap/driven current decomposition
+Baseline outputs written
+Baseline rebuild complete: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_19-03-56-132543_ne_ped_scale_1.200/cheasebs_baseline
+Starting iterative replay with target Ip=947061.789 A and initial amplitude=1.000000
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+Iteration 00 complete: Ip=952654.341 A, rel_error=5.905e-03, bs_change=n/a, q_change=n/a, next_amplitude=9.971e-01, converged=no
+Iteration 01: running CHEASE (amplitude=0.997065, qspec=on)
+Iteration 01 complete: Ip=954618.831 A, rel_error=7.979e-03, bs_change=4.879e-03, q_change=6.301e-03, next_amplitude=1.005e+00, converged=no
+Iteration 02: running CHEASE (amplitude=1.004969, qspec=on)
+Iteration 02 complete: Ip=960907.444 A, rel_error=1.462e-02, bs_change=1.157e-03, q_change=6.338e-03, next_amplitude=9.928e-01, converged=no
+Iteration 03: running CHEASE (amplitude=0.992787, qspec=on)
+Iteration 03 complete: Ip=956923.271 A, rel_error=1.041e-02, bs_change=4.537e-03, q_change=6.926e-03, next_amplitude=9.717e-01, converged=no
+Iteration 04: running CHEASE (amplitude=0.971681, qspec=on)
+Iteration 04 complete: Ip=948474.063 A, rel_error=1.491e-03, bs_change=5.990e-03, q_change=1.135e-02, next_amplitude=9.692e-01, converged=no
+Iteration 05: running CHEASE (amplitude=0.969212, qspec=on)
+Iteration 05 complete: Ip=948836.144 A, rel_error=1.874e-03, bs_change=1.346e-03, q_change=1.629e-03, next_amplitude=9.777e-01, converged=no
+Iteration 06: running CHEASE (amplitude=0.977683, qspec=on)
+Iteration 06 complete: Ip=953971.441 A, rel_error=7.296e-03, bs_change=1.485e-03, q_change=5.514e-03, next_amplitude=9.697e-01, converged=no
+Iteration 07: running CHEASE (amplitude=0.969704, qspec=on)
+Iteration 07 complete: Ip=950785.725 A, rel_error=3.932e-03, bs_change=2.169e-03, q_change=4.230e-03, next_amplitude=9.632e-01, converged=no
+Iteration 08: running CHEASE (amplitude=0.963176, qspec=on)
+Iteration 08 complete: Ip=948267.395 A, rel_error=1.273e-03, bs_change=1.726e-03, q_change=3.363e-03, next_amplitude=9.610e-01, converged=no
+Iteration 09: running CHEASE (amplitude=0.960988, qspec=on)
+Iteration 09 complete: Ip=947762.096 A, rel_error=7.395e-04, bs_change=6.426e-04, q_change=9.464e-04, next_amplitude=9.610e-01, converged=yes
+Completed iterative workflow after 10 iteration(s): Ip=947762.096 A, rel_error=7.395e-04, converged=yes
+Final EQDSK: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_19-03-56-132543_ne_ped_scale_1.200/iteration_09/artifacts/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT
+[cheaseBS] acceptance: ACCEPTED
+[cheaseBS]   Ip error         0.074%  (final 947762.1 A vs reference 947061.8 A)
+[cheaseBS]   q95 error        0.102%
+[cheaseBS]   q edge error    21.414%   <- separatrix-adjacent, see module docstring
+[cheaseBS]   solver flag    converged=True (10 iteration(s)) — recorded, not gated by default
+[cheaseBS] run summary: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_19-03-56-132543_ne_ped_scale_1.200/run_summary.png
+[cheaseBS]   note: after EQDSK taken from a per-iteration artifact (iteration_09/artifacts/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT) — the run directory root holds no EQDSK*.OUT, so this is the last iteration solved, not necessarily a converged result
+[TPED] iterdb: /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/ne_ped_scale_1.200/profiles.iterdb
+[cheaseBS] scratch run directory: /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_19-03-56-132543_ne_ped_scale_1.200
+[cheaseBS] new equilibrium written to: /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/ne_ped_scale_1.200/g132543.00700_CH_COCOS02_mtanh_full_ne-sh1.2.geqdsk
+  gfile   /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/ne_ped_scale_1.200/g132543.00700_CH_COCOS02_mtanh_full_ne-sh1.2.geqdsk
+  run dir /pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_19-03-56-132543_ne_ped_scale_1.200 (copied: chease_logs/iteration_00__artifacts__chease.log, chease_logs/iteration_00__chease_closure_6nhs7zxz__stage__chease.log, chease_logs/iteration_09__artifacts__chease.log, chease_logs/iteration_09__chease_closure_g348g5hk__stage__chease.log)
+  result  accepted
+=== test M: 5/5 accepted ===
+compare: /global/cfs/cdirs/m2116/software/conda/envs/TPED/bin/python /global/homes/j/joeschm/tools/TPED/projects/discharge_tools/scripts/compare_cheasebs_runs.py --baseline /global/homes/j/joeschm/data/ST_research/NSTXU_discharges/132543 --variations /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543 /global/homes/j/joeschm/projects/cheaseBS_tests/data/jparallel_box/132543/132543/Te_ped_scale_1.000 --outdir /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds --plot-combine mtanh om --pedestal 0.8,0.98 --slices 0.85 0.9 0.95 0.975
+[cheaseBS] 6 run directories found
+[cheaseBS] grouping 6 runs by discharge and transform
+[cheaseBS] 1 group(s): shot 132543 / mtanh+om (6)
+[cheaseBS] resolving 6 run directories
+[cheaseBS]   [1/6] /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/Te_ped_scale_0.800
+[cheaseBS]   [2/6] /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/Te_ped_scale_1.000
+[cheaseBS]   [3/6] /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/Te_ped_scale_1.200
+[cheaseBS]   [4/6] /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/ne_ped_scale_0.800
+[cheaseBS]   [5/6] /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/ne_ped_scale_1.200
+[cheaseBS]   [6/6] /global/homes/j/joeschm/projects/cheaseBS_tests/data/jparallel_box/132543/132543/Te_ped_scale_1.000
+[cheaseBS] shot 132543: building a comparison of 6 variant(s)
+[cheaseBS] reading 6 reconstruction EQDSK(s)
+[cheaseBS]   [1/6] mtanh_full_Te-sh0.8  coordinate=rhop
+[cheaseBS]   [2/6] mtanh_full_Te  coordinate=rhop
+[cheaseBS]   [3/6] mtanh_full-Te  coordinate=rhot
+[cheaseBS]   [4/6] mtanh_full_Te-sh1.2  coordinate=rhop
+[cheaseBS]   [5/6] mtanh_full_ne-sh0.8  coordinate=rhop
+[cheaseBS]   [6/6] mtanh_full_ne-sh1.2  coordinate=rhop
+[cheaseBS] comparison: /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/cheasebs_comparison_132543_mtanh-om.png
+[cheaseBS] pressure chain: /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/cheasebs_comparison_132543_mtanh-om_pchain.png
+[cheaseBS] resolving 6 run directories
+[cheaseBS]   [1/6] /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/Te_ped_scale_0.800
+[cheaseBS]   [2/6] /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/Te_ped_scale_1.000
+[cheaseBS]   [3/6] /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/Te_ped_scale_1.200
+[cheaseBS]   [4/6] /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/ne_ped_scale_0.800
+[cheaseBS]   [5/6] /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/132543/ne_ped_scale_1.200
+[cheaseBS]   [6/6] /global/homes/j/joeschm/projects/cheaseBS_tests/data/jparallel_box/132543/132543/Te_ped_scale_1.000
+[cheaseBS] shot 132543: building a comparison of 6 variant(s)
+[cheaseBS] reading 6 reconstruction EQDSK(s)
+[cheaseBS]   [1/6] mtanh_full_Te-sh0.8  coordinate=rhop
+[cheaseBS]   [2/6] mtanh_full_Te  coordinate=rhop
+[cheaseBS]   [3/6] mtanh_full-Te  coordinate=rhot
+[cheaseBS]   [4/6] mtanh_full_Te-sh1.2  coordinate=rhop
+[cheaseBS]   [5/6] mtanh_full_ne-sh0.8  coordinate=rhop
+[cheaseBS]   [6/6] mtanh_full_ne-sh1.2  coordinate=rhop
+[cheaseBS] comparison: /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds/cheasebs_comparison_132543_mtanh-om_rho0.8-0.98.png
+
+2 written, 0 failed
+compare exit 0; figures in /global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/M_bounds
