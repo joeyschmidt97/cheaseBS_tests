@@ -1,6 +1,6 @@
 {
     "schema_version": 1,
-    "generated": "2026-10-15T21:13:37",
+    "generated": "2026-10-16T16:27:10",
     "generated_by": "TPED discharge_tools output_gfile",
     "discharge": {
         "shot": 132543,
@@ -192,7 +192,7 @@
     },
     "outputs": {
         "baseline_gfile_written": "/global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/O_profiles_bounds/132543/Te_ne_ped_scale_1.000/g132543.00700",
-        "run_dir": "/pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_21-13-37-132543_Te_ne_ped_scale_1.000",
+        "run_dir": "/pscratch/sd/j/joeschm/cheaseBS_runs/20261016/20261016_16-27-10-132543_Te_ne_ped_scale_1.000",
         "final_dir": "/global/homes/j/joeschm/projects/cheaseBS_tests/data/cheasebs_132xxx/O_profiles_bounds/132543/Te_ne_ped_scale_1.000",
         "comment": "132543_Te_ne_ped_scale_1.000"
     },
@@ -205,7 +205,7 @@
         },
         "python": "3.10.14",
         "platform": "Linux-6.4.0-150600.23.125_15.0.29-cray_shasta_c-x86_64-with-glibc2.38",
-        "hostname": "login36",
+        "hostname": "login01",
         "user": "joeschm",
         "cwd": "/global/u1/j/joeschm/projects/NSTXU_lithium_study",
         "argv": [

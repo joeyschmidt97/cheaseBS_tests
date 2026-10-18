@@ -25,7 +25,7 @@
  NITMSHOT=           -1          -1
  equilibrium not taken from ITM structure, thus eqchease_in not allocated
 
- CPU TIME USED SO FAR =  1.800000E-05 SECS
+ CPU TIME USED SO FAR =  1.300000E-05 SECS
 
  Read EXPEQ, predge =   5.29980680E-03
  RZ0C seems incorrect in EXPEQ, changed to :  -0.20330749999999997     
@@ -321,7 +321,7 @@
  *****************************************
  
 
- CPU TIME USED SO FAR =  2.758963E+00 SECS
+ CPU TIME USED SO FAR =  2.323732E+00 SECS
 
 
   NS =   60     NT =   60     NISO =  220     NPSI =  220     NCHI =  220     NINSCA =   40     NINMAP =   40
@@ -369,15 +369,15 @@
  *****************************************
  
 
- CPU TIME USED SO FAR =  1.112222E+01 SECS
+ CPU TIME USED SO FAR =  9.377873E+00 SECS
 
  BEFORE MAPPING: 
 
- CPU TIME USED SO FAR =  1.127028E+01 SECS
+ CPU TIME USED SO FAR =  9.520165E+00 SECS
 
  AFTER MAPPING: 
 
- CPU TIME USED SO FAR =  2.541689E+01 SECS
+ CPU TIME USED SO FAR =  2.176879E+01 SECS
 
 
 
@@ -403,7 +403,7 @@
 
  AFTER ERATO STUFF: 
 
- CPU TIME USED SO FAR =  2.603462E+01 SECS
+ CPU TIME USED SO FAR =  2.234622E+01 SECS
 
  *************************************
 
@@ -449,4 +449,4 @@
 git hash 9dcbf8a86934ee91d9d31924d30c81df343eef5e_branch_master
           30
 
- CPU TIME USED SO FAR =  2.691092E+01 SECS
+ CPU TIME USED SO FAR =  2.314766E+01 SECS

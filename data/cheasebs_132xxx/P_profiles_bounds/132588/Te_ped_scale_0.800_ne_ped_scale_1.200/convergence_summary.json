@@ -6,7 +6,7 @@
   "final_amplitude_next": 0.9755942455463414,
   "final_bootstrap_change_rel": 0.00020890183599555062,
   "final_converged": true,
-  "final_eqdsk_path": "/pscratch/sd/j/joeschm/cheaseBS_runs/20261015/20261015_21-56-51-132588_Te_ped_scale_0.800_ne_ped_scale_1.200/iteration_16/artifacts/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT",
+  "final_eqdsk_path": "/pscratch/sd/j/joeschm/cheaseBS_runs/20261016/20261016_17-14-22-132588_Te_ped_scale_0.800_ne_ped_scale_1.200/iteration_16/artifacts/EQDSK_COCOS_02_POS_SOURCE_SIGNS.OUT",
   "final_ip_a": 983889.8057,
   "final_ip_error_a": 555.0557000000263,
   "final_ip_error_rel": 0.0005644626105199946,
