@@ -1,0 +1,90 @@
+{
+  "equilibrium": {
+    "b0_t": -0.439262,
+    "ip_a": 947061.789,
+    "nr": 129,
+    "nz": 129,
+    "psiaxis_wb": -0.0517546779,
+    "psiedge_wb": 0.0290460578,
+    "r0_m": 0.85,
+    "target_b0_t": -0.439262,
+    "target_ip_a": 947061.789
+  },
+  "inputs": {
+    "carbon_profile": "/global/u2/l/lleppin/NSTX132543/variations/<in-memory:NSTX132543_carbon>",
+    "deuterium_profile": "/global/u2/l/lleppin/NSTX132543/variations/<in-memory:NSTX132543_deuterium>",
+    "electron_profile": "/global/u2/l/lleppin/NSTX132543/variations/<in-memory:NSTX132543_electron>",
+    "eqdsk": "/global/u2/l/lleppin/NSTX132543/g132543.00700"
+  },
+  "mapping": {
+    "artifact_paths": {
+      "EXPEQ.OUT": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/chease_mapping_artifacts/EXPEQ.OUT",
+      "EXPEQ.OUT.TOR": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/chease_mapping_artifacts/EXPEQ.OUT.TOR",
+      "NOUT": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/chease_mapping_artifacts/NOUT",
+      "chease.log": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/chease_mapping_artifacts/chease.log",
+      "chease_namelist": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/chease_mapping_artifacts/chease_namelist",
+      "ogyropsi.dat": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/chease_mapping_artifacts/ogyropsi.dat"
+    },
+    "chease_return_code": 0,
+    "ogyropsi_source": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/chease_mapping_artifacts/ogyropsi.dat",
+    "rho_t_edge_raw": 0.98706856134
+  },
+  "outputs": {
+    "driven_current_profile_csv": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/driven_current_profile.csv",
+    "istar_current_profile_rhop_csv": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/istar_current_profile_rhop.csv",
+    "istar_current_profile_rhot_csv": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/istar_current_profile_rhot.csv",
+    "profiles_csv": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/profiles.csv"
+  },
+  "step1": {
+    "clamped_fast_pressure_points": 0,
+    "fast_pressure_floor_pa": 1.0,
+    "max_fast_pressure_pa": 9453.747896251534,
+    "min_fast_pressure_pa": 16.813371770986123,
+    "raw_below_floor_fast_pressure_points": 0,
+    "raw_max_fast_pressure_pa": 9453.747896251534,
+    "raw_min_fast_pressure_pa": 16.813371770986123,
+    "raw_negative_fast_pressure_points": 0,
+    "species_axes": {
+      "carbon": "rhop",
+      "deuterium": "rhop",
+      "electron": "rhop"
+    }
+  },
+  "step2": {
+    "artifact_paths": {
+      "EXPEQ.OUT": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/chease_stage2_artifacts/EXPEQ.OUT",
+      "EXPEQ.OUT.TOR": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/chease_stage2_artifacts/EXPEQ.OUT.TOR",
+      "EXPTNZ": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/chease_stage2_artifacts/EXPTNZ",
+      "NOUT": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/chease_stage2_artifacts/NOUT",
+      "chease.log": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/chease_stage2_artifacts/chease.log",
+      "chease_namelist": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/chease_stage2_artifacts/chease_namelist",
+      "ogyropsi.dat": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/chease_stage2_artifacts/ogyropsi.dat"
+    },
+    "bootstrap_conversion_b0_t": 0.439262,
+    "bootstrap_definition": "driven = total - bootstrap on the CHEASE j_parallel = <j.B>/B0 footing, using ogyropsi jdotB_over_B0 directly for total and JBSBAV/B0 for bootstrap",
+    "bootstrap_raw_quantity": "JBSBAV from ogyropsi.dat",
+    "chease_grid_points": 221,
+    "chease_return_code": 0,
+    "current_basis": "flux-surface-averaged parallel current density <j.B>/B0 [A/m^2]",
+    "driven_current_input_files": {
+      "rhop_expeq": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/driven_current_expeq_pol.dat",
+      "rhot_expeq": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/driven_current_expeq_tor.dat"
+    },
+    "export_grid_points": 129,
+    "future_chease_istar_source": "Use saved total/bootstrap/driven I* profiles through the NSTTP=2 external replay path",
+    "future_chease_second_source": "Use driven current with NSTTP=4 (jparallel_jB_over_B0); the exported driven_current_expeq_tor.dat is for NFUNRHO=1 and driven_current_expeq_pol.dat is for NFUNRHO=0",
+    "ion_temperature_assumption": "Effective single-ion Ti preserves total thermal ion pressure: Ti_eff = (nD*TD + nC*TC) / (nD + nC)",
+    "istar_reconstruction_rhop_max_abs": 2.76667577736589e-13,
+    "istar_reconstruction_rhop_rms": 1.865902293511342e-14,
+    "istar_reconstruction_rhot_max_abs": 2.76667577736589e-13,
+    "istar_reconstruction_rhot_rms": 1.865902293511342e-14,
+    "ogyropsi_source": "/pscratch/sd/l/lleppin/cheaseBS_runs/NSTX132543/baseline/chease_stage2_artifacts/ogyropsi.dat",
+    "rho_t_edge_raw": 0.98706856134,
+    "total_current_scale_factor": 1.0
+  },
+  "diagnostics": {
+    "min_driven_current_a_per_m2": 74203.29850176214,
+    "driven_current_negative_rhot_range": null,
+    "max_q_relative_difference": 2.021676028370552
+  }
+}
