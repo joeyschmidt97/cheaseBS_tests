@@ -1,0 +1,136 @@
+{
+    "schema_version": 1,
+    "generated": "2026-10-23T17:45:41",
+    "generated_by": "TPED discharge_tools output_gfile",
+    "discharge": {
+        "shot": 132543,
+        "time_ms": 700,
+        "machine": null,
+        "input_dir": "/global/homes/j/joeschm/projects/NSTXU_lithium_study/data/discharges/132543",
+        "source_gfile": "/global/homes/j/joeschm/projects/NSTXU_lithium_study/data/discharges/132543/g132543.00700",
+        "source_pfile": "/global/homes/j/joeschm/projects/NSTXU_lithium_study/data/discharges/132543/p132543.00700"
+    },
+    "command": {
+        "lines": [
+            "discharge = DischargeData(input_dir='/global/homes/j/joeschm/projects/NSTXU_lithium_study/data/discharges/132543')",
+            "phys = DischargePhysics(discharge)",
+            "phys = phys.apply_t_scale(factor=4.197954717566774, apply_to_tz=True, clamp_sep=True)"
+        ],
+        "text": "discharge = DischargeData(input_dir='/global/homes/j/joeschm/projects/NSTXU_lithium_study/data/discharges/132543')\nphys = DischargePhysics(discharge)\nphys = phys.apply_t_scale(factor=4.197954717566774, apply_to_tz=True, clamp_sep=True)"
+    },
+    "transform_history": [
+        {
+            "transform": "apply_t_scale",
+            "factor": 4.197954717566774,
+            "apply_to_tz": true,
+            "clamp_sep": true,
+            "t_sep": {
+                "Te": 42.236000000000004,
+                "Ti": 163.102,
+                "Tz": 163.102
+            }
+        }
+    ],
+    "cheasebs": {
+        "config_template": "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/configs/nstx_cheasebs_config.json",
+        "overrides": {
+            "replay_representation": "jparallel",
+            "coordinate": "rhop",
+            "bootstrap_mix": 0.35,
+            "amplitude_warmup_iters": 0,
+            "tol_bs": 0.001,
+            "tol_q": 0.001,
+            "tol_ip_rel": 0.001,
+            "max_iter": 40,
+            "target_bt_scale_t": 2.0488910946086847,
+            "target_ip_scale_a": 2.0488910946086847,
+            "initial_amplitude": 2.0488910946086847
+        },
+        "baseline_dir": null,
+        "baseline_gfile": null,
+        "strict": false,
+        "acceptance": null,
+        "script": "/global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py",
+        "chease_binary": "/global/homes/j/joeschm/simulators/chease/src-f90/chease",
+        "chease_namelist": "/pscratch/sd/j/joeschm/git_repos/cheaseBS_tests/data/cheasebs_132xxx/U_nstxu_0.9T/chease_namelist_nstx_ncscal4_tensbnd-1.0",
+        "chease_namelist_values": {
+            "RELAX": 0.0,
+            "NDIAGOP": 1,
+            "NBSEXPQ": 0,
+            "NPROPT": 2,
+            "NIDEAL": 6,
+            "NS": 60,
+            "NT": 60,
+            "NPSI": 220,
+            "NCHI": 220,
+            "NISO": 220,
+            "NTNOVA": 12,
+            "NCSCAL": 4,
+            "NOPT": 0,
+            "NSURF": 6,
+            "NPPFUN": 4,
+            "NFUNC": 4,
+            "NDIFPS": 0,
+            "NDIFT": 1,
+            "NMESHC": 1,
+            "NPOIDC": 2,
+            "SOLPDC": 0.7,
+            "CPLACE": [
+                0.95,
+                0.99,
+                1.0
+            ],
+            "CWIDTH": [
+                0.1,
+                0.02,
+                0.05
+            ],
+            "NTURN": 20,
+            "NBLC0": 16,
+            "NPPR": 24,
+            "NINMAP": 40,
+            "NINSCA": 40,
+            "NSYM": 0,
+            "NEGP": -1,
+            "NER": 1,
+            "NEQDSK": 1,
+            "NRBOX": 513,
+            "NZBOX": 513,
+            "EPSLON": 1e-10,
+            "ETAEI": 0.33,
+            "RPEOP": 0.5,
+            "RZION": 1.5,
+            "GAMMA": 1.6666666667,
+            "TENSPROF": 0.0,
+            "TENSBND": [
+                -1.0,
+                "/"
+            ]
+        },
+        "reference_profiles_used": true
+    },
+    "outputs": {
+        "baseline_gfile_written": "/pscratch/sd/j/joeschm/git_repos/cheaseBS_tests/data/cheasebs_132xxx/U_nstxu_0.9T/132543/T_scale_4.198_sep/g132543.00700",
+        "run_dir": "/pscratch/sd/j/joeschm/cheaseBS_runs/20261023/20261023_17-45-41-132543_T_scale_4.198_sep",
+        "final_dir": "/pscratch/sd/j/joeschm/git_repos/cheaseBS_tests/data/cheasebs_132xxx/U_nstxu_0.9T/132543/T_scale_4.198_sep",
+        "comment": "132543_T_scale_4.198_sep"
+    },
+    "environment": {
+        "tped_repo": "/global/homes/j/joeschm/tools/TPED",
+        "tped_git": {
+            "commit": "2a6655a4f96730fdbe9cb1f0f5f69445f908cab8",
+            "branch": "gene_datatree",
+            "dirty": true
+        },
+        "python": "3.10.14",
+        "platform": "Linux-6.4.0-150600.23.135_15.0.44-cray_shasta_c-x86_64-with-glibc2.38",
+        "hostname": "login35",
+        "user": "joeschm",
+        "cwd": "/global/u1/j/joeschm/projects/NSTXU_lithium_study",
+        "argv": [
+            "/global/homes/j/joeschm/projects/NSTXU_lithium_study/scripts/cheasebs_132xxx_tests.py",
+            "U"
+        ]
+    },
+    "plot_caption": "tscale-f4.2-sep"
+}
