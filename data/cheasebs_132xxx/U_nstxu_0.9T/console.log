@@ -1,0 +1,81 @@
+=== test U (132543): 1 case(s) -> /pscratch/sd/j/joeschm/git_repos/cheaseBS_tests/data/cheasebs_132xxx/U_nstxu_0.9T ===
+settings: {"replay_representation": "jparallel", "coordinate": "rhop", "bootstrap_mix": 0.35, "amplitude_warmup_iters": 0, "tol_bs": 0.001, "tol_q": 0.001, "tol_ip_rel": 0.001, "max_iter": 40, "target_bt_scale_t": 2.0488910946086847, "target_ip_scale_a": 2.0488910946086847}  namelist: {"NCSCAL": 4, "TENSBND": -1.0}
+--- 132543 T_scale_4.198_sep : T_scale 4.2 {'clamp_sep': True} ---
+Traceback (most recent call last):
+  File "/global/u1/j/joeschm/projects/NSTXU_lithium_study/scripts/cheasebs_132xxx_tests.py", line 474, in run_test
+    q = build(shot, steps)
+  File "/global/u1/j/joeschm/projects/NSTXU_lithium_study/scripts/cheasebs_132xxx_tests.py", line 440, in build
+    q = scale(q, name, s, **kw)
+  File "/global/u1/j/joeschm/projects/NSTXU_lithium_study/scripts/scalings.py", line 231, in scale
+    return APPLY[spec["apply"]](phys, spec, s, **kw)
+  File "/global/u1/j/joeschm/projects/NSTXU_lithium_study/scripts/scalings.py", line 220, in _apply_t_scale
+    return phys.apply_t_scale(s, **kw)
+AttributeError: 'DischargePhysics' object has no attribute 'apply_t_scale'
+  result  crashed: AttributeError("'DischargePhysics' object has no attribute 'apply_t_scale'")
+=== test U: 0/1 accepted ===
+=== test U (132543): 1 case(s) -> /pscratch/sd/j/joeschm/git_repos/cheaseBS_tests/data/cheasebs_132xxx/U_nstxu_0.9T ===
+settings: {"replay_representation": "jparallel", "coordinate": "rhop", "bootstrap_mix": 0.35, "amplitude_warmup_iters": 0, "tol_bs": 0.001, "tol_q": 0.001, "tol_ip_rel": 0.001, "max_iter": 40, "target_bt_scale_t": 2.0488910946086847, "target_ip_scale_a": 2.0488910946086847}  namelist: {"NCSCAL": 4, "TENSBND": -1.0}
+--- 132543 T_scale_4.198_sep : T_scale 4.2 {'clamp_sep': True} ---
+  dry run: transforms ['apply_t_scale']
+=== test U: 1/1 accepted ===
+=== test U (132543): 1 case(s) -> /pscratch/sd/j/joeschm/git_repos/cheaseBS_tests/data/cheasebs_132xxx/U_nstxu_0.9T ===
+settings: {"replay_representation": "jparallel", "coordinate": "rhop", "bootstrap_mix": 0.35, "amplitude_warmup_iters": 0, "tol_bs": 0.001, "tol_q": 0.001, "tol_ip_rel": 0.001, "max_iter": 40, "target_bt_scale_t": 2.0488910946086847, "target_ip_scale_a": 2.0488910946086847}  namelist: {"NCSCAL": 4, "TENSBND": -1.0}
+--- 132543 T_scale_4.198_sep : T_scale 4.2 {'clamp_sep': True} ---
+[TPED] transform log: /pscratch/sd/j/joeschm/cheaseBS_runs/20261023/20261023_17-32-42-132543_T_scale_4.198_sep/TPED_transform_log.json
+[cheaseBS] reference profiles: /pscratch/sd/j/joeschm/cheaseBS_runs/20261023/20261023_17-32-42-132543_T_scale_4.198_sep/reference_profiles
+[cheaseBS] target_ip_scale_a=2.0488910946086847 x source Ip 947062 A -> target_ip_a=1.94043e+06 A
+[cheaseBS] target_bt_scale_t=2.0488910946086847 x source Bt -0.439262 T -> target_bt_t=-0.9 T
+[cheaseBS] running: /global/homes/j/joeschm/simulators/cheaseBS/run_chease_iterative_profiles.py --config /pscratch/sd/j/joeschm/cheaseBS_runs/20261023/20261023_17-32-42-132543_T_scale_4.198_sep/cheasebs_run_config.json
+Starting iterative CHEASE workflow (coordinate=rhop, replay=jparallel, qspec=on)
+Output directory: /pscratch/sd/j/joeschm/cheaseBS_runs/20261023/20261023_17-32-42-132543_T_scale_4.198_sep
+Baseline directory: /pscratch/sd/j/joeschm/cheaseBS_runs/20261023/20261023_17-32-42-132543_T_scale_4.198_sep/cheasebs_baseline
+Run targets: Ip=1940426.466 A (source 947061.789 A), Bt=-0.900000 T (source -0.439262 T)
+Rebuilding baseline decomposition from reference profiles
+Preparing baseline inputs from g132543.00700
+Baseline radial mapping complete
+Baseline Step 1 complete: thermal/fast pressure split and Zeff
+Baseline Step 2 complete: bootstrap/driven current decomposition
+Baseline outputs written
+Baseline rebuild complete: /pscratch/sd/j/joeschm/cheaseBS_runs/20261023/20261023_17-32-42-132543_T_scale_4.198_sep/cheasebs_baseline
+Starting iterative replay with target Ip=1940426.466 A and initial amplitude=1.000000
+Iteration 00: running CHEASE (amplitude=1.000000, qspec=on)
+CHEASE did not produce ogyropsi.dat in /pscratch/sd/j/joeschm/cheaseBS_runs/20261023/20261023_17-32-42-132543_T_scale_4.198_sep/iteration_00/chease_closure_f990xi51/stage
+Traceback (most recent call last):
+  File "/global/u1/j/joeschm/projects/NSTXU_lithium_study/scripts/cheasebs_132xxx_tests.py", line 481, in run_test
+    path = q.output_gfile(savedir=case, run_cheasebs=True,
+  File "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/discharge_io.py", line 533, in output_gfile
+    chease_eqdsk = run_cheasebs_workflow(
+  File "/global/homes/j/joeschm/tools/TPED/projects/discharge_tools/src/cheasebs_runner.py", line 753, in run_cheasebs_workflow
+    raise RuntimeError(
+RuntimeError: cheaseBS exited with code 1. Check output above for details.
+  run dir /pscratch/sd/j/joeschm/cheaseBS_runs/20261023/20261023_17-32-42-132543_T_scale_4.198_sep (copied: profiles_e, profiles_i, profiles_z, cheasebs_run_config.json, chease_logs/iteration_00__artifacts__chease.log, chease_logs/iteration_00__chease_closure_f990xi51__stage__chease.log)
+  result  crashed: RuntimeError('cheaseBS exited with code 1. Check output above for details.')
+=== test U: 0/1 accepted ===
+compare: /global/cfs/cdirs/m2116/software/conda/envs/TPED/bin/python /global/homes/j/joeschm/tools/TPED/projects/discharge_tools/scripts/compare_cheasebs_runs.py --baseline /global/u1/j/joeschm/projects/NSTXU_lithium_study/data/discharges/132543 --variations /pscratch/sd/j/joeschm/git_repos/cheaseBS_tests/data/cheasebs_132xxx/U_nstxu_0.9T/132543 /pscratch/sd/j/joeschm/git_repos/cheaseBS_tests/data/jparallel_box/132543/132543/Te_ped_scale_1.000 --outdir /pscratch/sd/j/joeschm/git_repos/cheaseBS_tests/data/cheasebs_132xxx/U_nstxu_0.9T --plot-combine mtanh om --pedestal 0.8,0.98 --slices 0.85 0.9 0.95 0.975
+[cheaseBS] 2 run directories found
+[cheaseBS] grouping 2 runs by discharge and transform
+[cheaseBS] 2 group(s): shot 132543 (1), shot 132543 / mtanh+om (1)
+[cheaseBS] shot 132543: one variant so far
+[cheaseBS] resolving 1 run directory
+[cheaseBS]   [1/1] /pscratch/sd/j/joeschm/git_repos/cheaseBS_tests/data/cheasebs_132xxx/U_nstxu_0.9T/132543/T_scale_4.198_sep
+[cheaseBS] no readable runs; no comparison written
+[cheaseBS] resolving 1 run directory
+[cheaseBS]   [1/1] /pscratch/sd/j/joeschm/git_repos/cheaseBS_tests/data/cheasebs_132xxx/U_nstxu_0.9T/132543/T_scale_4.198_sep
+[cheaseBS] no readable runs; no comparison written
+[cheaseBS] shot 132543 / mtanh+om: one variant so far
+[cheaseBS] resolving 1 run directory
+[cheaseBS]   [1/1] /pscratch/sd/j/joeschm/git_repos/cheaseBS_tests/data/jparallel_box/132543/132543/Te_ped_scale_1.000
+[cheaseBS] shot 132543: building a comparison of 1 variant(s)
+[cheaseBS] reading 1 reconstruction EQDSK(s)
+[cheaseBS]   [1/1] mtanh_full-Te
+[cheaseBS] comparison: /pscratch/sd/j/joeschm/git_repos/cheaseBS_tests/data/cheasebs_132xxx/U_nstxu_0.9T/cheasebs_comparison_132543_mtanh-om.png
+[cheaseBS] pressure chain: /pscratch/sd/j/joeschm/git_repos/cheaseBS_tests/data/cheasebs_132xxx/U_nstxu_0.9T/cheasebs_comparison_132543_mtanh-om_pchain.png
+[cheaseBS] resolving 1 run directory
+[cheaseBS]   [1/1] /pscratch/sd/j/joeschm/git_repos/cheaseBS_tests/data/jparallel_box/132543/132543/Te_ped_scale_1.000
+[cheaseBS] shot 132543: building a comparison of 1 variant(s)
+[cheaseBS] reading 1 reconstruction EQDSK(s)
+[cheaseBS]   [1/1] mtanh_full-Te
+[cheaseBS] comparison: /pscratch/sd/j/joeschm/git_repos/cheaseBS_tests/data/cheasebs_132xxx/U_nstxu_0.9T/cheasebs_comparison_132543_mtanh-om_rho0.8-0.98.png
+
+2 written, 0 failed
+compare exit 0; figures in /pscratch/sd/j/joeschm/git_repos/cheaseBS_tests/data/cheasebs_132xxx/U_nstxu_0.9T

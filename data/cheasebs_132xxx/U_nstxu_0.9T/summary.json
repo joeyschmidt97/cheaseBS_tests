@@ -1,0 +1,36 @@
+{
+  "test": "U",
+  "shot": 132543,
+  "results": {
+    "T_scale_4.198_sep": "crashed: RuntimeError('cheaseBS exited with code 1. Check output above for details.')"
+  },
+  "settings": {
+    "replay_representation": "jparallel",
+    "coordinate": "rhop",
+    "bootstrap_mix": 0.35,
+    "amplitude_warmup_iters": 0,
+    "tol_bs": 0.001,
+    "tol_q": 0.001,
+    "tol_ip_rel": 0.001,
+    "max_iter": 40,
+    "target_bt_scale_t": 2.0488910946086847,
+    "target_ip_scale_a": 2.0488910946086847
+  },
+  "namelist": {
+    "NCSCAL": 4,
+    "TENSBND": -1.0
+  },
+  "cases": {
+    "T_scale_4.198_sep": [
+      [
+        "T_scale",
+        4.197954717566774,
+        {
+          "clamp_sep": true
+        }
+      ]
+    ]
+  },
+  "NSTXU_lithium_study": "777b840",
+  "finished": "2026-10-23T17:33:20"
+}
